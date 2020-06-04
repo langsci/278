@@ -1,0 +1,1745 @@
+% This file was converted to LaTeX by Writer2LaTeX ver. 1.4
+% see http://writer2latex.sourceforge.net for more info
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts,textcomp}
+\usepackage{array}
+\usepackage{supertabular}
+\usepackage{hhline}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue}
+% footnotes configuration
+\makeatletter
+\renewcommand\thefootnote{\arabic{footnote}}
+\makeatother
+% Text styles
+\newcommand\textstyleAucun[1]{#1}
+\newcommand\textstyleListLabelcii[1]{\textrm{#1}}
+\newcommand\textstyleListLabelciii[1]{#1}
+\newcommand\textstyleListLabelciv[1]{#1}
+\newcommand\textstyleListLabelcv[1]{#1}
+\newcommand\textstyleListLabelcxx[1]{{\fontsize{12pt}{14.4pt}\selectfont \textbf{\textup{#1}}}}
+\newcommand\textstyleListLabelcxi[1]{#1}
+\newcommand\textstyleListLabelcxii[1]{#1}
+\newcommand\textstyleListLabelcxiii[1]{#1}
+\newcommand\textstyleListLabelcxiv[1]{#1}
+\newcommand\textstyleFootnoteSymbol[1]{\textsuperscript{#1}}
+\newcommand\textstyleListLabelxciii[1]{#1}
+\newcommand\textstyleListLabelxciv[1]{#1}
+\newcommand\textstyleListLabelxcv[1]{#1}
+\newcommand\textstyleListLabelxcvi[1]{#1}
+\makeatletter
+\newcommand\arraybslash{\let\\\@arraycr}
+\makeatother
+\raggedbottom
+% Paragraph styles
+\renewcommand\familydefault{\rmdefault}
+\newenvironment{styleStandard}{\setlength\leftskip{0cm}\setlength\rightskip{0cm plus 1fil}\setlength\parindent{0cm}\setlength\parfillskip{0pt plus 1fil}\setlength\parskip{0cm plus 1pt}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\writerlistlabel\ignorespaces}{\unskip\vspace{0cm plus 1pt}\par}
+\newenvironment{styleCorps}{\setlength\leftskip{0cm}\setlength\rightskip{0cm plus 1fil}\setlength\parindent{0cm}\setlength\parfillskip{0pt plus 1fil}\setlength\parskip{0cm plus 1pt}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\fontsize{11pt}{13.2pt}\selectfont\writerlistlabel\ignorespaces}{\unskip\vspace{0cm plus 1pt}\par}
+\newenvironment{styleNormalWeb}{\setlength\leftskip{0cm}\setlength\rightskip{0cm plus 1fil}\setlength\parindent{0cm}\setlength\parfillskip{0pt plus 1fil}\setlength\parskip{0cm plus 1pt}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\fontsize{10pt}{12.0pt}\selectfont\writerlistlabel\ignorespaces}{\unskip\vspace{0cm plus 1pt}\par}
+\newenvironment{styleListParagraph}{\setlength\leftskip{0.5in}\setlength\rightskip{0in plus 1fil}\setlength\parindent{0in}\setlength\parfillskip{0pt plus 1fil}\setlength\parskip{0in plus 1pt}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\writerlistlabel\ignorespaces}{\unskip\vspace{0.139in plus 0.0139in}\par}
+\newenvironment{styleCorpsAA}{\setlength\leftskip{0cm}\setlength\rightskip{0cm plus 1fil}\setlength\parindent{0cm}\setlength\parfillskip{0pt plus 1fil}\setlength\parskip{0cm plus 1pt}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\fontsize{11pt}{13.2pt}\selectfont\writerlistlabel\ignorespaces}{\unskip\vspace{0cm plus 1pt}\par}
+% List styles
+\newcommand\writerlistleftskip{}
+\newcommand\writerlistparindent{}
+\newcommand\writerlistlabel{}
+\newcommand\writerlistremovelabel{\aftergroup\let\aftergroup\writerlistparindent\aftergroup\relax\aftergroup\let\aftergroup\writerlistlabel\aftergroup\relax}
+\newcounter{listWWNumiiileveli}
+\newcounter{listWWNumiiilevelii}[listWWNumiiileveli]
+\newcounter{listWWNumiiileveliii}[listWWNumiiilevelii]
+\newcounter{listWWNumiiileveliv}[listWWNumiiileveliii]
+\renewcommand\thelistWWNumiiileveli{\arabic{listWWNumiiileveli}}
+\renewcommand\thelistWWNumiiilevelii{\alph{listWWNumiiilevelii}}
+\renewcommand\thelistWWNumiiileveliii{\roman{listWWNumiiileveliii}}
+\renewcommand\thelistWWNumiiileveliv{\arabic{listWWNumiiileveliv}}
+\newcommand\labellistWWNumiiileveli{\thelistWWNumiiileveli.}
+\newcommand\labellistWWNumiiilevelii{\thelistWWNumiiilevelii.}
+\newcommand\labellistWWNumiiileveliii{\thelistWWNumiiileveliii.}
+\newcommand\labellistWWNumiiileveliv{\thelistWWNumiiileveliv.}
+\newenvironment{listWWNumiiileveli}{\def\writerlistleftskip{\setlength\leftskip{0.5in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\stepcounter{listWWNumiiileveli}\makebox[0cm][l]{\labellistWWNumiiileveli}\hspace{-0.635cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumiiilevelii}{\def\writerlistleftskip{\setlength\leftskip{1in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\stepcounter{listWWNumiiilevelii}\makebox[0cm][l]{\labellistWWNumiiilevelii}\hspace{-1.905cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumiiileveliii}{\def\writerlistleftskip{\setlength\leftskip{1.5in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.1252in}}\def\writerlistlabel{\stepcounter{listWWNumiiileveliii}\makebox[0cm][r]{\labellistWWNumiiileveliii}\hspace{-3.4919918cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumiiileveliv}{\def\writerlistleftskip{\setlength\leftskip{2in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\stepcounter{listWWNumiiileveliv}\makebox[0cm][l]{\labellistWWNumiiileveliv}\hspace{-4.4449997cm}\writerlistremovelabel}}}{}
+\newcommand\labellistWWNumiileveli{\textstyleListLabelcii{[F0B7?]}}
+\newcommand\labellistWWNumiilevelii{\textstyleListLabelciii{o}}
+\newcommand\labellistWWNumiileveliii{\textstyleListLabelciv{[F0A7?]}}
+\newcommand\labellistWWNumiileveliv{\textstyleListLabelcv{[F0B7?]}}
+\newenvironment{listWWNumiileveli}{\def\writerlistleftskip{\setlength\leftskip{0.5in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\makebox[0cm][l]{\labellistWWNumiileveli}\hspace{-0.635cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumiilevelii}{\def\writerlistleftskip{\setlength\leftskip{1in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\makebox[0cm][l]{\labellistWWNumiilevelii}\hspace{-1.905cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumiileveliii}{\def\writerlistleftskip{\setlength\leftskip{1.5in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\makebox[0cm][l]{\labellistWWNumiileveliii}\hspace{-3.175cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumiileveliv}{\def\writerlistleftskip{\setlength\leftskip{2in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\makebox[0cm][l]{\labellistWWNumiileveliv}\hspace{-4.4449997cm}\writerlistremovelabel}}}{}
+\newcounter{listWWNumvileveli}
+\newcounter{listWWNumvilevelii}[listWWNumvileveli]
+\newcounter{listWWNumvileveliii}[listWWNumvilevelii]
+\newcounter{listWWNumvileveliv}[listWWNumvileveliii]
+\renewcommand\thelistWWNumvileveli{\arabic{listWWNumvileveli}}
+\renewcommand\thelistWWNumvilevelii{\alph{listWWNumvilevelii}}
+\renewcommand\thelistWWNumvileveliii{\roman{listWWNumvileveliii}}
+\renewcommand\thelistWWNumvileveliv{\arabic{listWWNumvileveliv}}
+\newcommand\labellistWWNumvileveli{\textstyleListLabelcxx{(\thelistWWNumvileveli)}}
+\newcommand\labellistWWNumvilevelii{\thelistWWNumvilevelii.}
+\newcommand\labellistWWNumvileveliii{\thelistWWNumvileveliii.}
+\newcommand\labellistWWNumvileveliv{\thelistWWNumvileveliv.}
+\newenvironment{listWWNumvileveli}{\def\writerlistleftskip{\setlength\leftskip{0.5in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\stepcounter{listWWNumvileveli}\makebox[0cm][l]{\labellistWWNumvileveli}\hspace{-0.635cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumvilevelii}{\def\writerlistleftskip{\setlength\leftskip{1in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\stepcounter{listWWNumvilevelii}\makebox[0cm][l]{\labellistWWNumvilevelii}\hspace{-1.905cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumvileveliii}{\def\writerlistleftskip{\setlength\leftskip{1.5in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.1252in}}\def\writerlistlabel{\stepcounter{listWWNumvileveliii}\makebox[0cm][r]{\labellistWWNumvileveliii}\hspace{-3.4919918cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumvileveliv}{\def\writerlistleftskip{\setlength\leftskip{2in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\stepcounter{listWWNumvileveliv}\makebox[0cm][l]{\labellistWWNumvileveliv}\hspace{-4.4449997cm}\writerlistremovelabel}}}{}
+\newcommand\labellistWWNumvleveli{\textstyleListLabelcxi{[F0B7?]}}
+\newcommand\labellistWWNumvlevelii{\textstyleListLabelcxii{o}}
+\newcommand\labellistWWNumvleveliii{\textstyleListLabelcxiii{[F0A7?]}}
+\newcommand\labellistWWNumvleveliv{\textstyleListLabelcxiv{[F0B7?]}}
+\newenvironment{listWWNumvleveli}{\def\writerlistleftskip{\setlength\leftskip{0.25in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\makebox[0cm][l]{\labellistWWNumvleveli}\hspace{0.0cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumvlevelii}{\def\writerlistleftskip{\setlength\leftskip{0.75in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\makebox[0cm][l]{\labellistWWNumvlevelii}\hspace{-1.27cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumvleveliii}{\def\writerlistleftskip{\setlength\leftskip{1.25in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\makebox[0cm][l]{\labellistWWNumvleveliii}\hspace{-2.54cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumvleveliv}{\def\writerlistleftskip{\setlength\leftskip{1.75in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\makebox[0cm][l]{\labellistWWNumvleveliv}\hspace{-3.81cm}\writerlistremovelabel}}}{}
+\newcommand\labellistWWNumileveli{\textstyleListLabelxciii{[F0B7?]}}
+\newcommand\labellistWWNumilevelii{\textstyleListLabelxciv{o}}
+\newcommand\labellistWWNumileveliii{\textstyleListLabelxcv{[F0A7?]}}
+\newcommand\labellistWWNumileveliv{\textstyleListLabelxcvi{[F0B7?]}}
+\newenvironment{listWWNumileveli}{\def\writerlistleftskip{\setlength\leftskip{0.5in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\makebox[0cm][l]{\labellistWWNumileveli}\hspace{-0.635cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumilevelii}{\def\writerlistleftskip{\setlength\leftskip{1in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\makebox[0cm][l]{\labellistWWNumilevelii}\hspace{-1.905cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumileveliii}{\def\writerlistleftskip{\setlength\leftskip{1.5in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\makebox[0cm][l]{\labellistWWNumileveliii}\hspace{-3.175cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumileveliv}{\def\writerlistleftskip{\setlength\leftskip{2in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\makebox[0cm][l]{\labellistWWNumileveliv}\hspace{-4.4449997cm}\writerlistremovelabel}}}{}
+\newcounter{listWWNumivleveli}
+\newcounter{listWWNumivlevelii}[listWWNumivleveli]
+\newcounter{listWWNumivleveliii}[listWWNumivlevelii]
+\newcounter{listWWNumivleveliv}[listWWNumivleveliii]
+\renewcommand\thelistWWNumivleveli{\arabic{listWWNumivleveli}}
+\renewcommand\thelistWWNumivlevelii{\alph{listWWNumivlevelii}}
+\renewcommand\thelistWWNumivleveliii{\roman{listWWNumivleveliii}}
+\renewcommand\thelistWWNumivleveliv{\arabic{listWWNumivleveliv}}
+\newcommand\labellistWWNumivleveli{\thelistWWNumivleveli.}
+\newcommand\labellistWWNumivlevelii{\thelistWWNumivlevelii.}
+\newcommand\labellistWWNumivleveliii{\thelistWWNumivleveliii.}
+\newcommand\labellistWWNumivleveliv{\thelistWWNumivleveliv.}
+\newenvironment{listWWNumivleveli}{\def\writerlistleftskip{\setlength\leftskip{0.5in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\stepcounter{listWWNumivleveli}\makebox[0cm][l]{\labellistWWNumivleveli}\hspace{-0.635cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumivlevelii}{\def\writerlistleftskip{\setlength\leftskip{1in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\stepcounter{listWWNumivlevelii}\makebox[0cm][l]{\labellistWWNumivlevelii}\hspace{-1.905cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumivleveliii}{\def\writerlistleftskip{\setlength\leftskip{1.5in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.1252in}}\def\writerlistlabel{\stepcounter{listWWNumivleveliii}\makebox[0cm][r]{\labellistWWNumivleveliii}\hspace{-3.4919918cm}\writerlistremovelabel}}}{}
+\newenvironment{listWWNumivleveliv}{\def\writerlistleftskip{\setlength\leftskip{2in}}\def\writerlistparindent{}\def\writerlistlabel{}\def\item{\def\writerlistparindent{\setlength\parindent{-0.25in}}\def\writerlistlabel{\stepcounter{listWWNumivleveliv}\makebox[0cm][l]{\labellistWWNumivleveliv}\hspace{-4.4449997cm}\writerlistremovelabel}}}{}
+\setlength\tabcolsep{1mm}
+\renewcommand\arraystretch{1.3}
+\title{}
+\author{Enseignant}
+\date{2020-05-05}
+\begin{document}
+\clearpage\setcounter{page}{1}\begin{styleStandard}
+\textbf{Replication: Measuring the influence of typologically diverse target language properties on input processing at the initial stages of acquisition}
+\end{styleStandard}
+
+\begin{styleStandard}
+Marzena Watorek (Université Paris 8 \& UMR-SFL, CNRS)
+\end{styleStandard}
+
+\begin{styleStandard}
+Rebekah Rast (American University of Paris \& UMR-SFL, CNRS)
+\end{styleStandard}
+
+\begin{styleStandard}
+Xinyue Cécilia Yu (Inalco - CNRS - EHESS, CRLAO)
+\end{styleStandard}
+
+\begin{styleStandard}
+Pascale Trévisiol (Université Paris 3 \& DILTEC EA 2288)
+\end{styleStandard}
+
+\begin{styleStandard}
+Hedi Majdoub (Université Paris 8 \& UMR-SFL, CNRS)
+\end{styleStandard}
+
+\begin{styleStandard}
+Qianwen Guan (City University of Hong Kong)
+\end{styleStandard}
+
+\begin{styleStandard}
+Xiaoliang Huang (Beijing Foreign Studies University)
+\end{styleStandard}
+
+\begin{styleCorps}
+\textstyleAucun{\textbf{Abstract}}
+\end{styleCorps}
+
+\begin{styleCorps}
+\textstyleAucun{This study applies a “first exposure” approach to second language acquisition, based on data collected from learners’ very first contact with the target language. The VILLA project }(\textit{Varieties of Initial Learners in Language Acquisition: Controlled classroom input and elementary forms of linguistic organisation})\textstyleAucun{ (Dimroth et al. 2013) has made a significant contribution to the development of methodological tools used to observe initial input processing in the first 14 hours of exposure to a target language (Polish) by native speakers of five different languages (Italian, French, English, German and Dutch). The VILLA project dataset allows for a new type of analysis, which compares, under the same controlled input conditions, the performance of learners with different native languages exposed to the same target language. }
+\end{styleCorps}
+
+\begin{styleCorps}
+\textstyleAucun{With a view to expanding and strengthening the cross-linguistic dimension of second language acquisition research, replications of the VILLA methodology with new source-target language combinations are in the planning stages. This chapter presents the design of three replications in which three separate groups of French native speakers will be exposed, in an instructional setting, to Modern Standard Arabic, Mandarin Chinese or Japanese, all typologically different from Polish. The design of these pilot projects draws on the same organizational principles of the VILLA Polish language course, in that learners will be exposed to an unfamiliar language and their performance in the new target language will be tested at various intervals by means of tasks adapted from the VILLA database. }
+\end{styleCorps}
+
+\begin{styleCorps}
+\textstyleAucun{Two specific challenges have arisen while designing replications of the VILLA project that involve different target languages. The first concerns the target language input learners will receive in that the choice of linguistic paradigms to be presented in the input must allow for comparability across VILLA and its replication studies. The other concerns tasks in Arabic, Chinese and Japanese that must be designed based on the Polish model, while also allowing for comparability across studies. }This chapter focuses on reflections about these challenges and decisions made about a variety of methodological issues regarding replications when source-target language combinations differ from the initial study.
+\end{styleCorps}
+
+\begin{styleStandard}
+\textbf{1. Introduction}\footnote{\textrm{ We sincerely thank Amanda Edmonds, Pascale Leclercq and Aarnes Gudmestad for their support, encouragement and helpful suggestions throughout the process of writing this chapter. We would also like to thank our reviewers, whose comments contributed significantly to improving this work. }}
+\end{styleStandard}
+
+\begin{styleStandard}
+Replications in the field of applied linguistics are gaining support not only because they provide insights into the overall validity of results, but also because they allow us to generalise (or limit) results across populations. While Marsden et al. (2018) point out that little is known about replication in second language research, their useful guidelines and recommendations are intended to move the field forward in its practice of replicating, through increased collaboration and transparency of materials and data. They identify a variety of replication categories based on a review of the literature, from a broad to narrow understanding of what studies might entail or self-report. In sum, they recognize three categories, direct, partial and conceptual:
+\end{styleStandard}
+
+\begin{styleNormalWeb}
+\textit{Direct replications }make no intentional change to the initial study and seek to confirm methods, data, and analysis; \textit{partial replications }introduce one principled change to a key variable in the initial study to test generalizability in a clearly pre-defined way; and \textit{conceptual replications }introduce more than one change to one or more significant variables. In all cases, ensure that potential heterogeneity and contextual details are documented as fully as possible (366-367).
+\end{styleNormalWeb}
+
+\begin{styleStandard}
+This chapter introduces three future studies that will replicate an initial study, the French component of the VILLA project (\textit{Varieties of Initial Learners in Language Acquisition: Controlled classroom input and elementary forms of linguistic organisation}), a first exposure study conducted within a functional framework of second language acquisition (Perdue 1993; Watorek 2004; Dimroth 2013). Native speakers of Dutch, English, French, German and Italian received instruction in Polish, a language unfamiliar to all participants. The project contributed significantly to the development of methodological tools used to observe the initial processing of a target language by native speakers of different source languages.
+\end{styleStandard}
+
+\begin{styleStandard}
+The three replication studies discussed here will change one variable, that of the target language. Following Marsden et al. (2018), these studies could be considered “partial” replications in that one principled change to a key variable in the initial study is introduced with a view to testing the generalizability of findings of the French learners of Polish in the VILLA project. However, when the variable being changed is the target language, this logically triggers changes to other significant variables, such as the language features under investigation. Given this reality, the studies discussed here may be more accurately categorized as “conceptual” replications in that not all features and variables of the initial study can be maintained in cross-linguistic replications like these.
+\end{styleStandard}
+
+\begin{styleStandard}
+The objective of the current chapter is to describe the unfolding conceptual replications of the VILLA project’s methodology with a view to making cross-linguistic comparisons with other target languages that present different types of acquisitional problems, namely in the acquisition of nominal morphology.\footnote{\textrm{ Reflections on replications of the VILLA project were first presented by Rast, Dimroth, Starren \& Watorek (2017) as part of the EuroSLA panel “Consolidating and sustaining a principled replication effort in SLA research”.}} Given that the primary reason for these replications is to further our knowledge of the influence of target language properties on input processing at the initial stages of acquisition, we have selected three target languages that differ typologically from the VILLA project’s target language Polish and from first language (L1) French, particularly with respect to nominal morphology: Modern Standard Arabic (henceforth Arabic), Mandarin Chinese (henceforth Chinese) and Japanese. For each replication, a separate group of French native speakers will be exposed to one of these target languages. The input script used in the Polish instruction of the VILLA project will need to be replicated in the new target languages, as will the tasks designed to measure learners’ proficiency level, performance and language development. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Replicating studies within the VILLA project has revealed two particular challenges, one related to the target language input learners will receive, and the other related to the language tasks designed to measure learner performance and development over time. We present these challenges in the form of questions:
+\end{styleStandard}
+
+
+\setcounter{listWWNumiiileveli}{0}
+\begin{listWWNumiiileveli}
+\item 
+\begin{styleListParagraph}
+What linguistic paradigms examined in the target language Polish of the VILLA project can be considered “equivalent” in Arabic, Chinese and Japanese, and how will these be presented in the classroom input? \ 
+\end{styleListParagraph}
+\item 
+\begin{styleListParagraph}
+What Polish tasks designed for the VILLA project can be adapted for Arabic, Chinese and Japanese and how?
+\end{styleListParagraph}
+\end{listWWNumiiileveli}
+\begin{styleStandard}
+This chapter will begin with a brief overview of first exposure studies and the VILLA project, and will be followed by reflection on methodological issues regarding the replications of an instructed language experiment in different target languages, especially when the languages differ typologically in the properties to be investigated.
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{2. First exposure studies and the acquisition of inflectional morphology}
+\end{styleStandard}
+
+\begin{styleStandard}
+Research concerned with the role of input in the processing and appropriation of a second language (L2) has gained interest due, in part, to studies conducted within the “usage-based” framework (Tomasello 2003; Ellis 2008). This approach claims a strong influence of the statistical distribution of target language input properties for language acquisition. In addition, scholars such as Flege (2009) and others cited in Piske \& Young-Scholten’s (2009) \textit{Input Matters} highlight the important role of input in second language acquisition and encourage further investigation, even if controlling input is a complex endeavour. Research that focuses on initial exposure has often relied on artificial languages (e.g. Reber 1967; Hulstijn \& DeKeyser 1997; Williams 2005) or has been limited to the analysis of participants’ performance after only a few minutes of exposure to the input (e.g. Gullberg et al. 2012). A study conducted by Rast (2008), which reports on the first 8 hours of exposure to a new target language, contributed significantly to the development of methodology adopted for the study of input at first contact with a novel language and in the minutes and hours that follow. The VILLA project, designed within the same theoretical and methodological framework, can be viewed as emerging directly from this study (see also Rast 2017 for a follow-up to the 2008 study).
+\end{styleStandard}
+
+\begin{styleStandard}
+With Polish as the target language, a main focus of the VILLA project was inflectional morphology, primarily nominal morphology. A plethora of research has confirmed the difficulties faced by L2 learners in acquiring inflectional morphology (Bardovi-Harlig 2000; Larsen-Freeman 2010). According to Meisel (1987), Bardovi-Harlig (1992), Klein \& Perdue (1997) and Starren (2001), adult learners, for instance, code temporal concepts with lexical items (a semantic domain typically expressed by morphology in richly inflected languages) before acquiring inflectional markers.
+\end{styleStandard}
+
+\begin{styleStandard}
+Fairly recent studies address the challenge of acquiring inflectional morphology in the early stages of L2 acquisition, in a variety of target languages (e.g. Carroll \& Widjaja 2013; Han \& Liu 2013; Hinz et al. 2013; Rast et al. 2014). However, in spite of the difficulty in acquiring a new target morphological system, it appears that learners develop very early on – after only a few hours of exposure to the input – a sensitivity to target language morphological forms. Studies of target language Polish (in the VILLA project and its precursors), for instance, have shown that learners manage to judge Polish nominal morphology correctly and produce simple utterances in context using case marking after very limited instruction. Even though the type of task was shown to have an effect on learners’ processing (Watorek et al. 2016), these results still show some level of early form-meaning mapping.
+\end{styleStandard}
+
+\begin{styleStandard}
+Research conducted within the VILLA project has contributed to the debate concerning the relative importance of inflectional morphology in initial learner varieties.\footnote{\textrm{ For detailed information about the VILLA project, see Dimroth et al. 2013, Rast 2017, and Saturno 2017.}} Polish, a highly inflected language with a rich case system, has provided an excellent testing ground to observe learners’ processing and acquisition of nominal morphology in particular. The three target languages discussed in this chapter differ from Polish in a variety of ways, and allow for a new examination of the acquisition of other target languages that are highly inflected (e.g. Arabic) and of languages that show little inflection (e.g. Chinese and Japanese).
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{3. The VILLA Project}\footnote{\textrm{ The VILLA project was supported by a grant from ORA (Open Research Area in Europe for the Social Sciences) across three granting agencies: ANR in France, DFG in Germany, and NWO in the Netherlands. The British Academy and a PRIN grant supported the English and Italian teams. Additional funding was received from the French lab }\textrm{\textit{Structures Formelles du Langage}}\textrm{ (UMR 7023 – CNRS) and from the University of Paris 8.}}
+\end{styleStandard}
+
+\begin{styleStandard}
+The aim of the VILLA project is to investigate the absolute first stages of the acquisition of a foreign language by observing what learners do when exposed to language instruction, Polish in this case. The project developed the methodological means to do the following:
+\end{styleStandard}
+
+\begin{listWWNumiileveli}
+\item 
+\begin{styleListParagraph}
+observe the acquisitional process from the moment of first contact with the target language through 14 hours of exposure;
+\end{styleListParagraph}
+\item 
+\begin{styleListParagraph}
+study learners’ processing of the target language input in the domains of perception, comprehension, grammatical analysis and production;
+\end{styleListParagraph}
+\item 
+\begin{styleListParagraph}
+examine the role of typological features of the learners’ L1 on their acquisition of Polish (based on cross-linguistic comparisons), as well as the role of universal principles that are specific to language and communication.
+\end{styleListParagraph}
+\end{listWWNumiileveli}
+\begin{styleStandard}
+The VILLA database offers a complete documentation of the Polish lessons, language development, and learners’ individual profiles (Durand 2019). It follows that the database offers the possibility to examine with precision the instructional sequences (and hence the input “content”) relative to learner performance, interactions between learners, and interactions between learners and the instructor.
+\end{styleStandard}
+
+\begin{styleStandard}
+Ten groups of learners from five European countries – France, Italy, Germany, England and the Netherlands (two groups per country) – attended a beginning level Polish course taught by a native speaker of Polish. A communication-based teaching approach was used in the classroom, with linguistic content introduced relative to the situational context of the lesson through simple dialogues and question/answer sequences in Polish only. The instructor used no other languages in the classroom. The 14-hour course was held over two weeks (9 days of 90-minute sessions, with a final session of 15 minutes on the 10\textsuperscript{th} day before final testing). Central themes of the Polish instruction included introductions, professions, nationalities, languages, cities, countries, tastes and preferences, as well as ordering food and giving directions. In all project countries, the Polish lessons were filmed with two cameras (one focused on the instructor and the other on the learners) and audio-recorded with high quality multi-channel recording equipment (Macbook HD recording with RME Fireface and Presonus preamps), table microphones (Audix) for each learner and a wireless microphone (Dpa) for the instructor. As such, the database includes video and audio recordings of the instructor, as well as interactions and oral productions of individual learners during the lessons. The input content was carefully planned in advance, in particular with respect to the choice of lexical and grammatical items to be taught, and the frequency and transparency of these items. 
+\end{styleStandard}
+
+\begin{styleStandard}
+With respect to frequency, research in both first and second language acquisition has shown its important role in input processing (Slobin 1985; Braine et al. 1990; Rott 1999; Ellis 2002; Gullberg et al. 2010). The effect of frequency, however, is not necessarily immediate (Slobin 1985; Rast 2008). One objective of the VILLA project, which controls the input from the first moments of contact with the new language, is to identify when frequency begins to have a substantial influence on acquisition. Regular tasks administered throughout the data collection period made it possible to test the effect of frequency on learners’ processing of Polish in a variety of linguistic domains. To do this, frequency categories were established prior to instruction, and the Polish instructor was asked to use certain words frequently and regularly and to avoid using others. Based on frequency analyses conducted by Goldschneider \& DeKeyser (2001), the VILLA project methodology established the category of “frequent” as more than 20 occurrences of a word in the input at the time of testing. Words categorized as “absent” never appear in the classroom input.
+\end{styleStandard}
+
+\begin{styleStandard}
+Concerning transparency, words that were frequent in the input fit into two categories: transparent or opaque. This classification was based on the results of a transparency test taken by native speakers of the five L1s of the project, who knew no Polish or other Slavic language. They were asked to listen to Polish words and translate them as best they could into their native language. Words that were correctly translated by more than 50\% of the participants in each language group were classified as “transparent”. Those translated by no members of the group were considered “opaque”. These criteria for frequency and transparency provided the basis for the word list established before the Polish course began, with words classified in one of four categories: frequent and transparent; frequent and opaque; absent and transparent; absent and opaque.
+\end{styleStandard}
+
+\begin{styleStandard}
+A series of Polish tasks were administered to learners before the Polish course began to test their ability to perceive aspects of the new language at absolute first exposure and to serve as a benchmark for language development that took place over the 14-hour period of instruction. Polish tasks were administered regularly throughout the data collection period to gather information about learners’ abilities in a variety of language activities and the influence of frequency and transparency, if any. The VILLA project database, thus, includes not only documentation of the input during the lessons, but also documentation of learner performance on language tasks, enabling analyses that compare learners’ performance with the input they encountered.
+\end{styleStandard}
+
+\begin{styleStandard}
+The goal of the replication studies discussed in this chapter is to investigate whether the findings of the VILLA project with respect to learners’ ability to acquire and make use of the nominal morphology system of Polish can be generalised to other new target languages, namely Arabic, Chinese and Japanese. In the VILLA project, the Polish instructor introduced nominal morphology via the themes of nationalities and professions. These themes will remain consistent in the input of the three replication studies. Following exposure to the novel language, learners will be administered replications of carefully selected VILLA tasks: \textit{Grammaticality Judgment}, \textit{Oral Question-Answer}, and \textit{Picture Verification}. The processes and challenges of replication will be discussed in the following section. 
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{4. Replicating the VILLA~project}
+\end{styleStandard}
+
+\begin{styleStandard}
+To extend the cross-linguistic dimension of the VILLA project, the studies presented here propose replications of the VILLA methodology using native speakers of the same L1 (French in this case) learning three typologically different target languages: Arabic, Chinese and Japanese.
+\end{styleStandard}
+
+\begin{styleStandard}
+As mentioned above, this proposal faces two methodological challenges. The first is related to the input script of the language course, which will need to be designed in Arabic, Chinese and Japanese in the same way that it was created in Polish for the VILLA project. For first exposure replication studies, it will be important to select linguistic paradigms that can be introduced in beginning level language courses, to choose comparable linguistic paradigms to those taught in the VILLA project Polish course, and to maintain the variables of frequency and transparency of the lexical items taught. The objective is not only to control the input over a time period that extends beyond several minutes, but also to provide input (in the form of language courses) that is comparable across target languages with very different features.
+\end{styleStandard}
+
+\begin{styleStandard}
+The second methodological challenge involves the design of the language tasks in the new target languages relative to the linguistic paradigms taught in the language courses. Ideally, the language tasks would be direct replications of the VILLA tasks. However, this is not possible because the linguistic paradigms needed to communicate the same information in Polish and the other target languages differ. For instance, in Polish, when referring to nationalities and professions, the grammatical subject constrains nominal morphology and the predicate requires certain case marking depending on the context. The predicate requires the nominative case if the subject of the copula ‘to be’ is the demonstrative pronoun \textit{to }(‘this’) – this form is generally used to introduce a person (e.g., \textit{to jest student}, ‘this is a student’). The predicate requires the instrumental case if the subject of the copula is the personal pronoun \textit{on/ona }(‘he/she’) or a proper or common noun – this form is generally used to describe a person who has already been introduced (e.g., \textit{Luc jest studentem}, ‘Luc is a student). As in English, French nouns do not show case. Hence, this distinction in Polish for native speakers of languages like French presents a difficulty for the acquisition of the new morphological system. The VILLA project assured that evidence for this distinction appeared in the Polish input to learners and tested learners’ ability to make this distinction in comprehension and production. Cross-linguistic replication studies need to find ways to replicate this methodology in other source-target language combinations that do not necessarily have the same or even similar morphological systems. In Arabic, for example, there is no instrumental case, so one possibility for replication is to adapt the input and tasks to use the distinction between the nominative form (e.g., \textit{huwa faransiyy-un}, ‘he is French’) and the genitive form (\textit{al=sayyarat-u li=l-faransiyy-I},\textit{ }‘the car belongs to the French man’). In Japanese and Chinese, there is no distinction through case marking. The methodological challenge is to identify what linguistic features of Japanese and Chinese can appear in the input and be tested in such a way as to have access to the processes implicated in learning a new morphological system that would be comparable with the task French speakers face when confronted with Polish morphology.
+\end{styleStandard}
+
+\begin{styleStandard}
+The methodological challenges mentioned above, not only selecting the linguistic paradigms and creating the input that includes these, but also creating language tasks in Arabic, Chinese and Japanese that replicate the VILLA tasks, directly affect the lesson plan design, which will need to respect the principles of teaching methodology adopted in the VILLA project (a communication-based approach) and the progression of the VILLA classes. Given the cross-linguistic differences between Polish and the three languages of the replication studies, organizing pedagogical sequences in such a way that they can be compared with pedagogical sequences in VILLA also involves a careful choice of linguistic paradigms specific to each language.
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{4.1. Methodological challenge I: Replicating the language course input}
+\end{styleStandard}
+
+\begin{styleStandard}
+The general organisation of the language courses in the replication studies is the first major challenge. The replications consist of organising beginning-level courses in each of the three languages following a similar schedule to the VILLA project Polish course. When possible, the courses will address the same themes as the VILLA project (e.g. nationalities and professions). Keeping themes in line with the VILLA project guarantees that certain lexical items and linguistic properties studied in the VILLA project will be present in the input and tasks of the replication studies, hence facilitating comparability. For each language, 20 learners will be selected, all French native speakers with no prior knowledge of the target language and with similar profiles to those of the VILLA learners (university students aged 20-25, studying disciplines other than languages, psychology and linguistics).
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{4.1.1. The choice of linguistic paradigms and cross-linguistic differences}
+\end{styleStandard}
+
+\begin{styleStandard}
+In order to compare results of the replication studies with VILLA project results, it is important to carefully select the linguistic paradigms in Chinese and Japanese, on one hand (languages with little to no inflection), and Arabic on the other (a language with nominal morphology that nonetheless attests important differences from nominal morphology in Polish). Table 1 provides a brief overview of the major relevant differences between these languages.
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{Table 1: Cross-linguistic comparison of the languages of the VILLA project and replication studies }
+\end{styleStandard}
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{|m{1.1941599in}|m{0.78235984in}|m{0.94005984in}|m{0.9823598in}|m{0.89905983in}|m{1.0504599in}|}
+\hline
+ &
+\multicolumn{4}{m{3.8400598in}|}{\centering Target languages} &
+Native language\\\hline
+ &
+\textbf{Polish} &
+\textbf{Arabic} &
+\textbf{Chinese} &
+\textbf{Japanese} &
+\textbf{French}\\\hline
+Language family/group &
+Slavic &
+Semitic &
+Sino-Tibetan &
+Japonic &
+Romance\\\hline
+Verbal morphology &
+Yes &
+Yes &
+No &
+Yes &
+Yes\\\hline
+Nominal morphology 
+
+(case, gender) &
+7 cases
+
+3 genders &
+3 cases
+
+2 genders &
+No  &
+No (but case particles) &
+No\\\hline
+Word order &
+Relatively Free &
+Relatively Free &
+SVO &
+(S)OV &
+SVO\\\hline
+Morphological compounding  &
+Yes &
+Yes &
+Yes, very rich &
+Yes, very rich &
+Yes\\\hline
+Nominal classifiers &
+No &
+No &
+Yes, very rich &
+Yes, very rich &
+No\\\hline
+Alphabet &
+Latin &
+Arabic &
+Characters &
+Characters \textbf{+} Kanas &
+Latin\\\hline
+\end{supertabular}
+\end{flushleft}
+\begin{styleStandard}
+This cross-linguistic comparison highlights the different features that need to be taken into account when selecting linguistic paradigms for the replication studies. Arabic and Polish, despite their differences, offer the possibility of comparing a similar morpho-syntactic paradigm through the investigation of learners’ processing of inflectional marking relative to word order. Chinese and Japanese, despite their differences, have similar characteristics in contrast to Arabic and Polish. For replication purposes, given the absence of case marking in Chinese and Japanese, this feature, studied in detail in the VILLA project, needs to be replaced by other productive and teachable phenomena in the beginning level classes in Chinese and Japanese.
+\end{styleStandard}
+
+\begin{styleStandard}
+The French speakers of the VILLA project were exposed to Polish, which differs from French in morpho-syntactic features. Polish, a member of the western group of Slavic languages, attests rich nominal morphology (seven cases). Agreement is marked not only between subjects and verbs (systematic marking of person, number, and in the past tense, gender), but also between nouns and adjectives and certain numerals (gender, number and case). The rich morphology is associated with the pragmatic organisation of constituents and with the null subject feature. Polish nominal morphology marks not only gender and number, but also syntactic function, through case marking. Polish is a non-configurational language, that is, it is characterised by a relatively free word order. It is the case markers that signal relations between the different constituents of a clause.
+\end{styleStandard}
+
+\begin{styleStandard}
+The French speakers of the replication studies will be exposed to one of the three target languages, Arabic, Chinese or Japanese, all of which differ from Polish with respect to inflectional systems. These differences, however, are not of the same nature. Chinese and Japanese have little to no inflectional morphology, while Arabic has systems of nominal and verbal morphology that differ quite radically from Polish.
+\end{styleStandard}
+
+\begin{styleStandard}
+Designing language courses for the replications based on the VILLA project protocol will likely be easier in Arabic, a Semitic language of the Afro-Asiatic language family. It is an inflectional language that is both agglutinating and fusional, and its case system allows for flexible word order. \ Nouns are generally marked for gender, number and case by means of suffixes. The plural can also be formed with infixes. Even though Arabic tends towards VSO word order, other configurations are possible (Ryding 2005). During the Arabic instruction, markers of nominal morphology (suffixes) will be integrated immediately into the input to sensitise learners to the markers of gender and number, which are needed to distinguish referents in Arabic. These markers will be necessary for the themes, namely nationalities and professions (as per the VILLA project), to be used in the replications. For example, the suffixes –\textit{at}, \textit{{}-\=una} and \textit{{}-\=at} can be added to the lexeme \textit{mu’allim} to indicate gender and number: \textit{mu’allim }(teacher-\textsc{m.sg}), \textit{mu’allim-at }(teacher-\textsc{f.sg}),\textit{ mu’allim-\=una }(teacher-\textsc{m.pl}), \textit{mu’allim-\=at }(teacher-\textsc{f.pl}). The paradigm to be taught and tested in Arabic contrasts the nominative and accusative feminine and masculine forms in relation to three word-orders: VSO, SVO and VOS. As will be seen in section 4.2, adapting VILLA project language tasks to Arabic should not be too difficult given its system of inflectional morphology.
+\end{styleStandard}
+
+\begin{styleStandard}
+In contrast to the replication in Arabic, preparing the courses in Chinese and Japanese will be a greater challenge. Regarding morpho-syntax, Mandarin Chinese, which belongs to the Sino-Tibetan family, does not resort to inflectional morphology; verbs only combine with a few aspectual markers. There is neither S-V agreement nor tense or case marking. The most significant morphological phenomenon in Chinese is compounding. A compound can be defined as a combination of two or more lexemes, such as ‘blackboard’ (‘black’ + ‘board’) in English and its equivalent in Chinese [9ED1?][677F?] \textit{heiban} ([9ED1?]\textit{hei} ‘black’ + [677F?]\textit{ban} ‘board’). The canonical word order is SVO in Chinese, and in the absence of inflectional morphology, Chinese has a relatively strict word order. Under certain pragmatic conditions, however, such as new/old information or a topic/comment distribution of information, a surface word order such as OSV or SOV is legitimated. Verbal arguments such as subject or object, when implicit in the context, can even be omitted in the surface structure. Classifiers are used in Chinese when expressing quantification.
+\end{styleStandard}
+
+\begin{styleStandard}
+Japanese, a Japonic language, can be viewed as an inflected language when referring to certain word classes, in particular verbs, adjectives and auxiliaries that carry aspectual-temporal marking. As for Japanese nouns, they are non-inflecting, have no gender or grammaticalised number and take no articles. Japanese word formation involves various types of suffixes, and it also has productive mechanisms of compound formation with native words, Sino-Japanese or a combination of words of different origin (Shibatani 1990). Free and bound morphemes are attested in both derivation and compounding processes. Another feature of morphology is the use of nominal classifiers to express quantified objects. Japanese is classified as a language with SOV canonical word order. Apart from the constraint of the predicate in final position (verbal, adjectival or nominal), Japanese word order is relatively free. The subject and direct object do not have fixed positions in an utterance, and topicalized objects can precede the subject (OSV) when they refer to old or known information. Furthermore, none of the arguments of the predicate is obligatory in a strictly syntactic sense, even the subject, which is the same case in Chinese.
+\end{styleStandard}
+
+\begin{styleCorps}
+It is worth noting that even though some features are widely attested cross-linguistically, they do not necessarily fit with the VILLA project. This is because the manifestation of a given feature can vary from one language to another so considerably that the term ‘feature’ can only be understood in a functional sense, meaning that structures assuming the same function can be entirely different in languages. This is the case of possessive constructions, which are realized morphologically in languages with declensions like Polish, but fall into the realm of syntax in Chinese. The possessive construction in Chinese takes a ‘A-\textit{de}{}-B’ form, where~\textit{de} is a functional word which links A to B and the ‘possessor-possessed’ is just one of the numerous relations, all syntactic in nature, that can possibly hold between A and B. Due to this fact, it is difficult to establish a correspondence between the possessive construction in Chinese and the construction assuming the same function in Polish, namely the genitive case.
+\end{styleCorps}
+
+\begin{styleCorpsAA}
+\textstyleAucun{This is a different situation than the case of numeral classifiers in Chinese, for which a correspondence can be defined when compared to French. Both Chinese and French categorize nouns via semantic features, which are manifested by the selection of classifiers in the former and by gender marking in the latter. This idea has been advanced on different grounds, for example by Aikhenvald (2003) from a typological perspective and by Picallo (2008) (cited in Rouveret 2016) from the perspective of formal syntax. At the same time, classifiers in Chinese involve number features (see Cheng \& Sybesma 1998 and Li 1999 among others), which are also present in French. All in all, it is fair to say that in both Chinese and French the same sets of features come into play syntactically in the nominal domain.~}
+\end{styleCorpsAA}
+
+\begin{styleStandard}
+Following this line of thought, two linguistic paradigms in Chinese and Japanese were identified as the focus of the replication studies: morphological compounding and nominal classifiers. Similar to the VILLA project’s examination of nominal morphology, the Chinese and Japanese replications will examine how learners go about analysing the internal structure of compound words composed of different morphemes in Chinese or Japanese. As mentioned above, language acquisition research has shown L2 inflectional morphology to be particularly difficult to acquire. Replications in Chinese and Japanese address the question of whether morphological features in non-inflected languages pose the same type of acquisitional challenge.
+\end{styleStandard}
+
+\begin{styleStandard}
+Due to the (quasi) absence of inflectional morphology in target languages Chinese and Japanese, unlike in Polish of the VILLA project, the focus of these studies will be the morphological awareness of compounding. Compounding consists of combining two or more morphemes to produce a new lexical unit that functions as one word. In Chinese and Japanese, most compounds have the internal structure ‘modifier + modified’. The modified morpheme is the head of the compound word, and the modifier semantically modifies it.
+\end{styleStandard}
+
+\begin{styleStandard}
+As for morphological awareness, it refers to the ability to reflect upon and manipulate morphemes and the morphological structure of words (Carlisle 2003). These morphological structures include inflection and derivational morphology, as well as compounding. Whereas sensitivity to (or awareness of) inflectional morphology was the focus of the VILLA project, the focus in the Chinese and Japanese replications will be awareness of morphological compounding. Hence, an important question for the Chinese and Japanese replications is whether morphological awareness has an impact on vocabulary knowledge and vice versa. Given that many previous studies (Ku \& Anderson 2003; Zhang \& Koda 2014; Ichikawa 2014; Zhang et al. 2016, among others) have shown a positive correlation between morphological awareness and vocabulary knowledge, we would also like to know whether this correlation starts already at the very beginning stages of the acquisition of a novel language.
+\end{styleStandard}
+
+\begin{styleStandard}
+Both Chinese and Japanese differ from French and Polish in that they are “classifier languages” (see details in 4.2.2.2.2). Classifiers can be used to quantify both countable and uncountable objects. Previous studies on the acquisition of classifiers in L1 and/or L2 Chinese (Liang 2008; Gong 2010; Kong 2012, among others) reveal different processes observed in L1 children and L2 adults with respect to the acquisition of classifiers due to cognitive knowledge difference and cross-linguistic influence. However, to our best knowledge, none of these studies have taken input into consideration (to explain overgeneralisation, for example). The question, therefore, is whether the processing of morphological compounding and nominal classifiers represents the same cognitive cost and degree of difficulty as nominal morphology does when processing languages like Polish.\footnote{\textrm{ It should be noted that certain proposed tasks will be programmed using E-prime software to record reaction time, which is one way to measure the cognitive cost involved when performing such tasks.}}
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{4.1.2. The variables frequency and transparency in the replication studies}
+\end{styleStandard}
+
+\begin{styleStandard}
+In an effort to keep true to the VILLA project methodology, the frequency and transparency of lexical items in the input will need to be established before the organisation of language courses and be taken into account by the instructor during the lessons. This type of replication should be able to contribute to our understanding of whether frequency effects can be established independent of target language and to what extent transparency plays a role in the processing of different target languages. Typological differences between target languages of the study, however, lead to new challenges, especially in the case of transparency. The semantic transparency of an item as it was operationalised in the VILLA project depends entirely on the relation between prior known languages and the target language, based on results of a transparency test, as described in section 3 above.
+\end{styleStandard}
+
+\begin{styleStandard}
+With this observation in mind, the research teams of the three future replication studies discussed in this chapter proceeded to conduct transparency tests following the VILLA project methodology. As such, the same type of transparency test was administered to three distinct groups of native speakers of French who were unfamiliar with Arabic, Chinese and Japanese. The participants listened to words in the respective target language, 76 in total, and were asked to translate them as best they could into French. As in the VILLA project, words were chosen relative to the themes of instruction (nationalities, professions, etc.). An item was considered “transparent” when it was translated correctly by at least 50\% of the participants. Note that this methodological challenge, which seeks transparency across speakers of the same L1 learning different target languages, differs from that of the VILLA project, in which transparency was sought across speakers of different L1s learning the same target language (see Section 3). In both cases, the objective is to establish a list of transparent items across language learner groups, with various source-target language combinations for the purpose of comparability. 
+\end{styleStandard}
+
+\begin{styleStandard}
+The results of the transparency test demonstrate the difficulty in establishing a list of common transparent items across the target languages of the replication studies. Only 3 items were transparent across the three target languages for native speakers of French (the words ‘Italian’, ‘Marseille’ and ‘Mauritania’). Analyses of the data for each target language show 27 transparent items between French and Arabic, 18 between French and Japanese, and 6 between French and Chinese. Of these items, 7 are shared between Arabic and Japanese, 3 between Japanese and Chinese and only one item between Arabic and Chinese.
+\end{styleStandard}
+
+\begin{styleStandard}
+These results are not surprising. Chinese has few items borrowed from Indo-European languages, and those that are borrowed are adapted to the phonological system of Chinese, which makes them difficult for French speakers to perceive. It is also clear from these results that transparency indeed varies according to the source and target languages in question. Given these results, maintaining transparency as a variable across all three replication studies reported here is not possible. Transparency will be maintained, however, for Japanese and Arabic, although different transparent and opaque items will be selected for the two languages given the lack of overlap in the results of the transparency test.
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{4.2. Methodological challenge II: Replicating the language tasks}
+\end{styleStandard}
+
+\begin{styleStandard}
+Designing comparable tasks to those of the initial study is also a challenge. This section describes the tasks that have been adapted from the VILLA project to examine the processing of the selected linguistic paradigms (described above) during the observation period. The studies described here intend to replicate two or three of the VILLA tasks: \textit{Grammaticality Judgement, Picture Verification}, and \textit{Oral Question-Answer}. The first two receptive tasks test the processing of a given linguistic paradigm, whereas the third task, a focused production exercise, tests whether a learner can make use of the linguistic paradigm in oral production.
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{Task: Grammaticality Judgement}
+\end{styleStandard}
+
+\begin{styleStandard}
+In the VILLA project, the acquisition of different properties of Polish inflectional morphology was investigated by means of a series of experiments that were repeated at various time intervals. As mentioned above, one primary focus was the acquisition of case marking. The Nominative vs. Instrumental contrast was captured by a reaction-timed grammaticality judgement task. In this experiment, participants heard two types of Polish copula constructions involving either a correct construction with one noun marked for nominative and the other for instrumental, or an incorrect construction with a double nominative in which the noun in the predicate was used in the incorrect context. The learners were asked to indicate whether they thought the sentence was correct or not. Examples in (1) and (2) are taken from the VILLA grammaticality judgement task. Target items were evenly distributed with respect to transparency (transparent/opaque) and frequency (frequent/absent) in the input.
+\end{styleStandard}
+
+
+\setcounter{listWWNumvileveli}{0}
+\begin{listWWNumvileveli}
+\item 
+\begin{styleListParagraph}
+\textbf{Correct sentences}
+\end{styleListParagraph}
+\end{listWWNumvileveli}
+\begin{styleStandard}
+Transparent items:
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{Albert jest fotograf-}\textbf{\textit{em}}
+\end{styleStandard}
+
+\begin{styleStandard}
+Albert is photographer.M-Inst
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{Helena jest studenk-}\textbf{\textit{ą}}\newline
+Helena is student.F-Inst
+\end{styleStandard}
+
+\begin{styleStandard}
+Opaque items:
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{Patryk jest lekarz-}\textbf{\textit{em}}
+\end{styleStandard}
+
+\begin{styleStandard}
+Patryk is doctor.M-Inst
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{Eliza jest Włoszk-}\textbf{\textit{ą}}
+\end{styleStandard}
+
+\begin{styleStandard}
+Eliza is Italian.F-Inst
+\end{styleStandard}
+
+\begin{listWWNumvileveli}
+\item 
+\begin{styleListParagraph}
+\textbf{Incorrect sentences}
+\end{styleListParagraph}
+\end{listWWNumvileveli}
+\begin{styleStandard}
+Transparent items:
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{*Tomasz jest fotograf{}-}\textbf{\textit{Ø}}
+\end{styleStandard}
+
+\begin{styleStandard}
+Tomasz is photographer.M-Nom
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{*Krystyna jest studentk-}\textbf{\textit{a}}\newline
+Krystyna is student.F-Nom
+\end{styleStandard}
+
+\begin{styleStandard}
+Opaque items:
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{*Dawid jest lekarz{}-}\textbf{\textit{Ø}}
+\end{styleStandard}
+
+\begin{styleStandard}
+David is doctor.M-Nom\ \ 
+\end{styleStandard}
+
+\begin{styleStandard}
+*\textit{Sandra jest Włoszk-}\textbf{\textit{a}}
+\end{styleStandard}
+
+\begin{styleStandard}
+Sandra is Italian.F-Nom\ \ 
+\end{styleStandard}
+
+\begin{styleStandard}
+The task was administered after 4.5 hours and again after 10.5 hours of Polish instruction, such that data from the judgement and production (oral question-answer) experiments could be compared. 
+\end{styleStandard}
+
+\begin{styleStandard}
+A grammaticality judgement task is generally used to test learners’ intuitions about the grammatical acceptability of a decontextualised sentence, be it oral or written. This task is difficult to replicate in Chinese and Japanese with the two paradigms chosen – morphological compounding and nominal classifiers – because both require the involvement of a semantic component. In these paradigms, grammaticality alone cannot be judged. Sentences that contain morphological components or classifiers must be presented in context or linked to images so that participants can comment on the acceptability of the sentence, which would be a “semantic”, not “grammatical” acceptability. For this reason, the grammaticality judgement task will be replicated in Arabic only. 
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{Task: Picture Verification}
+\end{styleStandard}
+
+\begin{styleStandard}
+The picture verification task was designed primarily to discover precisely what type of grammar rules learners developed for the assignment and interpretation of argument roles (subject vs. direct object) with respect to the Polish input. The experiment comprised transitive SVO and OVS sentences in order to tease apart the relative role of word order and morphological case marking (nominative vs. accusative). In this task, participants listened to pre-recorded Polish transitive sentences in either SVO, OVS or OSV word order (e.g. {\textasciigrave}The brother calls the sister{\textasciigrave}). The following examples illustrate the sentence types:
+\end{styleStandard}
+
+\begin{listWWNumvileveli}
+\item 
+\begin{styleListParagraph}
+\textit{a.\ \ Brat{}-}\textbf{\textit{Ø}}\textit{ \ \ \ \ \ \ woła \ \ \ \ \ \ \ \ \ \ siostr}\textbf{\textit{ę}}\textit{\ \  }(\textbf{SVO})
+\end{styleListParagraph}
+\end{listWWNumvileveli}
+\begin{styleStandard}
+brother.Sg-M-\textbf{NOM}\ \ \ \ calls.PRS.3Sg\ \ \ \ \ \ \ \ sister.Sg-F-\textbf{ACC}
+\end{styleStandard}
+
+\begin{styleStandard}
+‘brother calls sister’
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{b.\ \ siostr}\textbf{\textit{ę}}\textit{\ \ \ \ \ \ \ \ woła\ \ \ \ \ \ \ \ \ \ brat{}-}\textbf{\textit{Ø}} (\textbf{OVS})
+\end{styleStandard}
+
+\begin{styleStandard}
+sister.Sg-F-\textbf{ACC}\ \ \ \ \ \ calls.PRS.3Sg\ \ \ \ \ \ \ \ brother.Sg-M-\textbf{NOM}
+\end{styleStandard}
+
+\begin{styleStandard}
+‘brother calls sister’
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{c.\ \ siostr}\textbf{\textit{ę}}\textit{\ \ \ \ \ \ \ \ brat{}-}\textbf{\textit{Ø}}\textit{\ \ \ \ \ \ \ \ \ \ woła }(\textbf{OSV})
+\end{styleStandard}
+
+\begin{styleStandard}
+sister.Sg-F-\textbf{ACC}\ \ \ \ \ \ brother.Sg-M-\textbf{NOM}\ \ \ \ \ \ calls.PRS.3Sg
+\end{styleStandard}
+
+\begin{styleStandard}
+‘brother calls sister’
+\end{styleStandard}
+
+\begin{styleStandard}
+Each sentence was accompanied by two pictures depicting the two protagonists involved in the action. One picture showed the event with the agent and patient roles as stated in the sentence they heard; in the other picture the agent and patient roles were switched. The task was designed in this way in order to tap learners’ preferred interpretations of the Polish sentences, in particular to observe whether they relied mainly on word order, or rather on morphological case marking when trying to figure out the meaning of a sentence. This task was run after 9 hours and again after 13.5 hours of Polish instruction.
+\end{styleStandard}
+
+\begin{styleStandard}
+In the Arabic replication, this task will be administered as per the VILLA project protocol. In Chinese and Japanese, picture verification tasks in each language will be adapted for the paradigm to be tested, morphological compounding in one task and nominal classifiers in the other. The objective is to observe the influence of length of input exposure and the frequency of items in the input on learners’ capacity to process complex compounding structures. With respect to transparency, only in Japanese will the influence of transparent items on this processing be examined. As noted in section 4.1.2, the previously conducted transparency experiments reveal that we cannot maintain this variable in the construction of lessons and tasks across all three target languages.
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{Task: Oral Question-Answer}
+\end{styleStandard}
+
+\begin{styleStandard}
+In an oral question-answer task, learners saw a picture of a man or a woman on a screen and heard a pre-recorded copula question in Polish asking for the person’s profession or nationality. The questions came in one of two formats, requiring a noun phrase with either the nominative or the instrumental case in the answer. After the question, a picture symbolizing a profession or a nationality appeared on the screen. The learners’ task was to answer the question with a simple affirmative copula sentence, stating the person’s profession or nationality. Examples taken from the VILLA oral question-answer\textit{ }task are provided in (4):
+\end{styleStandard}
+
+\begin{listWWNumvileveli}
+\item 
+\end{listWWNumvileveli}
+\begin{styleStandard}
+Question: \textit{kto to jest?} 
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ who is this?
+\end{styleStandard}
+
+\begin{styleStandard}
+Expected answer: \textit{to jest student{}-}\textbf{\textit{Ø}}
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \  \ \ \ \ \ \ \ \ This is student.M-\textbf{NOM}
+\end{styleStandard}
+
+\begin{styleStandard}
+Question: \textit{kto to jest?} 
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ who is this?
+\end{styleStandard}
+
+\begin{styleStandard}
+Expected answer: \textit{to jest studentk-}\textbf{\textit{a}}
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ \ \ this is student.F-\textbf{NOM}
+\end{styleStandard}
+
+\begin{styleStandard}
+Question: \textit{kim on jest?} 
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ what is he/she?
+\end{styleStandard}
+
+\begin{styleStandard}
+Expected answer: \textit{on jest student-}\textbf{\textit{em}}
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{\textit{\ \ \ \  \ \ \ \ }}\ \ \ he is student.M-INST
+\end{styleStandard}
+
+\begin{styleStandard}
+Question: \textit{kim on jest?} 
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ what is he/she?
+\end{styleStandard}
+
+\begin{styleStandard}
+Expected answer: \textit{ona jest studentk-}\textbf{\textit{ą}}
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ she is student.F-INST
+\end{styleStandard}
+
+\begin{styleStandard}
+Items elicited in the oral question-answer task were evenly distributed for transparency and frequency in the input. This task was administered after 4.5 hours and again after 10.5 hours of Polish instruction, such that data from the grammaticality judgement and production experiments concerning the same target language properties could be directly compared. 
+\end{styleStandard}
+
+\begin{styleStandard}
+In Arabic, the oral question-answer task will be administered as per the VILLA project protocol. In Chinese and Japanese, two versions of this task will be designed, to test both morphological compounding and nominal classifiers.
+\end{styleStandard}
+
+\begin{styleStandard}
+The following sections will provide descriptions of the task designs in progress:
+\end{styleStandard}
+
+\begin{listWWNumvleveli}
+\item 
+\begin{styleListParagraph}
+Grammaticality judgement in Arabic (one task); 
+\end{styleListParagraph}
+\item 
+\begin{styleListParagraph}
+Picture verification in Arabic (one task), in Chinese (two tasks, one for morphological compounding and one for nominal classifiers), in Japanese (also two tasks, as in Chinese);
+\end{styleListParagraph}
+\item 
+\begin{styleListParagraph}
+Oral question-answer in Arabic (one task), in Chinese (two tasks, one for morphological compounding and one for nominal classifiers), and in Japanese (also two tasks, as in Chinese).
+\end{styleListParagraph}
+\end{listWWNumvleveli}
+\begin{styleStandard}
+\textbf{4.2.1. Grammaticality Judgement task in Arabic}
+\end{styleStandard}
+
+\begin{styleStandard}
+As a reminder, the Polish grammaticality judgement task of the VILLA project focuses on the Nominative/Instrumental opposition in two types of utterance structures used in introducing or identifying a person and conveying information about profession or nationality. This paradigm can be easily used to design appropriate pedagogical units for beginner foreign language courses, and also lends itself to transparent items. Nouns that designate professions and nationalities in Polish, for example, tended to be transparent with the L1s of the VILLA project. 
+\end{styleStandard}
+
+\begin{styleStandard}
+In the Arabic replication, in order to maintain comparability with the transparency variable in the VILLA project, a similar structure in Arabic was selected, one that uses the nominative case in the speech act of introducing someone. The target lexical items, however, correspond to nationalities only and not to professions because the latter are not transparent between Arabic and French. Also, contrary to Polish, in Arabic, a person cannot be introduced by means of a structure that requires a different case. For this reason, the task will test the opposition between the nominative case and some other case, which will appear in the incorrect sentences only. The genitive case, used to express belonging, was chosen to contrast with sentences comprising a nominative form, and will be used in the oral question-answer production task in Arabic as well. Both tasks will be designed in such a way to be able to compare learners’ oral productions and judgements of similar structures. 
+\end{styleStandard}
+
+\begin{styleStandard}
+More specifically, the linguistic paradigm tested in Arabic will be the opposition between the masculine and feminine singular forms of the nominative and genitive cases. The target items will use the four categories of the VILLA project with respect to frequency and transparency, namely: frequent and transparent; frequent and opaque; absent and transparent; absent and opaque. The correct sentences of the grammaticality judgement task will contain lexical items that refer to nationality and require the nominative case. 
+\end{styleStandard}
+
+\begin{styleStandard}
+The examples in (5a) and (5b) illustrate this type of sentence, which, in Arabic, serves as a copula without the verb “to be”. The nominative case marker corresponds to a morpheme -\textit{un} (-\textit{u} marks nominative case and -\textit{n} marks the indefinite) and does not indicate gender. Gender is marked in the adjectives of nationality by the addition of \textit{–iyy-} (masculine) or \textit{–iyyat-} (feminine) to the root. Contrary to Polish, gender is not integrated into Arabic case markers (Kouloughli 2007).
+\end{styleStandard}
+
+
+\setcounter{listWWNumvileveli}{0}
+\begin{listWWNumvileveli}
+\item 
+\begin{styleListParagraph}
+a. Transparent items:
+\end{styleListParagraph}
+\end{listWWNumvileveli}
+\begin{styleStandard}
+\textit{Jean faransiyy}\textbf{\textit{{}-un}}\newline
+Jean French.M-\textbf{NOM}
+\end{styleStandard}
+
+\begin{styleStandard}
+‘Jean is French’
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{Marie norwiyyat}\textbf{\textit{{}-un}}\newline
+Marie Norwegian.F-\textbf{NOM}
+\end{styleStandard}
+
+\begin{styleStandard}
+‘Marie is Norwegian’
+\end{styleStandard}
+
+\begin{styleStandard}
+b. Opaque items:
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{Charles yunaniyy}\textbf{\textit{{}-un}}\newline
+Charles Greek.M-\textbf{NOM}
+\end{styleStandard}
+
+\begin{styleStandard}
+‘Charles is Greek’
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{Jessie nesmawiyyat}\textbf{\textit{{}-un}}\newline
+Jessie Austrian.F-\textbf{NOM}
+\end{styleStandard}
+
+\begin{styleStandard}
+‘Jessie is Austrian’
+\end{styleStandard}
+
+\begin{styleStandard}
+Incorrect sentences of the grammaticality judgement task, as in (6a) and (6b), will be modelled after the correct sentences, but they will contain lexical items with the genitive marker -\textit{in} (-\textit{i} marks genitive case and -\textit{n} marks the indefinite) in place of the correct nominative marker. Both the genitive and nominative markers will appear in the input to learners.
+\end{styleStandard}
+
+\begin{listWWNumvileveli}
+\item 
+\begin{styleListParagraph}
+a. Transparent items:
+\end{styleListParagraph}
+\end{listWWNumvileveli}
+\begin{styleStandard}
+*\textit{Jean faransiyy-}\textbf{\textit{in}}
+\end{styleStandard}
+
+\begin{styleStandard}
+Jean French.M-\textbf{GEN}
+\end{styleStandard}
+
+\begin{styleStandard}
+‘Jean is French’
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{\textit{*}}\textit{Marie norwiyyat}\textbf{\textit{{}-in}}\newline
+Marie Norwegian.F-\textbf{GEN}
+\end{styleStandard}
+
+\begin{styleStandard}
+‘Marie is Norwegian’
+\end{styleStandard}
+
+\begin{styleStandard}
+b. Opaque items:
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{\textit{*}}\textit{Charles yunaniyy}\textbf{\textit{{}-in}}
+\end{styleStandard}
+
+\begin{styleStandard}
+Charles Greek.M-\textbf{GEN}
+\end{styleStandard}
+
+\begin{styleStandard}
+‘Charles is Greek’
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{\textit{*}}\textit{Jessie nesmawiyyat}\textbf{\textit{{}-in}}\newline
+Jessie Austrian.F-\textbf{GEN}
+\end{styleStandard}
+
+\begin{styleStandard}
+‘Jessie is Austrian’
+\end{styleStandard}
+
+\begin{styleStandard}
+Following the VILLA project task construction model, including the same number of stimuli, this task in Arabic will comprise 64 test sentences, 32 of which will be correct (nominative) and 32 incorrect (genitive), as well as 32 distracter sentences.
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{4.2.2. Picture Verification task in Arabic, Chinese and Japanese}
+\end{styleStandard}
+
+\begin{styleStandard}
+The Arabic replication of the picture verification task coincides well with the task created for the VILLA project. Given the morpho-syntactic similarities between Arabic and Polish, the task can be used to test learners’ ability to comprehend a sentence by relying on nominal morphology in both Polish and Arabic. As discussed above, this is not the case with Chinese and Japanese given the absence of nominal morphology in these two target languages. For these replication studies, the tasks will be adapted to test the comprehension of compound nouns and nominal classifiers.
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{4.2.2.1 Arabic}
+\end{styleStandard}
+
+\begin{styleStandard}
+Methodologically speaking, this new picture verification task in Arabic will be identical to that of the VILLA project in that learners see two pictures of two people involved in some sort of action. In one of the pictures, person A is the agent of the action and person B is the patient. In the other, the roles are reversed. The learners hear a sentence describing one of the pictures and are asked to identify which picture corresponds to the sentence they heard. Two verbs that were used frequently in the VILLA Polish instruction, ‘kiss’ and ‘teach’, will be maintained for Arabic. The three sentences in (7), for example, show the three possible word orders in Arabic. If learners rely on their native French canonical word order, SVO, when processing Arabic, they will need to learn the relevant morphological markers to be able to accurately identify who is doing the action. In the following examples, for instance, they will have to understand whether the Italians or the French are doing the teaching. Learners’ ability to perceive and comprehend the nominative and accusative markers (i.e. their ‘morphological awareness’) will thus be tested in the three different word order conditions.
+\end{styleStandard}
+
+\begin{listWWNumvileveli}
+\item 
+\begin{styleListParagraph}
+a. \ \ \textit{al=it\=aliyy-}\textbf{\textit{\=una}}\textit{ \ \ \ \ \ \ \ \ \ \ \ \ \ yu[2BF?]allim\=una \ \ \ \ \ \ \ \ \ \ \ \ \ al=faransiyy-}\textbf{\textit{\=\ina}} \ \  (\textbf{SVO})
+\end{styleListParagraph}
+\end{listWWNumvileveli}
+\begin{styleStandard}
+\ \ \ \ \ \ \ \ DEF=Italian.PL-\textbf{NOM\ \ }teach.PRS.3PL\ \ \ \ DEF=French.PL-\textbf{ACC}
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ \ ‘Italians teach French’
+\end{styleStandard}
+
+\begin{styleStandard}
+b. \ \ \ \textit{yu[2BF?]allimu \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ al=it\=aliyy-}\textbf{\textit{\=una\ \ }}\textit{al=faransiyy-}\textbf{\textit{\=\ina}}\textit{ }\textit{\ \  }(\textbf{VSO})
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{\ \ \ }\ \ \ \ \ \ \ \ teach.PRS.3S\textit{\ \ \ \ }DEF=Italian.PL-\textbf{NOM}\ \ DEF=French.PL-\textbf{ACC}
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \  ‘Italians teach French’
+\end{styleStandard}
+
+\begin{styleStandard}
+c.\ \ \textit{yu[2BF?]allimu\ \ \ \ al=faransiyy-}\textbf{\textit{\=\ina\ \ }}\textit{al= it\=aliyy-}\textbf{\textit{\=una}}\textit{\ \ }(\textbf{VOS})\textstyleFootnoteSymbol{\textit{ }}\footnote{ Note that the canonical VSO word order of Arabic has an impact on subject-verb agreement. When the verb precedes the subject, the latter only agrees in gender, not in number. When the subject precedes the verb, it agrees in gender and number. This should not influence the results of this task because the focus here is on nominal morphology, namely the distinction between nominative and accusative forms, not on verbal morphology. }\textit{\ \ \ \ \ \ }
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ \ \ \ \ \ \ teach.PRS.3S\textbf{\textit{\ \ \ \ }}DEF=French.PL-\textbf{ACC}\ \ DEF=Italian.PL-\textbf{NOM} \ \ \ \ \ \ \ \ \ \ \ \ 
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ ‘Italians teach French’
+\end{styleStandard}
+
+\begin{styleStandard}
+The task, programmed in OpenSesame to capture accuracy and reaction time, will be administered following the same schedule as the VILLA project. It will be interesting to observe input properties, such as frequency and transparency, as well as the role played by L1 (French) in the learning of a different target language (Arabic), after such limited input, and compare these findings with those of the VILLA project.
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{4.2.2.2 Chinese and Japanese}
+\end{styleStandard}
+
+\begin{styleStandard}
+The picture verification task will be used to test the acquisition process of two linguistic paradigms in Chinese and Japanese, morphological compounding and nominal classifiers, both of which will be introduced to learners during the Chinese and Japanese language instruction.
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{4.2.2.2.1 Morphological compounding}
+\end{styleStandard}
+
+\begin{styleStandard}
+Morphemes in Chinese can be roughly divided into four categories according to whether they are free or bound, lexical or functional (Packard 2000): 
+\end{styleStandard}
+
+\begin{listWWNumileveli}
+\item 
+\begin{styleListParagraph}
+function word (+free, +functional): \textit{le} [4E86?] (aspectual marker)
+\end{styleListParagraph}
+\item 
+\begin{styleListParagraph}
+root word (+free, +lexical): \textit{shu} [4E66?] (book)
+\end{styleListParagraph}
+\item 
+\begin{styleListParagraph}
+bound root (+bound, +lexical): \textit{guo}[56FD?] (country)
+\end{styleListParagraph}
+\item 
+\begin{styleListParagraph}
+affix (+bound, +functional): -\textit{zhe} [8005?] (someone who)
+\end{styleListParagraph}
+\end{listWWNumileveli}
+\begin{styleStandard}
+It is important to note that a root word can either appear independently as a word or be combined with another morpheme(s) to form a compound word. On the contrary, a bound root always appears in a compound word.
+\end{styleStandard}
+
+\begin{styleStandard}
+As with the Polish instruction in the VILLA project and the Arabic instruction in the replication described above, two themes for the Chinese and Japanese instruction will be nationalities and professions. Nouns with the internal structure ‘modifier + modified’ will be taught from the very beginning of instruction. The modified morpheme is the head of the compound word, and the modifier semantically modifies it. For example, in Chinese, the compound noun \textit{faguoren} (French people, as in nationality) is composed of the modifier \textit{faguo} (France), which modifies the head morpheme -\textit{ren} (person).
+\end{styleStandard}
+
+
+\setcounter{listWWNumvileveli}{0}
+\begin{listWWNumvileveli}
+\item 
+\begin{styleListParagraph}
+a. Examples in Chinese:
+\end{styleListParagraph}
+\end{listWWNumvileveli}
+\begin{styleStandard}
+\ \ a) \textit{faguo}\textbf{\textit{{}-ren}}\textbf{ }\ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b) \textit{xibanya-}\textbf{\textit{ren}}\ \ \ \ 
+\end{styleStandard}
+
+\begin{styleStandard}
+France-\textbf{person\ \ \ \ \ \ \ \ }Spain-\textbf{person}
+\end{styleStandard}
+
+\begin{styleStandard}
+‘French’ (nationality)\ \ \ \ \ \ \ \ ‘Spanish’ (nationality)
+\end{styleStandard}
+
+\begin{styleStandard}
+In Japanese, in a similar manner, a free morpheme, such as \textit{furansu} (France) serves as a determiner to the bound morpheme \textit{–jin} (person) by semantically modifying it to refer to someone's nationality. 
+\end{styleStandard}
+
+\begin{styleStandard}
+b. Examples in Japanese:
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ a) \textit{furansu-}\textbf{\textit{jin\ \ \ \ \ \ \ \ \ \ }}b) \textit{supein-}\textbf{\textit{jin}}
+\end{styleStandard}
+
+\begin{styleStandard}
+France-\textbf{person} \ \ \ \ \ \ \ \ Spain-\textbf{person}
+\end{styleStandard}
+
+\begin{styleStandard}
+‘French’ (nationality)\ \ \ \ \ \  \ \ ‘Spanish’ (nationality)
+\end{styleStandard}
+
+\begin{styleStandard}
+This compounding applies regardless of the lexical origin of the modifier morpheme. In this way, the suffixes -\textit{go} (language) and -\textit{jin }(person) can link to lexical morphemes of Indo-European origin, as in \textit{furansu} (France) and \textit{supein} (Spain), as well as to morphemes of Sino-Japanese origin like \textit{chuugoku} (China) or \textit{kankoku} (South Korea). In both Chinese and Japanese, there is no modification of the morpheme itself, regardless of person, gender and/or number of the referent.
+\end{styleStandard}
+
+\begin{styleStandard}
+For the Chinese language instruction, five head morphemes of root words and five head morphemes of bound roots will be chosen. The two sub-categories of head morphemes (root words and bound roots) will occur differently in the input; the root words will appear both as independent words and in compound nouns, whereas bound roots will always be ‘bound’ to other morphemes (free or bound) to function as a word. In other words, the bound root will always appear in a compound noun.
+\end{styleStandard}
+
+\begin{styleStandard}
+In the following example, \textit{ren} appears as an independent word:
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{\ \ \ \ \ \ \ Jiaoshi \ \  \ li \ \ you\ \  \ \ \ \ ji \ \ \ \ ge \ \ \ \ ren?} 
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ classroom \ \ in \ \ have \ \ how many \ \ \ \ \ CL \ \ \ person
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ ‘How many people are there in the classroom?’ 
+\end{styleStandard}
+
+\begin{styleStandard}
+The root words selected for the input in Chinese are hyperonyms to the compounds containing them. In the compound noun \textit{faguoren} ‘French (person)’, the modifier \textit{faguo}, the literal meaning of which is ‘France’, modifies the head morpheme \textit{ren}, which means ‘person’. Thus, \textit{faguoren} (French (person)) is a kind of \textit{ren} (person). 
+\end{styleStandard}
+
+\begin{styleStandard}
+As for Japanese language instruction, it is not possible to proceed exactly as in Chinese because we cannot count on a systematic alternation between “root words” and “bound roots”.
+\end{styleStandard}
+
+\begin{styleStandard}
+An example in the input for Japanese will be:\ \ [82B1?][5C4B?]hana-ya (= flower-shop/florist) 
+\end{styleStandard}
+
+\begin{styleStandard}
+In the compound used to express the place \textit{hanaya} (flower shop) and by extension, the profession (florist), the head morpheme \textit{ya} [5C4B?](roof, house, shop) will change to the word \textit{mise} \textbf{[5E97?]}when used to refer to a ‘shop’ in a free morpheme as in the example:
+\end{styleStandard}
+
+\begin{styleStandard}
+[3053?][306E?]\textbf{[5E97?]}[306F?][82B1?][5C4B?][3067?][3059?]
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{kono }\textbf{\textit{mise}}\textit{ wa hanaya desu}
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{this shop }TOP-Topic\textit{ flower shop }AUX-Auxiliairy
+\end{styleStandard}
+
+\begin{styleStandard}
+‘this shop is a flower shop’
+\end{styleStandard}
+
+\begin{styleStandard}
+This is why in the Japanese replication, only words with “bound roots” will be tested because the corresponding morphemes attest different forms when they are “free”. 
+\end{styleStandard}
+
+\begin{styleStandard}
+A picture verification task will be administered twice during the period of exposure, as per the VILLA project protocol and in line with the Arabic replication. The methodology of this task will differ somewhat from the Polish and Arabic task design (in which learners see two pictures, hear a sentence and are asked to select the picture that corresponds to the sentence they heard). In the Chinese and Japanese versions of the task, learners will see a picture and hear a word, and they will be asked to verify whether the item they hear corresponds to the picture by responding ‘yes’ or ‘no’. If learners manage to judge words correctly that have been taught (frequent words in the classroom input), but not those that are not taught (absent from the input), this would suggest that they are basing their knowledge on vocabulary. On the other hand, if they correctly judge new words, those that are absent from the input, in the same way they judge words that are frequent in the input, this would suggest that they base their knowledge on both vocabulary and morphology.
+\end{styleStandard}
+
+\begin{styleStandard}
+The experimental items will contain the ‘modifier-modified’ structure. By manipulating the frequency and transparency, the four conditions of the VILLA project are obtained for Japanese: frequent and transparent; absent and transparent; frequent and opaque; absent and opaque. In Chinese, however, only frequency (frequent or absent) will be maintained for reasons explained above (cf. 4.1.2). The target items will be composed of head morphemes in Japanese: \textit{{}-jin} (person/nationality), \textit{{}-ka} (expert), -\textit{ya} (house/store) and -\textit{go} (language). In Chinese, the categories of head morphemes will be included in the experiment: bound roots like {}-\textit{yu} (language), -\textit{jia} (expert), -\textit{guan} (establishment), \textit{{}-ji} (machine) and root words like\textit{ren} (person/nationality), -\textit{dian} (shop), \textit{che} (vehicle), and \textit{piao} (ticket).
+\end{styleStandard}
+
+\begin{styleStandard}
+To illustrate, let us take a look at some sample stimuli in both Chinese and Japanese.
+\end{styleStandard}
+
+\begin{styleStandard}
+In Chinese, the learners will see a picture of a singer and hear a word. They may hear \textit{gechang}\textbf{\textit{{}-jia}} (sing-\textbf{expert }= singer). The modifier \textit{gechang} (sing) will have been frequent in the input and has a semantically relevant modified head. In this case, the correct response is ‘yes’. Or they may hear *\textit{gechang-}\textbf{\textit{ren}} ((sing-\textbf{person}). The modifier is frequent in the input and has a semantically irrelevant modified head, because –\textit{ren} (which means ‘person’ and signifies ‘nationality’ in a compound) cannot link to the lexical item \textit{gechang} (sing). In this case, the correct response is ‘no’.
+\end{styleStandard}
+
+\begin{styleStandard}
+In a similar fashion, in Japanese, the learners will see a picture of a person speaking French and hear a word, such as \textit{furansu-}\textbf{\textit{go}}\textit{ }(France-language = French). The modifier is transparent and frequent in the input. The modified head is semantically relevant. In this case, the correct response is ‘yes’. Or they will hear\textit{ }*\textit{furansu-}\textbf{\textit{ka}} (France-\textbf{expert}). The modifier is both transparent and frequent in the input but has a semantically irrelevant modified head, because –\textit{ka} (which signifies an expert) cannot link to the lexical item\textit{ furansu} (France). In this case, the correct response is 'no'.
+\end{styleStandard}
+
+\begin{styleStandard}
+In the VILLA project, the challenge of the picture verification task was to perceive and comprehend the nominal morphology in order to understand which person was performing the action. The challenge in this task for French learners will be to perceive and comprehend the morphemes, mapping form to meaning, as well as to understand the modifier-modified relation, which is in the reverse order compared to French (e.g. \textbf{\textit{langue}}\textit{ française} (language French) in French vs. \textit{France-}\textbf{\textit{langue}}\textbf{ }(France-language) in Japanese and Chinese.
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{4.2.2.2.2 Nominal classifiers}
+\end{styleStandard}
+
+\begin{styleStandard}
+During the first stages of acquisition of target language Chinese or Japanese, a challenge for the French learner is expressing quantified objects. The potential difficulty of this resides in the fact that Chinese and Japanese are “classifier languages”, both having non-individual classifiers and individual classifiers.
+\end{styleStandard}
+
+\begin{styleNormalWeb}
+Non-individual classifiers are independent nouns in Chinese (9a) and Japanese (9b) , as in French, and are used to count mass objects.
+\end{styleNormalWeb}
+
+\begin{listWWNumvileveli}
+\item 
+\begin{styleNormalWeb}
+a. Example in Chinese:
+\end{styleNormalWeb}
+\end{listWWNumvileveli}
+\begin{styleNormalWeb}
+\textit{san }\textbf{\textit{gongjin}}\textit{ pingguo}
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+\ \ \ \ \ \ \ \ \ \ \ \ three \textbf{kilo} apple
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+\ \ \ \ \ \ \ \ \ \ \ \ ‘three \textbf{kilos} of apples’
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+b. Example in Japanese:
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+\textit{ringo san}\textbf{\textit{ kiro}}\textit{ }
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+\ \ apple three \textbf{kilo}
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+‘three \textbf{\textit{kilos}} of apples’
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+An important difference with respect to French is the use of so-called “individual classifiers” (CL), namely “measure words” that combine with countable nouns. These nouns are normally preceded by a numeral in languages like French and English. In both Chinese and Japanese, individual classifiers combine with countable nouns according to a semantic feature matching (shape, animacy, function among others) (Nishio 2000; Zhang 2007). 
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+For example, in Chinese, \textit{tiao} marks a long shape and flexible feature as in:
+\end{styleNormalWeb}
+
+\begin{styleStandard}
+\textit{san}\textbf{\textit{ tiao}}\textit{ shengzi} 
+\end{styleStandard}
+
+\begin{styleNormalWeb}
+three \textbf{CL} rope 
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+‘three ropes’
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+In another Chinese example, the element \textit{zhang} marks a flat surface and thin feature as in:
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+\textit{san }\textbf{\textit{zhang}}\textit{ zhaopian} 
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+three \textbf{CL} pictures 
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+‘three pictures’ 
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+Japanese classifiers are quite similar to those in Chinese except for the grammatical nature of the individual classifier, which is an affix, and the syntax: “Noun-Numeral-Classifier” in Japanese; “Numeral-Classifier-Noun” in Chinese.
+\end{styleNormalWeb}
+
+\begin{styleStandard}
+The following are examples in Japanese: 
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{bin san-}\textbf{\textit{bon\ \ \ \ \ \ \ \ \ \ \ \ }}
+\end{styleStandard}
+
+\begin{styleStandard}
+bottle-three-\textbf{CL shape} (long object) \ \ \ \ 
+\end{styleStandard}
+
+\begin{styleStandard}
+‘three bottles’\ \ \ \ \ \ \ \ 
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{shashin san-}\textbf{\textit{mai}}
+\end{styleStandard}
+
+\begin{styleStandard}
+picture-three- \textbf{CL shape} (flat object)
+\end{styleStandard}
+
+\begin{styleStandard}
+‘three pictures’ 
+\end{styleStandard}
+
+\begin{styleNormalWeb}
+In both Chinese and Japanese, the use of a numeral requires an individual classifier in quantification by counting. Hence, the absence of the individual classifier will lead to ungrammaticality in Chinese just as it does in Japanese. 
+\end{styleNormalWeb}
+
+\begin{styleStandard}
+With respect to the acquisition of classifiers in Chinese and Japanese, in our input provided to learners, we have strictly selected vocabulary controlled for frequency with two types of classifiers: non-individual and individual. Keeping with the themes proposed in the VILLA project, in addition to nationalities and professions, this study will use the theme of talking about and ordering food to introduce quantified food and drinks in a social event such as a picnic or party. Noun phrases instantiated in the Numeral-Classifier-Noun structure in Chinese and in the Noun-Numeral-Classifier in Japanese will be presented during instruction in sentences illustrated with pictures to facilitate comprehension.
+\end{styleStandard}
+
+\begin{styleStandard}
+Thus, another picture verification task, measuring accuracy and reaction time, will be administered twice as well, following the VILLA protocol. In this task, learners will be asked to judge whether the acoustic stimulus corresponds to the picture. More specifically, learners will see a picture and hear a noun phrase and be asked to verify if the noun phrase corresponds to the picture. By manipulating the frequency of nouns (frequent or absent in the input), syntactic grammaticality (classifier) and semantic relevance (classifier type), six conditions are obtained: frequent noun and syntactically ungrammatical classifier; absent noun and syntactically ungrammatical classifier; frequent noun and semantically relevant classifier; absent noun and semantically relevant classifier; frequent noun and semantically irrelevant classifier; absent noun and semantically irrelevant classifier.
+\end{styleStandard}
+
+\begin{styleStandard}
+To illustrate the methodology, six experimental conditions are provided. In the first three conditions with a frequent item, either in Chinese or Japanese, learners will see a picture of three pictures (flat objects) and hear one of the structures below. Only one of the structures is correct (10b). Of the two incorrect structures, one has no classifier, and the other has the wrong classifier. The meaning in examples (10a-c) is ‘three pictures’. 
+\end{styleStandard}
+
+\begin{listWWNumvileveli}
+\item 
+\begin{styleListParagraph}
+a. Numeral + Ø (syntactically ungrammatical) + frequent noun ={\textgreater} *\textit{san-Ø-zhaopian} (Chinese) / \ frequent noun + Numeral + Ø\textit{ \ ={\textgreater}} *\textit{shashin san-Ø} (Japanese)
+\end{styleListParagraph}
+\end{listWWNumvileveli}
+\begin{styleStandard}
+b. Numeral + semantically relevant CL + frequent noun ={\textgreater} \textit{san-zhang-zhaopian} (three-CL-picture) (Chinese) / frequent noun + Numeral + CL ={\textgreater} \textit{shashin san-mai} (picture three-CL) (Japanese)
+\end{styleStandard}
+
+\begin{styleStandard}
+c. Numeral + semantically irrelevant CL + frequent noun ={\textgreater} *\textit{san-tiao-zhaopian} (Chinese) / frequent noun + Numeral + CL ={\textgreater} *\textit{shashin san-bon} (Japanese)
+\end{styleStandard}
+
+\begin{styleStandard}
+In the other three conditions with an absent item, in either Chinese or Japanese, learners will see a picture of three pancakes (also flat objects). Again, only one of the structures is correct (11b) and the meaning in examples (11a-c) is ‘three pancakes’.
+\end{styleStandard}
+
+\begin{listWWNumvileveli}
+\item 
+\begin{styleListParagraph}
+a. Numeral + Ø (syntactically ungrammatical) + absent noun ={\textgreater} *\textit{san-Ø-jianbing} (Chinese) / absent noun + Numeral + Ø\textit{ ={\textgreater} *pankeeki} \textit{san-Ø }(Japanese)
+\end{styleListParagraph}
+\end{listWWNumvileveli}
+\begin{styleStandard}
+b. Numeral + semantically relevant CL + absent noun ={\textgreater} \textit{san-zhang-jianbing} (three-CL-pancake) (Chinese) / absent noun + Numeral + CL ={\textgreater} \textit{pankeeki san-mai} (pancake-three-CL) (Japanese)
+\end{styleStandard}
+
+\begin{styleStandard}
+c. Numeral + semantically irrelevant CL + absent noun ={\textgreater} *\textit{san-tiao-jianbing} (Chinese) / absent noun + Numeral + CL ={\textgreater} *\textit{pankeeki san-bon} (Japanese)
+\end{styleStandard}
+
+\begin{styleStandard}
+The challenge of making form-meaning connections required in this picture verification task is potentially similar to that faced by L1 French speakers learning Polish or Arabic in that learners have to adapt to a new system which is very different from their L1 in terms of how they express relations between verb arguments, on the one hand, and notions like quantification, on the other. In this latter case, in Japanese, as in Chinese, the French learner has to create a new category (the classifier) while paying attention to semantic features. 
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{4.2.3. Oral Question-Answer task in Arabic, Chinese and Japanese}
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{4.2.3.1 Arabic}
+\end{styleStandard}
+
+\begin{styleStandard}
+As in the VILLA project, the replications of the grammaticality judgement and the oral question-answer tasks in Arabic will test the Nominative/Genitive opposition. Using the same testing paradigm, data from judgements and productions can be compared.
+\end{styleStandard}
+
+\begin{styleStandard}
+The oral question-answer task in Arabic will elicit utterances comprising either the nominative or genitive forms, keeping the same four frequency and transparency categories as in the grammaticality judgement task, namely frequent and transparent, frequent and opaque, absent and transparent, absent and opaque. The target nouns will correspond to nationalities to remain consistent with target items in the grammaticality judgement task. Two selected contexts are expected to elicit these two inflections. On one hand, question (1) is meant to elicit an utterance with the nominative form: “who is he? / \textit{man huwa}?” \ or “who is she?~/\textit{man hiya}?”. On the other hand, question (2) “to whom does this object belong? / \textit{li=man h\=aza al=chay?}” should elicit a response with the genitive form.
+\end{styleStandard}
+
+\begin{styleStandard}
+Learners will see a series of 32 images, half of which will contain two icons, one referring to a specific gender and the other to a nationality. For half of the images they will hear question (1) above, to which the expected response will contain the nominative form. 
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{(12)}
+\end{styleStandard}
+
+\begin{styleStandard}
+Question: \textit{man huwa?}
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Who \ he
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ‘Who is he?’
+\end{styleStandard}
+
+\begin{styleStandard}
+Expected answer: \textit{huwa \ \ \ faransiyy}\textbf{\textit{{}-un}}
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }he \ \ \ \ \ \ \ French.3S.M{}-\textbf{NOM\newline
+\ \ \ \  \ \ \ \ \ \ }‘he is French’
+\end{styleStandard}
+
+\begin{styleStandard}
+Question: \textit{min \ \ hiya?}
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Who \ she
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ‘Who is she?’
+\end{styleStandard}
+
+\begin{styleStandard}
+Expected answer: \textit{hiya faransiyyat}\textbf{\textit{{}-un}}
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }She\textit{ \ \ }French.3S.F-\textbf{NOM}
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{\ \ \ \  \ \ \ \ \ \ }‘She is French’
+\end{styleStandard}
+
+\begin{styleStandard}
+For the other half of the images, participants will hear question (2) above, eliciting the genitive form. These images show, for example, a car (the object of belonging) and an icon that represents the gender (male or female) of the car owner and other symbols that reveal the car owner’s nationality. 
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{(13)}
+\end{styleStandard}
+
+\begin{styleStandard}
+Question: \textit{li=man \ \ \ \ \ \ \ \ as=sayyarat-u?}~
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PREP=INT \ \ \ \ \ DEF=car{}-NOM?
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ‘Whose is the car?’
+\end{styleStandard}
+
+\begin{styleStandard}
+Expected answer: \textit{al=sayyarat-u \ \ li=l-faransiyyat}\textbf{\textit{{}-i}}
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{\textit{\ \ \ \  \ \ \ \ \ }}DEF=car-NOM \ \ PREP=DEF{}-French.F{}-\textbf{GEN}
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }‘the car belongs to the French woman’
+\end{styleStandard}
+
+\begin{styleStandard}
+Question: \textit{li=man \ \ \ \ \ \ \ \ as=sayyarat-u?}~
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PREP=INT \ \ \ \ \ \ DEF=car{}-NOM?
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ‘Whose is the car?’
+\end{styleStandard}
+
+\begin{styleStandard}
+Expected answer: \textit{al=sayyarat-u \ \ li=l-faransiyy}\textbf{\textit{{}-i}}
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{\textit{\ \ \ \  \ \ \ \ \ }}DEF=car-NOM \ \ PREP=DEF{}-French.M{}-\textbf{GEN}
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }‘the car belongs to the French man’
+\end{styleStandard}
+
+\begin{styleStandard}
+In sum, the 8 target items will be balanced with respect to the two independent variables, frequency and transparency, resulting in four distributions: frequent and transparent; frequent and opaque; absent and transparent; absent and opaque. The items will also be classified according to case (nominative or genitive) and gender (masculine or feminine). 
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{4.2.3.2 Chinese and Japanese}
+\end{styleStandard}
+
+\begin{styleStandard}
+Whereas the picture verification task will test comprehension, the oral question-answer task will elicit oral responses that test effective production and use of morphemes found in the compounds and nominal classifiers. 
+\end{styleStandard}
+
+\begin{styleStandard}
+With respect to compounding, the same target items as those in the picture verification task will be used, eliciting focused productions of several types of head morphemes preceded by a modifier: in Chinese, -\textit{ren}/person (nationality), -\textit{yu}/language, -jia/expert, -\textit{dian}/store, etc.; in Japanese, -\textit{jin}/person (nationality), -\textit{go}/language, -\textit{ka}/expert, -\textit{ya}/store, varying the conditions of frequency in Chinese, and frequency and transparency in Japanese. Distractors will also be included in the tasks.
+\end{styleStandard}
+
+\begin{styleStandard}
+The learners will be given simple instructions: “Describe what you see in the picture”. By introducing images that illustrate the new items that are absent from the input, we will be able to observe to what extent learners are capable of generalising their use of paradigms presented in the language course by making use of their morphological knowledge of the target language. 
+\end{styleStandard}
+
+\begin{styleStandard}
+With respect to classifiers, we will test the production of items that correspond to a certain number of objects, again in the form of images that alternate individual and non-individual classifiers, while also varying the conditions relative to frequency in the Chinese input, and frequency and transparency in the Japanese input, as well as syntactic grammaticality/agrammaticality and semantic relevance/irrelevance.
+\end{styleStandard}
+
+\begin{styleStandard}
+In Chinese, the following classifiers will be targeted:
+\end{styleStandard}
+
+\begin{styleStandard}
+{}- non individual: -\textit{jin} (half kilo), -\textit{he} (box), -\textit{ping} (bottle), -\textit{wan} (bowl)
+\end{styleStandard}
+
+\begin{styleStandard}
+{}-individual: -\textit{tiao} (long and flexible object), -\textit{zhang} (flat objet), -\textit{liang} (vehicle), -\textit{ben} (book)
+\end{styleStandard}
+
+\begin{styleStandard}
+In Japanese, we will elicit productions of the following classifiers: 
+\end{styleStandard}
+
+\begin{styleStandard}
+{}- non individual: -\textit{kiro} (kilo), -\textit{hako} (box), -\textit{bin} (bottle), -\textit{hai} (bowl)
+\end{styleStandard}
+
+\begin{styleStandard}
+{}- individual: -\textit{hon} (long object), -\textit{mai} (flat object), -\textit{dai} (vehicle), -\textit{satsu} (book).
+\end{styleStandard}
+
+\begin{styleStandard}
+Instructions are also important when testing classifiers. As with the compounding task, the learners will be given simple instructions: “Describe what you see in the picture”. Simple instructions like this are particularly important in this context in order to avoid leading questions like “how many/much?”, which, in both Japanese and Chinese, signal that a classifier is required for countable objects. 
+\end{styleStandard}
+
+\begin{styleStandard}
+The replication of the oral question-answer task allows us to test learners' procedural knowledge of nominal morphology in the three target languages: the Nominative/Genitive opposition in Arabic, and the use of compounds and classifiers in Chinese and Japanese. In order to accomplish this task, learners must take into consideration linguistic constraints with respect to morpho-syntax and semantics in their use of nominal morphemes. 
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{5. Conclusion}
+\end{styleStandard}
+
+\begin{styleStandard}
+The three replications of the VILLA project described in this chapter and summarised in Table 2 are designed for the purpose of comparing the initial processing and acquisition of typologically different languages by native speakers of French. More specifically, comparisons will be made between the acquisition of Polish, the target language of the VILLA project, and each of the three target languages of the replication studies, Arabic, Chinese and Japanese.
+\end{styleStandard}
+
+\clearpage\setcounter{page}{1}\begin{styleStandard}
+\textbf{Table 2: Tasks of the VILLA project and plans for replication in Arabic, Chinese and Japanese}
+\end{styleStandard}
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{1.1184598in}m{1.4316599in}m{1.0330598in}m{0.7566598in}m{1.7163599in}m{0.7434598in}m{0.7427598in}m{0.83585984in}m{0.7851598in}}
+\hline
+ &
+ &
+ &
+ &
+ &
+\multicolumn{4}{m{3.3434598in}}{\centering Target languages}\\\hhline{~~~~~----}
+\centering Task name &
+\centering Task type &
+\centering Task focus &
+\centering Measures used &
+\centering Time intervals wrt hours of input &
+\centering Polish (VILLA) &
+\centering Arabic &
+\centering Chinese &
+\centering\arraybslash Japanese\\\hline
+Grammaticality judgement &
+receptive/judgement &
+case marking &
+accuracy
+
+reaction time &
+Time 1: after 4.5 hours
+
+Time 2: after 10.5 hours &
+Yes &
+Yes &
+No &
+No\\
+Picture verification &
+receptive/choice or judgement &
+case marking, word order, compounding, nominal classifiers  &
+accuracy &
+Time 1: after 9 hours
+
+Time 2: after 13.5 hours &
+Yes &
+Yes &
+Yes &
+Yes\\
+Oral question and answer &
+production &
+case marking, compounding, nominal classifiers &
+accuracy &
+Time 1: after 4.5 hours
+
+Time 2: after 10.5 hours &
+Yes &
+Yes &
+Yes &
+Yes\\\hline
+\end{supertabular}
+\end{flushleft}
+\clearpage\setcounter{page}{1}\begin{styleStandard}
+Following Marsden et al. (2018), one principled change to a key variable of the initial study to test generalisability, the target language in this case, might designate a “partial” replication. While designing these replication studies, however, it became clear that including target languages that are typologically different from the target language of the initial study and/or from each other implies changes to other variables, such as the linguistic features under investigation. For this reason, rather than “partial” replications, this chapter describes three “conceptual” replications, each of which introduces more than one change relative to the initial study. We focus here on the challenges inherent in conducting this type of replication study, to which we attempted to respond by posing the following questions: 
+\end{styleStandard}
+
+
+\setcounter{listWWNumivleveli}{0}
+\begin{listWWNumivleveli}
+\item 
+\begin{styleListParagraph}
+What linguistic paradigms examined in the target language Polish of the VILLA project can be considered “equivalent” in Arabic, Chinese and Japanese, and how will these be presented in the classroom input? \ 
+\end{styleListParagraph}
+\item 
+\begin{styleListParagraph}
+What Polish tasks designed for the VILLA project can be adapted for Arabic, Chinese and Japanese? 
+\end{styleListParagraph}
+\end{listWWNumivleveli}
+\begin{styleStandard}
+With respect to the first question, linguistic paradigms that allow for an investigation into similar acquisition processes as those examined in the VILLA project were identified in the replication languages. Firstly, we limited the replications to the study of nominal morphology. In this way, processes observed in the acquisition of Polish and Arabic, languages that attest rich nominal morphology, could be compared. For Chinese and Japanese, the acquisition of morphological compounding and nominal classifiers were selected as linguistic paradigms that might require similar processing on the part of the learners to that of Polish and Arabic nominal morphology. Results of the VILLA project reveal a degree of learner sensitivity to morphological markers for all L1s of the project. \ In a similar manner, we predict that learners of Chinese and Japanese will show signs of morphological awareness when processing and producing nominal morphemes in these target languages. Secondly, certain input properties of the initial study were maintained, namely the frequency and transparency of the lexical items to be taught during language instruction. Frequency poses few problems for replications; the VILLA project carefully defined criteria for frequency along with a clear protocol for controlling and documenting the target language input, which all replication studies can follow. Transparency, on the other hand, proved to be particularly challenging. Although not surprising, transparency tests conducted in preparation for the three replication studies revealed how sensitive transparency is to typological difference. Thirdly, given that the Polish lessons of the VILLA project used a communication-based approach to language teaching, it was important to choose similar themes that fit this model in order to preserve comparability across the studies. Indeed, the replications followed the Polish protocol and included lexical items within the realm of professions, nationalities, and food. Within the functional framework adopted in the VILLA project and its replications, the acquisition of specific linguistic paradigms is always studied within a communicative context. To this end, properties in the input are presented as tools of communication in comparable situations.
+\end{styleStandard}
+
+\begin{styleStandard}
+The second major challenge of these replication studies involves the selection and design of target language tasks. Taking into account the points mentioned above about the challenges of replicating the study of the acquisition of nominal morphology in different target languages, we have designed tasks relative to the linguistic paradigms selected. In Arabic, as per the VILLA project, we will test sensitivity to morphological marking. In Chinese and Japanese, the tasks are designed to test morphological awareness when learners are exposed to morphological compounding and nominal classifiers in the input. The variables of frequency and transparency will be incorporated into the language tasks when possible, and the same themes used in the Polish instruction and tasks, such as professions and nationalities, will be used as content in the replication tasks as well.
+\end{styleStandard}
+
+\begin{styleStandard}
+Although ecological “live” input studies cannot be replicated with exact precision, they can be replicated in a variety of ways, as we have shown here. These replications are essential for the future of input processing research in that replications, even if partial or conceptual, help refine hypotheses and tighten methodology. Despite the many challenges identified in this chapter, this description and analysis of the methodology of cross-linguistic replication studies reveals that properties of the input within and across studies, such as frequency, transparency in some cases, and certain linguistic paradigms, can be closely replicated. Most importantly, replications require particularly careful planning in the pre-data collection phase, and when this occurs, the field of applied linguistics will, without a doubt, benefit from such studies in the future.
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{References}
+\end{styleStandard}
+
+\begin{styleStandard}
+Aikhenvald, Alexandra Y. 2000. \textit{Classifiers: A typology of noun categorization devices}. Oxford: Oxford University Press.
+\end{styleStandard}
+
+\begin{styleStandard}
+Bardovi-Harlig, Kathleen. 1992. The relationship of form and meaning: A cross-sectional study of tense and aspect in the interlanguage of learners of English as a second language. \textit{Applied Psycholinguistics} 13. 253–278. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Bardovi-Harlig, Kathleen. 2000. \textit{Tense and aspect in second language acquisition: Form, Meaning and Use. }Oxford, Blackwell.
+\end{styleStandard}
+
+\begin{styleStandard}
+Braine, Martin D.S. \& Brody, Ruth E. \& Brooks, Patricia J. \& Sudhalter, Vicky \& Ross, Julie A. \& Catalano, Lisa \& Fisch, Shalom M. 1990. Exploring language acquisition in children with a miniature artificial language: Effects of item and pattern frequency. Arbitrary subclasses, and correction. \ \textit{Journal of Memory and Language} 29. 591–610.
+\end{styleStandard}
+
+\begin{styleStandard}
+Carlisle, Joanne. F. 2003. Morphology matters in learning to read: A commentary. \textit{Reading Psychology} 24 (Issue 3-4). 291–322.
+\end{styleStandard}
+
+\begin{styleStandard}
+Carroll, Susanne \& Widjaja, Elizabeth. 2013. Learning exponents of number on first exposure to an L2. \textit{Second Language Research} 29(2). 201–229.
+\end{styleStandard}
+
+\begin{styleCorpsAA}
+Cheng, Lisa L.-S., Sybesma, Rint, et al. Yi-wan tang, yi-ge tang: Classifiers and massifiers. Tsing Hua journal of Chinese studies, 1998, vol. 28, no 3, p. 385-412.
+\end{styleCorpsAA}
+
+\begin{styleStandard}
+Dimroth, Christine. 2013. Learner varieties. In Chapelle, Carol A. \ (ed.), \textit{The encyclopedia of applied linguistics}, 3256–3263. Malden, MA: Blackwell.
+\end{styleStandard}
+
+\begin{styleStandard}
+Dimroth, Christine \& Rast, Rebekah \& Starren, Marianne \& Watorek, Marzena. 2013. Methods for studying a new language under controlled input conditions: The VILLA project. \textit{EuroSLA Yearbook} 13. 109–138.
+\end{styleStandard}
+
+\begin{styleStandard}
+Durand, Marie. 2019. \textit{La découverte et la compréhension des profils d’apprenants : classification semi-supervisée et acquisition d’une langue seconde}. Saint-Denis, Université Paris 8. (Doctoral dissertation.).
+\end{styleStandard}
+
+\begin{styleStandard}
+Ellis, Nick C. 2002. Frequency effects in language processing: A review with implications for theories of implicit and explicit language acquisition. \textit{Studies in Second Language Acquisition} 24. 143–188.
+\end{styleStandard}
+
+\begin{styleStandard}
+Ellis, Nick. C. 2008. Usage-based and form-focused language acquisition: The associative learning of constructions, learned-attention, and the limited L2 end state. In Robinson, Peter \& Ellis, Nick (eds.), \textit{Handbook of cognitive linguistics and second language acquisition}, 372–405. New York NY: Routledge.
+\end{styleStandard}
+
+\begin{styleStandard}
+Flege, James E. 2009. Give input a chance! In Piske, Thorsten \& Young-Scholten, Martha (eds.), \textit{Input matters in SLA, }175–190. Bristol: Multilingual Matters.
+\end{styleStandard}
+
+\begin{styleStandard}
+Goldschneider, Jennifer M. \& DeKeyser, Robert. 2001. Explaining the “natural order of L2 morpheme acquisition” in English: A meta-analysis of multiple determinants. \textit{Language Learning} 51. 1–50.
+\end{styleStandard}
+
+\begin{styleStandard}
+Gong, Jiang Song. 2010. Chinese classifier acquisition: Comparison of L1 child and L2 adult development. Graduate Student Theses, Dissertations \& Professional Papers. Graduate School, University of Montana. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Gullberg, Marianne \& Roberts, Leah \& Dimroth, Christine. 2012. What word-level knowledge can adult learners acquire after minimal exposure to a new language? \textit{International Review of Applied Linguistics in Language Teaching} 50(4). 239–276.
+\end{styleStandard}
+
+\begin{styleStandard}
+Gullberg, Marianne \& Roberts, Leah \& Dimroth, Christine \& Veroude, Kim \& Indefrey, Peter. 2010. Adult language learning after minimal exposure to an unknown natural language. \textit{Language Learning }60\textit{ }(Supplement 2). 5–24.
+\end{styleStandard}
+
+\begin{styleStandard}
+Han, Zhao-Hong \& Liu, Zehua 2013. Input processing of Chinese \textit{ab initio} learners. \textit{Second Language Research }29(2). 145–164.
+\end{styleStandard}
+
+\begin{styleStandard}
+Hinz, Johanna \& Krause, Carina \& Rast, Rebekah \& Shoemaker, Ellenor \& Watorek, Marzena. 2013. Initial processing of morphological marking in nonnative language acquisition: Evidence from French and German learners of Polish. \textit{Eurosla Yearbook }13. 39–175.
+\end{styleStandard}
+
+\begin{styleStandard}
+Hulstijn, Jan \& DeKeyser, Robert. (eds.). 1997. Testing SLA Theory in the Research Laboratory [Special issue]. \textit{Studies in Second Language Acquisition }19(2).
+\end{styleStandard}
+
+\begin{styleNormalWeb}
+Ichikawa, Shingo. 2014. The role of morphological awareness in L2 vocabulary development in logographic languages. \textit{Journal of Nagoya Gakuin University} 25(2). 25–37.
+\end{styleNormalWeb}
+
+\begin{styleStandard}
+Klein, Wolfgang \& Perdue, Clive. 1997. The Basic Variety. Or: Couldn't natural languages be much simpler? \textit{Second Language Research} 13. 301–347.
+\end{styleStandard}
+
+\begin{styleStandard}
+Kong, Stano. 2012. Adult English speakers' acquisition of Chinese count-mass classifiers. \textit{Journal of Chinese Linguistics~}40(2). 442–477
+\end{styleStandard}
+
+\begin{styleStandard}
+Kouloughli, Djamel Eddine. 2007. \textit{L’arabe}. Paris : Presses Universitaires de France - PUF. 
+\end{styleStandard}
+
+\begin{styleNormalWeb}
+Ku, Yu-Min \& Anderson, Richard. C. 2003. Development of morphological awareness in Chinese and English. \textit{Reading and Writing: An Interdisciplinary Journal} 16. 399–422.
+\end{styleNormalWeb}
+
+\begin{styleStandard}
+Larsen-Freeman, Diane. 2010. Not so fast: A discussion of L2 morpheme processing. \textit{Language Learning} 60(1). 221–230.
+\end{styleStandard}
+
+\begin{styleCorpsAA}
+Li, Yen-hui Audrey. Plurality in a classifier language. Journal of East Asian Linguistics, 1999, vol. 8, no 1, p. 75-99.
+\end{styleCorpsAA}
+
+\begin{styleStandard}
+Liang, Neal Szu-Yen. 2008. The acquisition of Chinese shape classifiers by L2 adult learners. In Chan, Marjorie K.M. \ \& Kang, Hana (eds.), \textit{Proceedings of the 20th North American Conference on Chinese Linguistics (NACCL-20).}, 309–326 Volume 1. Columbus, Ohio: The Ohio State University. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Marsden, Emma \& Morgan-Short, Kara \& Thompson, Sophie \& Abugaber, David. 2018. Replication in second language research: Narrative and systematic reviews and recommendations for the field. \textit{Language Learning} 68(2). 321–391. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Meisel, Jürgen M. 1987. Reference to past events and actions in the development of natural second language acquisition, In Pfaff, Wollman C. (ed.), \textit{First and second} \textit{language acquisition processes}, 206–24. Rowley, MA: Newbury House,. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Nishio, Sumikazu. 2000. \textit{Classificateurs numéraux en japonais : constructions et catégories}.Lyon: Université Lumière Lyon 2. (Doctoral dissertation.)
+\end{styleStandard}
+
+\begin{styleStandard}
+Packard, Jerome L. 2000. \textit{The morphology of Chinese: A linguistic and cognitive approach}. Cambridge: Cambridge University Press. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Perdue, Clive. (ed.). 1993. \textit{Adult language acquisition: Cross-linguistic perspectives}, Vol. I and II. Cambridge: Cambridge University Press.
+\end{styleStandard}
+
+\begin{styleStandard}
+Picallo, M. Carme. \ 2008. Gender and number in Romance. \textit{Lingue e linguaggio} 7(1). 47–66.
+\end{styleStandard}
+
+\begin{styleStandard}
+Piske, Thorsten \& Young-Scholten, Martha (eds.). 2009. \textit{Input matters in SLA.} Bristol: Multilingual Matters.
+\end{styleStandard}
+
+\begin{styleStandard}
+Rast, Rebekah. 2008. \textit{Foreign language input: Initial processing}. Clevedon: Multilingual Matters.
+\end{styleStandard}
+
+\begin{styleStandard}
+Rast, Rebekah. 2017. \textit{L’apprentissage et l’enseignement d’une langue étrangère : de l’exposition initiale aux premières productions} (\textit{Foreign Language Learning and Teaching: From first exposure to first productions}). Habilitation à diriger des recherches, Université Grenoble Alpes, Linguistics and English.
+\end{styleStandard}
+
+\begin{styleStandard}
+Rast, Rebekah \& Dimroth, Christine \& Starren, Marianne \& Watorek, Marzena. 2017. Replicating input-based studies, contextual factors, and ecological validity, for the panel “Consolidating and sustaining a principled replication effort in SLA research”, \textit{European Second Language Association Conference 25}, Reading, UK, 31 August. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Rast, Rebekah \& Watorek, Marzena \& Hilton, Heather \& Shoemaker, Ellenor. 2014.\textit{ }Initial processing and use of inflectional markers: Evidence from French adult learners of Polish. In Han, Zhao-Hong \& Rast, Rebekah (eds.), \textit{First exposure to a second language: Learners’ initial input processing}, 64–106. Cambridge: Cambridge University Press.
+\end{styleStandard}
+
+\begin{styleStandard}
+Reber, Arthur. S. 1967. Implicit learning of artificial grammars. \textit{Journal of Verbal Learning and Verbal Behavior} 77. 317–327.
+\end{styleStandard}
+
+\begin{styleStandard}
+Rott, Susanne. \ 1999. \ The effect of exposure frequency on intermediate language learners' incidental vocabulary acquisition and retention through reading. \textit{Studies in Second Language Acquisition }21. 589–619.
+\end{styleStandard}
+
+\begin{styleStandard}
+Rouveret, Alain. 2016. \textit{Arguments minimalistes: une présentation du Programme minimaliste de Noam Chomsky}. ENS éditions.
+\end{styleStandard}
+
+\begin{styleStandard}
+Ryding, Karin C. 2005. \textit{A reference grammar of Modern Standard Arabic}. Cambridge: Cambridge University Press. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Saturno, Jacopo. 2017. \textit{Inflectional morphology and utterance structure in initial varieties of Polish L2}. Bergamo \& Paris: Università degli studi di Bergamo \& University of Paris 8. (Doctoral dissertation.)
+\end{styleStandard}
+
+\begin{styleStandard}
+Shibatani, Masayoshi. 1990. \textit{The languages of Japan}. Cambridge: Cambridge University Press.
+\end{styleStandard}
+
+\begin{styleStandard}
+Slobin, Dan I. 1985. Introduction. In Slobin, Dan I. (ed.). \textit{The crosslinguistic study of language cquisition}, Vol. 1. The data, 3–24. Hillsdale, NJ: Lawrence Erlbaum Associates.
+\end{styleStandard}
+
+\begin{styleStandard}
+Starren, Marianne. 2001. \textit{The second time: The acquisition of temporality in Dutch and French as a second language}. Utrecht: LOT.
+\end{styleStandard}
+
+\begin{styleStandard}
+Tomasello, Michael. 2003. \textit{Constructing a language. A usage-based theory of language acquisition}. Cambridge, MA: Harvard University Press.
+\end{styleStandard}
+
+\begin{styleStandard}
+Watorek, Marzena. 2004. Construction du discours par des apprenants de langues, enfants et adultes. \textit{Acquisition et Interaction en Langue Etrangère} 20. 129–171.
+\end{styleStandard}
+
+\begin{styleStandard}
+Watorek, Marzena \& Durand, Marie \& Starosciak, Katarzyna. 2016. L’impact de l’input et du type de tâche sur la production de la morphologie nominale en polonais par des apprenants francophones débutants. \textit{Discours} 18. http://journals.openedition.org/discours/9163; DOI: 10.4000/discours.9163.
+\end{styleStandard}
+
+\begin{styleStandard}
+Williams, John N. 2005. Learning without awareness. \textit{Studies in Second Language Acquisition} 27(2). 269–304. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Zhang, Dongbo \& Koda, Keiko. 2014. Awareness of derivation and compounding in Chinese-English biliteracy acquisition. \textit{International Journal of Bilingual Education and Bilingualism} 17(1). 55–73. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Zhang, Dongbo \& Koda, Keiko \& Leong, Che Kan. 2016. Morphological awareness and bilingual word learning: A longitudinal Structural Equation Modeling study. \textit{Reading and Writing~}29(3). 383–407.
+\end{styleStandard}
+
+\begin{styleStandard}
+Zhang, Hong. 2007. Numeral classifiers in Mandarin Chinese. \textit{Journal of East Asian Linguistics} 16(1). 43–59.
+\end{styleStandard}
+
+\end{document}

@@ -1,0 +1,1423 @@
+% This file was converted to LaTeX by Writer2LaTeX ver. 1.4
+% see http://writer2latex.sourceforge.net for more info
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[nynorsk]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts,textcomp}
+\usepackage{array}
+\usepackage{supertabular}
+\usepackage{hhline}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue}
+% footnotes configuration
+\makeatletter
+\renewcommand\thefootnote{\arabic{footnote}}
+\makeatother
+% Text styles
+\newcommand\textstyleStrong[1]{\textbf{#1}}
+\newcommand\textstyleInternetlink[1]{#1}
+\newcommand\textstyleauthor[1]{#1}
+\newcommand\textstyleHTMLCite[1]{\textit{#1}}
+\newcommand\textstylepubyear[1]{#1}
+\newcommand\textstylearticletitle[1]{#1}
+\newcommand\textstylejournaltitle[1]{#1}
+\newcommand\textstylevol[1]{#1}
+\newcommand\textstylepagefirst[1]{#1}
+\newcommand\textstylepagelast[1]{#1}
+% Headings and outline numbering
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{0.0cm}{0in}{0.1mm}{\normalfont\normalsize\fontsize{12pt}{14.4pt}\selectfont\raggedright}}
+\renewcommand\@seccntformat[1]{\csname @textstyle#1\endcsname{\csname the#1\endcsname}\csname @distance#1\endcsname}
+\setcounter{secnumdepth}{0}
+\newcommand\@distancesection{}
+\newcommand\@textstylesection[1]{#1}
+\makeatother
+\makeatletter
+\newcommand\arraybslash{\let\\\@arraycr}
+\makeatother
+\raggedbottom
+% Paragraph styles
+\renewcommand\familydefault{\rmdefault}
+\newenvironment{styleNormalWeb}{\renewcommand\baselinestretch{1.0}\setlength\leftskip{0cm}\setlength\rightskip{0cm plus 1fil}\setlength\parindent{0cm}\setlength\parfillskip{0pt plus 1fil}\setlength\parskip{0.1945in plus 0.01945in}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\writerlistlabel\ignorespaces}{\unskip\vspace{0.1945in plus 0.01945in}\par}
+\newenvironment{styleStandard}{\renewcommand\baselinestretch{1.0}\setlength\leftskip{0cm}\setlength\rightskip{0cm plus 1fil}\setlength\parindent{0cm}\setlength\parfillskip{0pt plus 1fil}\setlength\parskip{0in plus 1pt}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\writerlistlabel\ignorespaces}{\unskip\vspace{0in plus 1pt}\par}
+\newenvironment{styleannotationtext}{\renewcommand\baselinestretch{1.0}\setlength\leftskip{0cm}\setlength\rightskip{0cm plus 1fil}\setlength\parindent{0cm}\setlength\parfillskip{0pt plus 1fil}\setlength\parskip{0in plus 1pt}\writerlistparindent\writerlistleftskip\leavevmode\normalfont\normalsize\fontsize{10pt}{12.0pt}\selectfont\writerlistlabel\ignorespaces}{\unskip\vspace{0.111in plus 0.0111in}\par}
+% List styles
+\newcommand\writerlistleftskip{}
+\newcommand\writerlistparindent{}
+\newcommand\writerlistlabel{}
+\newcommand\writerlistremovelabel{\aftergroup\let\aftergroup\writerlistparindent\aftergroup\relax\aftergroup\let\aftergroup\writerlistlabel\aftergroup\relax}
+\setlength\tabcolsep{1mm}
+\renewcommand\arraystretch{1.3}
+\newcounter{Table}
+\renewcommand\theTable{\arabic{Table}}
+\title{}
+\author{}
+\date{2020-05-05}
+\begin{document}
+\clearpage\setcounter{page}{1}\begin{styleNormalWeb}
+\textstyleStrong{L2 acquisition in a rich dialectal environment – some methodological considerations when SLA meets dialectology}\newline
+Linda Evenstad Emilsen, Østfold University College
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+Åshild Søfteland, Østfold University College
+\end{styleNormalWeb}
+
+\section[Abstract]{\textbf{Abstract}}
+\begin{styleStandard}
+This chapter discusses how interlanguage variation and dialectal variation in the target language appear homophonic in Norwegian. We demonstrate that this may pose challenges for the interpretation of second-language data. In societies with a high degree of variation in spoken vernaculars (or written norms), second-language learners are likely to be exposed to a great deal of~variation and possibly conflicting~features. The Norwegian language situation is a case in point: dialects have a neutral or high status and most people speak their local dialect in a variety of settings, both formal and informal. In this chapter, we review empirical and theoretical studies on second-language acquisition, focusing on the predictions they make for interlanguage variation. We then compare the findings of these studies to spontaneous speech data obtained from \textit{The Nordic Dialect Corpus} and first-language studies of Norwegian. We demonstrate that it can be hard or impossible to distinguish between targetlike dialect variation and nontargetlike interlanguage variation. This has implications for the coding and interpretation of data. Our investigation seeks to raise awareness of the methodological issues related to differentiation between target-language variation and interlanguage variation and to stimulate further discussion on the topic.
+\end{styleStandard}
+
+\section[Keywords]{\textbf{Keywords}}
+\begin{styleStandard}
+language variation, dialectal variation, interlanguage variation, L1 monolingual norm, baseline, homophony, isomorphic crux
+\end{styleStandard}
+
+\section[1. Introduction ]{\textbf{1. Introduction }}
+\begin{styleStandard}
+One of the fundamentals in a lot of second-language (L2) research is the distinction between interlanguage (or nontargetlike) and targetlike variation (Gass \& Madden 1985). In differentiating between targetlike and nontargetlike variation, it is imperative that any relevant comparisons be made with an appropriate baseline, if a comparison is needed. However, it is not always straightforward what the adequate baseline is. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Until recently, the norm in both second language acquisition (SLA) research and in additional-language teaching has been to compare bi- and multilingual speakers with an idealised first-language (L1) monolingual speaker. Even early on, researchers expressed concerns about the appropriateness of this (see for instance Bley-Vroman 1983; Klein 1998). Yet, the norm persisted until very recently. However, now even the concept of an “L1 monolingual speaker” is strongly contested and debated, and the L1 monolingual comparison is meeting strong criticism (see The Douglas Fir Group 2016 for an update on the debate). 
+\end{styleStandard}
+
+\begin{styleStandard}
+One point of criticism against L1 monolinguals as a baseline for L2 acquisition, is that the concept of a monolingual speaker is an abstraction and idealisation. For instance, an L1 monolingual speaker is often associated with a standard language, and dialectal variation is not taken into account. Why this is problematic can be exemplified with the following: if an L2 English learner receives as input mostly a variety of Scottish English, that learner will start acquiring English based on the input received. It would be inadequate to compare the interlanguage of that learner exclusively to the grammar of an L1 speaker of Oxford English, as many aspects of the grammars in Scottish and Oxford English diverge. A comparison with Oxford English would exclude features that are present in the Scottish English input if they are not present in Oxford English, and vice versa: include features that are present in Oxford English even if they are not present in Scottish English. Needless to say, this is highly problematic from a scientific point of view.
+\end{styleStandard}
+
+\begin{styleStandard}
+In addition, language learners may receive input from several dialects at once, thus being exposed to potentially diverging linguistic systems. Input from different spoken varieties poses extra challenges in establishing both the exact input and the baseline.\footnote{\textrm{ In this study, we will not discuss issues related to quantity of input, including how much input is needed for something to be acquired. We will leave this question open and set no threshold for the quantity of input. We take the stance that if something is present in the input, no matter to what extent, it is relevant to the current discussion.}} It also makes it difficult to determine what grammatical features a language learner is expected to acquire. Input consisting of multiple varieties leads to ambiguity in output analyses, making it difficult to determine if an utterance is targetlike. This is an important methodological challenge related, fundamentally, to how we interpret all kinds of language acquisition/development data. 
+\end{styleStandard}
+
+\begin{styleannotationtext}
+Variationist approaches to the acquisition of sociolinguistic variation deal with issues like these rather extensively (see for instance Geeslin 2011). However, this kind of a methodological challenge applies to research on L2 acquisition and bi- or multilingualism in any speech community characterised by a high degree of variation and goes beyond the boundaries of acquisition of sociolinguistic variation. The issue is also relevant to language teachers and others working with language assessment, as the differentiation between targetlike and nontargetlike is important in those contexts. 
+\end{styleannotationtext}
+
+\begin{styleannotationtext}
+Even though challenges related to variation in the input apply to the entire field of SLA, it remains neglected in much research literature. Some studies investigate the L2 acquisition of dialects or of variation in the target language (TL) (see for instance Geeslin \& Gudmestad 2008; Schmidt 2011; Geeslin et al. 2012; Rodina \& Westergaard 2015b). Much of the literature, however, does not address explicitly how variation in L2 learners’ input affects the interpretation of L2 data. The main aim of the present study is to enhance the discussion on this topic and show that the issue is relevant for multiple research traditions; we aim to expand this discussion beyond variationist and sociolinguistic literature and into the whole field of SLA, focusing especially on grammatical aspects.
+\end{styleannotationtext}
+
+\begin{styleannotationtext}
+We seek to highlight methodological issues related to the presence of more than one variety in the input in additional-language acquisition. We do this by exploring one of the challenges caused by variation in the TL: empirical observations and theoretical approaches to SLA describe interlanguage variation that is coinciding with features regarded as characteristic of dialectal variation. In other words, we show that variation in L2 learners’ grammars may look both like interlanguage and like TL variation, making it difficult, even impossible, to distinguish between the two analyses. By comparing TL dialects with interlanguage variation described by earlier studies on L2 acquisition (see section 3 for relevant references), we hope to demonstrate how complex the interpretation of linguistic data is when L2 learners are exposed to several varieties in the input. 
+\end{styleannotationtext}
+
+\begin{styleannotationtext}
+Our study focuses on the Norwegian language situation. We compare spontaneous speech data from different dialects of L1 Norwegian excerpted from a spoken language corpus (\textit{The Nordic Dialect Corpus }(NDC)\textit{ }(Johannessen et al. 2009) with empirical observations and theoretical predictions about L2 interlanguage from SLA studies on Norwegian and other languages (see 3.1 and 3.2). By examining how dialectal variation and interlanguage variation may coincide, the second aim of our study is to bridge the gap between SLA and dialectology. 
+\end{styleannotationtext}
+
+\begin{styleStandard}
+The following subsection provides a brief note on terminology (1.1). The next section contains a description of the background for our study, focusing mainly on the Norwegian language situation (2.1), the role of an idealised or monolingual norm in assessing L2 use and development (2.2) and earlier research on target-language variation in SLA research (2.3). The third section explores specific grammatical features described as interlanguage variation in the SLA literature that is homophonic with Norwegian dialect variation: (3.1) deals with morphology in the determiner phrase (DP) and (3.2) with finiteness and verb second (V2) constructions. Section (4) summarises the chapter and presents a few suggestions for addressing the methodological challenges identified. 
+\end{styleStandard}
+
+\section[1.1. A note on terminology]{\textbf{1.1. A note on terminology}}
+\begin{styleStandard}
+In our chapter, we seek to have a general approach: We do not focus on the order of acquisition of different languages, we do not distinguish between formal and informal learning, or between learning and acquisition. Further, we do not distinguish between bi- and multilingualism. We therefore use \textit{L2 speaker/listener/learner} as an umbrella term for bi- and multilingualism and use the terms \textit{learning }and\textit{ acquisition} interchangeably, unless otherwise specified. 
+\end{styleStandard}
+
+\begin{styleStandard}
+For pragmatic reasons, we use the terms \textit{variety} and \textit{TL variation} to include all kinds of dialectal variation: geographically induced (\textit{geolects}), sociolinguistic (\textit{sociolects}) and spoken-language variation often described as multi-ethnolectal (\textit{ethnolects}). Unless otherwise specified, we include all kinds of (oral) registers and inter- and intra-individual variation. In descriptions of the Norwegian language, the terms \textit{dialect} and \textit{spoken language variety} are both used to describe the same kinds of variation, and we will also use them as synonymous.
+\end{styleStandard}
+
+\begin{styleStandard}
+In general, we consider transcription, coding and other analyses as part of the \textit{interpretation of data}. Still, our main focus here is the interface between coding and overall grammatical analyses, i.e. the interpretation of authentic utterances as targetlike or not. \ \ 
+\end{styleStandard}
+
+\section[2. Background]{\textbf{2. Background}}
+\section[2.1 Language diversity – the Norwegian context]{\textbf{2.1 Language diversity – the Norwegian context}}
+\begin{styleStandard}
+Norwegian is part of the Scandinavian dialect continuum, where dialects differ extensively in phonology, morphology and syntax, but are mutually intelligible both inside and across national borders. Within Norway, most dialects have high or neutral status, and there is high acceptance for the use of dialects in most contexts – including the media, university lectures and parliament (Røyneland 2009; Sandøy 2011). Most Norwegians would agree that it is important to keep using dialects (Røyneland 2009), and dialectal variation is officially recognised and protected in a variety of ways (e.g., Trudgill 2002: 31). One important language policy document is the ‘Dialect paragraph’ (\textit{Talemålsparagrafen}) in the School Law (Lovdata, no date), introduced in 1878, stating that teaching should take place in the children’s own dialect. Hence, teachers have never been officially instructed to teach in a standard language, rather the contrary. The official phrasing today is that students and teachers can decide what spoken language variety to use, but that teachers and school leaders shall take the students’ dialects into consideration as much as possible (Lovdata, no date). 
+\end{styleStandard}
+
+\begin{styleStandard}
+Norway has two official written standards (Bokmål and Nynorsk), but no official spoken standard. The Oslo dialect, which also is close to the written standard ‘Bokmål’, has a more neutral status than other varieties and could to some extent be considered an unofficial standard (Mæhlum 2009; Røyneland 2009). This variety is also the most common in oral media, and it is spreading in Southeast Norway (i.e., the Oslo circumference, Mæhlum 2009). In Norwegian sociolinguistic research, this spoken variety is often referred to as ‘Standard Eastern Norwegian’, and we use this term in this chapter.\footnote{\textrm{ The reader should still keep in mind that this is not an official standard. Also, the term ‘Standard Eastern Norwegian’, and the existence of a standard spoken language in Norway is disputed by researchers in Norwegian dialectology (cf. Mæhlum 2009 vs. Sandøy 2009). }} Nevertheless, local dialects have high status and are widely used, including on national TV and radio (Røyneland 2009; Sandøy 2011). There is also a great deal of mobility in Norway, especially into the Oslo area, but also in other directions (Stjernholm 2013), and most people continue to speak their original dialect if they move to another part of the country (Jahr 1990: 7). Furthermore, many language learners will hear dialectal variation associated with multi-ethnolectal style, i.e. a dialect shared by people from several minority groups and some of their majority group friends (Svendsen \& Røyneland 2008; Opsahl \& Nistov 2010).\footnote{\textrm{ Svendsen \& Røyneland define }\textrm{\textit{‘multi-ethnolect’}}\textrm{ and }\textrm{\textit{‘ethnolect’}}\textrm{ as follow: “Whereas }\textrm{\textit{ethnolects}}\textrm{ might be conceived of as “varieties of a language that mark speakers of ethnic groups who originally used another language or distinctive variety” (Clyne, 2000, p.86), }\textrm{\textit{multiethnolects}}\textrm{ are characterised by their use by }\textrm{\textit{several}}\textrm{ minority groups “collectively to express their minority status and/or as a reaction to that status to upgrade it” (Clyne, 2000, p.87). When majority speakers come to share a multiethnolect with minorities, we see an expression of a new form of group identity” (Svendsen \& Røyneland 2008: 64).}} The status of these varieties seems to be rising.
+\end{styleStandard}
+
+\begin{styleStandard}
+In summary, one must say that all learners of Norwegian will be exposed both to local dialects and to ‘standard Eastern Norwegian’, and most language learners will also encounter many dialects from other parts of the country and/or multi-ethnolects. This entails that the input for both L1 and L2 learners, children and adults, is characterised by variation. It is from this complex input learners of Norwegian develop the rules that make up their interlanguage grammar, and the kind of input they encounter is of course important for further language development (see 2.3 for more details). 
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ Our work on L2 acquisition started with the project MultiCKUS – \textit{MULTIlingual Children from Kindergarten to Upper Secondary school} (Arntzen 2012). This is a longitudinal research project following a group of \ L2 children from kindergarten to high school. The project consists of a variety of data, including spontaneous speech, where the children play or talk with each other and/or with a teacher or a researcher. The two authors of this chapter were especially responsible for developing a transcription and annotation standard for the spontaneous speech part of the project. This is when we first encountered examples like the ones we discuss in this chapter and we had to make explicit decisions about their interpretation.\footnote{\textrm{ See Johannessen (2017) and Søfteland (2018) for thorough discussions on annotation processes for Norwegian/Scandinavian spoken language.}} (1a) and (2a) shows two of them.
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ MultiCKUS was carried out in a city in Southeast Norway. Because of the proximity to Oslo, Standard Eastern Norwegian has a strong influence in the area. Still, the local dialect is also in use and some local dialect features are especially common, e.g. parts of the pronominal system (cf. Stjernholm \& Søfteland 2019). In 3\textsuperscript{rd} person plural, the local dialect subject form can be homophonic with the object form in standard Eastern Norwegian (and written Bokmål).\footnote{\textrm{ This is shown in (1c), and is indicated in the glossing where the (subject) pronoun is marked “OBJ” (compare with the glossing of (1b)).}} How, then, should we interpret situations like in (1), where (1a) is an utterance by an (early) L2 learner, (1b) is the equivalent in Standard Eastern Norwegian, and (1c) is a local form? “OBJ.” in the glossing marks when \textit{dem} would be analysed as targetlike in the subject position.
+\end{styleStandard}
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.41015986in}m{1.9886599in}m{0.6101598in}m{0.6101598in}m{2.0879598in}}
+(1a) &
+\textit{dem} &
+\textit{gikk} &
+\textit{hjem} &
+\raggedleft\arraybslash (actual utterance from L2 data)\\
+ &
+they.”OBJ.”/them.OBJ. &
+walked &
+home &
+\\
+ &
+\multicolumn{3}{m{3.3664598in}}{‘They/Them walked home.’} &
+\\
+(1b) &
+\textit{de} &
+\textit{gikk} &
+\textit{hjem} &
+\raggedleft\arraybslash (Standard Eastern Norwegian)\\
+ &
+they.SUBJ. &
+walked &
+home &
+\\
+ &
+\multicolumn{3}{m{3.3664598in}}{‘They walked home.’} &
+\\
+(1c) &
+\textit{dem} &
+\textit{gikk} &
+\textit{hjem} &
+\raggedleft\arraybslash (local dialect form)\\
+ &
+they.”OBJ.” &
+walked &
+home &
+\\
+ &
+\multicolumn{3}{m{3.3664598in}}{‘They walked home.’} &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{styleStandard}
+The form \textit{dem} ‘them’ used in a subject position, as in (1a), is targetlike when compared to the local dialect (1c). /\textit{dem}/ or /\textit{døm}/ is the regular form in this area, both in subject and object position. In Standard Eastern Norwegian the most frequent subject form is \textit{de} ‘they’ (1b). Considering the language situation in the area where MultiCKUS took place, we can be sure that the children have heard both \textit{de} ‘they’ and \textit{dem} ‘them’ in subject position, but we cannot know how much. Thus, we must consider both (1b) and (1c) targetlike. However, it is not possible to determine if (1a), the actual utterance by an L2 speaker, is dialectal or interlanguage variation. Within sociolinguistics and research on language change, this kind of ambiguity has sometimes been referred to as an \textit{isomorphic crux} (Hårstad 2009): the finishing point (the cross, or ‘crux’) of a specific linguistic change can be traced back to two different origins, with both (diachronic) processes ending in the same homonymous (‘isomorphic’) forms. If a researcher, student or teacher is supposed to judge whether an L2 learner utterance is targetlike or not, how can they make adequate decisions about examples like (1a)? Our concern is that if (1a) was uttered by an L1 speaker it might be judged as targetlike, while if it was uttered by an L2 speaker it might be judged as nontargetlike. This of course affects analyses of data. 
+\end{styleStandard}
+
+\begin{styleStandard}
+The interpretation of the feminine pronoun form \textit{henne} ‘her’ in subject position, as in (2a), is even trickier. In Standard Eastern Norwegian \textit{henne} would be the object form and \textit{hun} the subject form (as shown in 2b).
+\end{styleStandard}
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.40385985in}m{0.49905983in}m{0.7233598in}m{1.6330599in}m{2.54556in}}
+(2a) &
+\textit{da} &
+\textit{skrek} &
+\textit{henne} &
+\raggedleft\arraybslash (actual utterance from L2 data)\\
+ &
+then &
+screamed &
+she.”OBJ.”/her.OBJ. &
+\\
+ &
+\multicolumn{3}{m{3.01296in}}{‘Then she/her screamed.’} &
+\\
+(2b) &
+\textit{da} &
+\textit{skrek} &
+\textit{hun} &
+\raggedleft\arraybslash (Standard Eastern Norwegian)\\
+ &
+then &
+screamed &
+she.SUBJ. &
+\\
+ &
+\multicolumn{3}{m{3.01296in}}{‘Then she screamed.’} &
+\\
+(2c) &
+\textit{da} &
+\textit{skrek} &
+\textit{henne} &
+\raggedleft\arraybslash (attested among young L1 speakers \\
+ &
+then &
+screamed &
+she.”OBJ.” &
+\raggedleft\arraybslash in adjacent dialect areas)\\
+ &
+\multicolumn{3}{m{3.01296in}}{‘Then she screamed.’} &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{styleStandard}
+The original object form \textit{henne} in subject position is not known to be part of the local dialect traditionally, but it might be targetlike if compared to the dialect of the L2 learners’ L1 Norwegian classmates: \textit{henne} is used in subject position by adolescents elsewhere in Eastern Norwegian, in and around Oslo (cf. 2c), but we do not know if this linguistic change has appeared in these learners’ linguistic environments.\footnote{\textrm{ The glossing in (2) marks }\textrm{\textit{henne }}\textrm{as “OBJ.” with quotation marks when we analyse it as a subject.}} The only way we can decide whether \textit{da skrek henne} (2a) is targetlike, is to find out if L2 speakers encounter this in their input (and to what extent). This exemplifies some of the complexities of data interpretation in our project. 
+\end{styleStandard}
+
+\begin{styleStandard}
+These are just two examples from an area close to Oslo, but they motivated us to investigate potential ambiguities between TL and interlanguage variation more systematically, as we find little discussion of this in the research literature. This issue is relevant to teachers as well. Despite the ‘Dialect paragraph’ and its long history, there is reason to believe that many teachers are unconscious of dialectal variation, \- both in L1 teaching classrooms (Jahr 1992; Jansson et al. 2017) and in L2 classrooms and learning materials (Husby 2009; Heide 2017). 
+\end{styleStandard}
+
+\section[2.2 The role of an idealised or monolingual norm in assessing L2 use and development]{\textbf{2.2 The role of an idealised or monolingual norm in assessing L2 use and development}}
+\begin{styleStandard}
+As mentioned in the introduction, SLA research and additional-language teaching have been criticised for having used L1 monolingual norms when assessing L2 use and development. Cook \& Newson (2007: 221) even go so far in their criticism as to claim that “the only true knowledge of the language is taken to be that of the adult monolingual native speaker”, suggesting that interlanguages have been of less importance in linguistics. Many researchers (see for instance Saniei 2011) connect this norm with Chomsky (1965: 3) saying, “linguistic theory is concerned with an ideal speaker-listener in a completely homogeneous speech community, who knows its language perfectly and is unaffected by such grammatically irrelevant conditions as memory limitations, distractions, shifts of attention and interest, and errors (random or characteristic) in applying his knowledge of the language in actual performance.” This quote has often been taken to mean that researchers should only study idealised L1 speakers. At the time of Chomsky’s statement, the field of study was so new that investigating idealisations was complicated enough. As the field developed and insights and methodological developments accumulated, researchers started to go beyond the ideal speaker–listener. SLA research is a good example: for decades now, investigations have described and explained variation in the interlanguage of language learners (see for instance Corder 1967; Selinker 1972), i.e. the grammars of “non-ideal” language learners have also been studied. However, many SLA studies still use L1 native speakers as a baseline for L2 learners/speakers and take L1 monolingual speakers as “the golden standard” (Amaral \& Roeper 2014: 29). 
+\end{styleStandard}
+
+\begin{styleStandard}
+Using L1 monolinguals as the standard for L2 learners has been contested as it raises a number of issues (pointed out by Cook \& Newson 2007; Amaral \& Roeper 2014; Slabakova 2016; The Douglas Fir Group 2016; Ortega 2019). Idealisations can be useful when a research field is so new that there are too many unknown factors and no established methodology; a more streamlined approach is needed to gain the first insights. However, idealisations are always problematic as they are not accurate depictions of reality. Some of the issues when working with idealisations relate to ontological status, others to theoretical approaches, (unconscious) attitudes, and methodological issues, especially how we handle data. In what follows, we will describe the issues most relevant to our study and draw explicit connections to the Norwegian language context. 
+\end{styleStandard}
+
+\begin{styleStandard}
+First, we may ask who are the monolingual L1 speakers? This is an empirical question. In today’s globalised society, L1 speakers are often not monolingual. Cook \& Newson (2007: 6), for instance, ask if “the issue is really whether it is proper to set universal bilingualism to one side in linguists’ descriptions of competence or whether it should in effect form the basis of the description from the beginning”; the norm should rather be an L1 bilingual speaker than an L1 monolingual.
+\end{styleStandard}
+
+\begin{styleStandard}
+Further, \textit{what is an L1}? It often seems as if an L1, at least on a societal level, only consists of \textit{one grammar }and is unchanging and stable. However, this is an idealisation and a simplification; in reality, all languages will have some amount of dialectal variation. Furthermore, often ‘L1 grammar’ seems to be considered as equivalent to a standardised norm when used as a baseline for L2 acquisition. Given all this, an idealised L1 grammar is insufficient to have as the regular starting point for a scientific approach: many L2 learners worldwide receive input from varieties other than the standard language. Also, using a language in different contexts often includes using different registers. Seen this way, speakers can have \textit{parallel grammars} (cf. Eide \& Sollid 2011), which differ from other individuals’ grammars (still speaking the same variety). In addition, a language is in continual change both in the individual and across individuals, which may cause synchronic variation and generational variation to exist at the same time. Several studies indicate that cross-linguistic influence may affect the L1 (see for instance Cook \& Newson 2007), so the typical idealisation needs to be questioned considering this as well. When considering cross-linguistic influence effects on the L1, the typical idealisation needs to be questioned, as it highlights that the L1 is not one fixed grammar, but varies synchronically and is changeable over time both across and within individuals. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Working with an L1 idealisation may also harm research on \textit{L1 acquisition}: Child L1 acquisition is characterised by variation that differ from the grammar of adult L1 speakers. We may call this \textit{L1 interlanguage variation}. If an L1 child meets dialectal variation that is homophonic to L1 interlanguage in the input, this may be wrongly analysed as developmental variation in a child learning the language and not as dialect variation. On a more ideological level, in light of the critique of idealisations, one could ask if not L1 interlanguage variation also should be classified as L1 variation at the same level as dialect variation. Even if the child’s L1 interlanguage grammar is different from that of an adult L1 speaker and undergoing rapid development, it is still an L1 grammar just as much as the adult’s L1 grammars are. It is the children’s L1. 
+\end{styleStandard}
+
+\begin{styleStandard}
+To sum up, the concept of L1 is clearly not straightforward, and, in many respects, perhaps not appropriate as a baseline for L2 acquisition – unless all relevant L1 variation is taken into account.\footnote{\textrm{ This then again raises the questions: What is relevant input and when is input not relevant, if it were to be not relevant at any points? We do not address this any further, but the questions highlight the complexity of the topic of input and baseline. }} The existence of L1 variation – be it language change, dialectal variation, social registers or something else – raises the following questions: What grammar do L2 learners actually acquire? And how do we handle variation in the input methodologically? Our main methodological question in the present study concerns decisions on what can be considered targetlike when there is potentially extensive variation in L2 learners’ input.
+\end{styleStandard}
+
+\section[2.3 TL variation in SLA]{\textbf{2.3 TL variation in SLA}}
+\begin{styleStandard}
+TL variation in L2 acquisition is not a widely covered topic. However, there is a growing body of research on variation in American English (e.g., Eisenstein 1986), Spanish (e.g., Gudmestad 2012), Cypriote and Standard Greek (Leivada et al. 2017), and Norwegian (Rodina \& Westergaard 2015b). Much of the research focuses on acquisition of sociolinguistic variation. Some studies examine L2 learners’ exposure to linguistic variation in the input (including but not limited to sociolinguistic variation), how this is constrained by internal and external factors, and whether learners acquire this variation. Others investigate how L2 learners acquire specific dialectal features. Such work underscores that acquiring a TL means acquiring variation and demonstrates that it may be hard to idealise what an L1 is. What is less studied is how L2 learners navigate in language environments where they may come in contact with extensive – and potentially conflicting – input from a different variety than the one they may primarily be thought to acquire. To our knowledge, few studies contextualise how this kind of TL variation poses methodological challenges, with ‘isomorphic cruxes’ where interlanguage variation is homophonic with TL variation (but see Emilsen (in preparation) and short comments as in Cornips (2018: 17)). In this section, we focus on Norwegian and show that this aspect is ignored in the research literature, in language learner corpora for research, and in textbooks for teachers.
+\end{styleStandard}
+
+\begin{styleStandard}
+In 2.1, we described the Norwegian language context with its linguistic variation and the high status of dialects. Due to this situation, a language learner of Norwegian in Norway may, and is likely to, get input from a) the local dialect, b) dialects from other parts of the country, c) the (unofficial) standard Eastern Norwegian d) two different written standards (Bokmål and Nynorsk), e) multi-ethnolects, and f) L2 Norwegian variation from other L2 learners of Norwegian. Still, in acquisition research from the Norwegian language community, we find a range of examples of Norwegian being treated as one uniform variety, disregarding the variation in the input. For instance, Glahn et al. (2001) study agreement in nominal phrases and the placement of negation in subordinate clauses in adult L2 acquisition of Norwegian, Swedish and Danish. They use elicitation tasks to find out if the participants follow a specific acquisition trajectory of the tested features. One major issue with this study is that they appear to take for granted that learners of all Scandinavian varieties can be compared; little consideration is given to variation within the languages. In so doing, they also imply that the input the different language users have access to is comparable. We argue that comparing language learners without considering different dialect backgrounds is problematic. For example, placement of negation can vary in both subordinate and main clauses in Norwegian dialects (see Bentzen 2007), and apocope can lead to invisible agreement marking (see section 3.1). This should be highly relevant variation for Glahn et al., but they barely mention it. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Similarly, Ragnhildstveit (2017) claims there is a strong correlation between assigned gender and declension of nouns in Norwegian, but relates this only to written norms. This is problematic, as the learners may also have oral input, and the oral input may – and likely does – diverge from the written systems. There is no discussion of the fact that the L2 learners in her study may have much oral input diverging from the written systems described. She does, however, describe both written standards of Norwegian – Bokmål and Nynorsk – thus acknowledging some variation in Norwegian. The lack of discussion of the variation between oral and written language in Ragnhildstveit’s (2017) study, is especially problematic since several recent studies have attested an ongoing change in some Norwegian dialects (including the dialects in and around Oslo), where the three-gender system is reduced to a two-gender system (see Lødrup 2011; Rodina \& Westergaard 2015a; Busterud et al. 2019) and where the definite suffixes are affected differently. As pointed out by Emilsen (in preparation, in several dialects there is now a clear discrepancy between the definite singular suffix and gender agreement, and different systems co-exist, resulting in a weakening of the link between gender and suffix. This means that the gender agreement/definite suffix system is less transparent, making it less evident what system language learners acquire. For instance, if L2 learners of Norwegian produce a two-gender system, is that due to a two-gender system in the input or is it interlanguage variation?
+\end{styleStandard}
+
+\begin{styleStandard}
+We also find a lack of acknowledgement and discussion of variation in Norwegian in the extensive \textit{ASK corpus} developed at the University of Bergen (\textit{Norsk AndreSpråksKorpus, }‘Norwegian second language corpus’). \textit{ASK} consists of data collected from written exams by adult L2 learners, testing their competence in Norwegian. These exams are annotated with the learners’ L1 and general linguistic background, other personal data, level on the test-exam, and \textit{feilanalyser,} ‘error analyses’. The corpus is searchable for a variety of linguistic features, both in the students’ original submissions and in the ‘correct-marked’ corpus. On the corpus website, the guidelines for error-annotation include some important methodological considerations, but looking through the listed error examples, it still seems as if potential (written) language variation is ignored, for instance in the placement of negation. Searches in the written language corpus \textit{Leksikografisk bokmålskorpus} (Knudsen \& Fjeld 2013) show that several of the ‘errors’ identified for L2 texts are common in L1 text production. \ 
+\end{styleStandard}
+
+\begin{styleStandard}
+If we turn to the pedagogical literature for teachers, we find that, in a number of cases, Norwegian is treated as a uniform variety. Heide (2017) points out that L2 textbooks mostly describe typical pronunciation of the written standard Bokmål and only mention dialectal variation briefly, while the research literature most often excludes it completely. Husby (2009) describes a situation where the usual language of instruction for adult L2 teachers of Norwegian is a “Bokmål-influenced spoken language with some dialectal variation” (Husby 2009, our translation). Husby says this is problematic because such a variety rarely exists outside the classroom. He further explains that L2 children and L2 adults can have different primary sources of input: Children often have more access to local (and other) dialects through their peers in kindergartens and schools, while adults often primarily encounter Norwegian through Norwegian courses for adults. Here different dialects are much less present, superseded by the ‘Bokmål-influenced’ speech. It is also not unusual for minority language families to speak the majority language at home (e.g., Berggreen \& Latomaa 1994; Kulbrandstad 1997; Mancilla-Martinez \& Kieffer 2010; Karlsen \& Lykkenborg 2012; Fulland 2016). This entails that family members will be part of the (L2) input of other family members – at the same time as each family member may have diverging input from L1 Norwegian sources. This again makes it hard to pinpoint what grammatical system we could expect the learners to acquire, i.e. what an adequate baseline would be.
+\end{styleStandard}
+
+\begin{styleStandard}
+The teacher textbook \textit{God nok i norsk?} (‘Good enough in Norwegian?’) (Berggreen et al. 2012) is one example that shows how common it is to treat Norwegian as one variety when analysing the L2 learner’s acquisition process. This book has L2 writing\textit{ }as the main subject and relies mostly on the authors’ research on L2 students’ texts, but the book still has many generalizing quotes about Norwegian grammar, such as this one:
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ “In Norwegian, subordinate words in the noun phrases, such as determinatives and 
+\end{styleStandard}
+
+\begin{styleStandard}
+adjectives, must adjust to the noun. [...] The adjective shall indicate whether the noun 
+\end{styleStandard}
+
+\begin{styleStandard}
+it belongs to is singular or plural, definite or indefinite, neutral or common-gender.” 
+\end{styleStandard}
+
+\begin{styleStandard}
+(Berggreen et al. 2012: 80, our translation; see 3.1 for details on the grammatical features)
+\end{styleStandard}
+
+\begin{styleStandard}
+Statements like this appear to discuss the Norwegian language in general, not only written standards, thus failing to acknowledge the variation in the input that L2 learners may have been exposed to. In combination with the findings from Heide (2017) and Husby (2009) this strengthens our assumption that both researchers and teachers may be unconscious about dialectal variation in the L2 learners’ input.
+\end{styleStandard}
+
+\section[3. Interlanguage variation or targetlike (dialect) variation ]{\textbf{3. Interlanguage variation or targetlike (dialect) variation }}
+\begin{styleStandard}
+So far, we have claimed that dialectal variation in the TL may lead to challenges in the interpretation of L2 data. More specifically, we claimed that interlanguage variation may coincide with TL variation, making it difficult to distinguish between the two. In this section, we present data and analyses supporting this statement, by comparing empirical descriptions from a range of L2 studies with authentic spontaneous speech data from the L1 corpus \textit{The Nordic Dialect Corpus} (NDC)\textit{ }(Johannessen et al. 2009). 
+\end{styleStandard}
+
+\begin{styleStandard}
+First, we review some relevant features of the Norwegian nominal phrase, i.e. how it is described in the literature and in descriptive reference grammars. These descriptions are heavily influenced by the written standards. Then, we present an overview of SLA literature on L2 acquisition of the relevant linguistic features, focusing on nontargetlike variation. This is followed by a description of certain dialect phenomena that may cause the realisation of the relevant features in Norwegian dialects to be homophonic with the described interlanguage variation (i.e. ‘isomorphic cruxes’, as mentioned in 2.1). The description of the phenomena is accompanied by authentic spontaneous speech data from different Norwegian dialects. After this investigation of the nominal phrase in (3.1), we do the same for finiteness and V2 constructions in (3.2).
+\end{styleStandard}
+
+\section[3.1 Morphology in the noun phrase]{\textbf{3.1 Morphology in the noun phrase}}
+\section[3.1.1 Typical description of the Norwegian nominal phrase]{\textbf{\textit{3.1.1 Typical description of}}\textbf{ }\textbf{\textit{the Norwegian nominal phrase}}}
+\begin{styleStandard}
+Norwegian noun phrases are often described as being inflected for definiteness and number, as in \textit{The Norwegian Reference Grammar} (Faarlund et al. 1997). Some also say that nouns are inflected for gender since the definite singular suffix often correlates with the gender of the noun (e.g., Johannessen \& Larsson 2015). According to \textit{The Norwegian Reference Grammar}, adjectives and determiners agree with the noun in gender, number and definiteness. When an attributive adjective is present, a prenominal determiner is often obligatory, and definite contexts with attributive adjectives give rise to the construction often labelled as double definiteness or compositional definiteness (Julien 2005; Baal 2018); there is both a definite suffix on the noun and a definite determiner present. Table 1 shows a typical paradigm for Norwegian noun phrases with attributive adjectives.
+\end{styleStandard}
+
+\section[Table 1: A typical paradigm for Norwegian nouns modified with an attributive adjective]{\textbf{\textup{Table \stepcounter{Table}{\theTable}: A typical paradigm for Norwegian nouns modified with an attributive adjective}}}
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.34905985in}m{2.7663598in}m{3.38376in}}
+ &
+\textbf{Indefinite singular} &
+\textbf{Definite singular}\\\hline
+\textbf{Masc.}
+
+(sg.) &
+\textbf{\textit{en}}\textit{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ stor \ \ \ \ bil}
+
+MASC.INDEF.SING. big-Ø car
+
+‘a big car’ &
+\textbf{\textit{den}}\textit{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ stor-}\textbf{\textit{e}}\textit{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bil-}\textbf{\textit{en}}
+
+MASC.DEF.SING. big-DEF.SING. car-MASC.DEF.SING.
+
+‘the big car’\\\hline
+\textbf{Fem.}
+
+(sg.) &
+\textbf{\textit{ei }}\textit{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ stor \ \ \ \ dukke}
+
+FEM.INDEF.SING. big-Ø doll
+
+‘a big doll’ &
+\textbf{\textit{den}}\textit{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ stor-}\textbf{\textit{e}}\textit{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dukk}\textbf{\textit{{}-a}}
+
+FEM.DEF.SING. big-DEF.SING. doll-FEM.DEF.SING. 
+
+‘the big doll’\\\hline
+\textbf{Neut.}
+
+(sg.) &
+\textbf{\textit{et}}\textit{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ stor-}\textbf{\textit{t }}\textit{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ hus}
+
+NEUT.INDEF.SING. big-NEUT.INDEF.SING. house
+
+‘a big house’ &
+\textbf{\textit{det}}\textit{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ stor-}\textbf{\textit{e}}\textit{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ hu}\textbf{\textit{s-et}}
+
+NEUT.DEF.SING. big-DEF.SING. house-NEUT.DEF.SING.
+
+‘the big house’\\\hline
+\textbf{Masc.}
+
+(pl.) &
+\textit{stor-}\textbf{\textit{e}}\textit{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bil-}\textbf{\textit{er}}
+
+big-INDEF.PL. car-INDEF.PL.
+
+‘big cars’ &
+\textbf{\textit{de}}\textit{ \ \ \ \ \ \ \ \ \ \ stor-}\textbf{\textit{e}}\textit{ \ \ \ \ \ \ \ \ \ \ \ bil}\textbf{\textit{{}-ene}}
+
+DEF.PL. big-DEF.PL. car-DEF.PL.
+
+‘the big cars’\\\hline
+\textbf{Fem.}
+
+(pl.) &
+\textit{stor}\textbf{\textit{{}-e}}\textit{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dukk}\textbf{\textit{{}-er}}
+
+big-INDEF.PL. doll-INDEF.PL.
+
+‘big dolls’ &
+\textbf{\textit{de}}\textit{ \ \ \ \ \ \ \ \ \ \ \ stor}\textbf{\textit{{}-e}}\textit{ \ \ \ \ \ \ \ \ \ \ dukk}\textbf{\textit{{}-ene}}
+
+DEF.PL. big-DEF.PL. doll-DEF.PL.
+
+’the big dolls’\\\hline
+\textbf{Neut.}
+
+(pl.) &
+\textit{stor}\textbf{\textit{{}-e}}\textit{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ hus}
+
+big-INDEF.PL. house-Ø
+
+‘big houses’ &
+\textbf{\textit{de}}\textit{ \ \ \ \ \ \ \ \ \ \ stor}\textbf{\textit{{}-e}}\textit{ \ \ \ \ \ \ \ \ \ \ \ hus}\textbf{\textit{{}-ene}}
+
+DEF.PL. big-DEF.PL. house-DEF.PL.
+
+‘the big houses’\\\hline
+\end{supertabular}
+\end{flushleft}
+\section[3.1.2 Nominal morphology in SLA]{\textbf{\textit{3.1.2 Nominal morphology in SLA}}}
+\begin{styleStandard}
+Acquisition and use of nominal morphology in L2 has been extensively investigated across languages: Garavito \& White (2002) for L2 Spanish, Hawkins \& Franceschina (2004) for L2 Spanish and L2 French, Trenkic (2007) for L2 English, Glahn et al. (2001) for L2 ‘Mainland Scandinavian’, and Jin (2007), Jin et al. (2009), Anderssen \& Bentzen (2013), Rodina \& Westergaard (2013; 2015b), Emilsen \& Søfteland (2018), and Emilsen (2019; in preparation) for L2 Norwegian. All of these studies report nontargetlike variation at some point in the acquisition of L2 nominal morphology. A frequently observed pattern is omission of agreement or prenominal determiners in contexts where they are expected in the TL. Another frequent pattern is substitution of phonological forms: the overt marking is realised by a morphological form other than the one predicted in the TL. A third pattern, albeit rare, is the use of a morphological marking in contexts where it is not expected in the TL.
+\end{styleStandard}
+
+\begin{styleStandard}
+This brief overview shows that (nontargetlike) variation in the realisation of the nominal phrase is attested and predicted in L2 acquisition. However, Norwegian dialects vary greatly in the way nominal morphology is realised, and some of this variation is homophonic with variation predicted for interlanguage grammars, as we show in 3.1.3.
+\end{styleStandard}
+
+\section[3.1.3 Nominal morphology in Norwegian dialects]{\textbf{\textit{3.1.3 Nominal morphology in Norwegian dialects}}}
+\begin{styleStandard}
+Nominal morphology is subject to variation due to apocope in many Norwegian dialects. Apocope may be defined as the loss of unstressed word final vowels (e.g., Mæhlum \& Røyneland 2012: 76, 106). The examples show apocopation in authentic spontaneous speech data from South-Western Norwegian (\textit{Fusa}) in (3) and North-Western Norwegian (\textit{Aure}) in (4) (data from \textit{NDC, }phonetic transcription). As a consequence of apocope, the unstressed \textit{{}-e }on adjectives is missing, and the nominal phrases look, on the surface, as if they lacked agreement for plural (3) or definiteness (4).\footnote{\textrm{ This is marked in the glossing with an arrow pointing to how it would look if it were not apocopised, i.e. if the agreement was spelled out phonologically.}} 
+\end{styleStandard}
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.24205986in}m{1.1497599in}m{0.8316598in}m{1.4969599in}m{0.8948598in}m{0.52265984in}}
+(3) &
+veldi &
+\textbf{go} &
+vænna &
+${\Rightarrow}$ \textit{go-e} &
+\\
+ &
+very &
+good.\textbf{Ø} &
+friend.PL &
+good.\textbf{PL}. &
+\\
+ &
+\multicolumn{3}{m{3.63586in}}{‘very good friends’} &
+‘good’ &
+\\
+(4) &
+n &
+\textbf{ræu} &
+rinngen &
+${\Rightarrow}$ \textit{ræu-e} &
+\\
+ &
+DEF.SG.COM &
+red.\textbf{Ø} &
+ring.DEF.SG.MASC &
+red.\textbf{DEF}. &
+\\
+ &
+\multicolumn{3}{m{3.63586in}}{‘this red ring’} &
+‘red’ &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{styleNormalWeb}
+Apocope is an established dialect feature in Norwegian, the core geographical area for it being the northern and middle part of Norway (cf. Mæhlum \& Røyneland 2012: 76). Apocope is also frequent in fast spontaneous speech across all spoken varieties in typically unstressed words or contexts. Apocope is, in other words, rather widespread. That increases the likelihood of L2 learners (and L1 learners) receiving (extensive) input where the nominal phrase may be considered targetlike even though overt agreement marking is not present. As previously mentioned, this kind of morpho-phonological realisation of the nominal phrase is also found in L2 interlanguage variation, creating a potential ambiguity – an isomorphic crux – between interlanguage variation and dialectal, targetlike variation when coding and interpreting L2 data. \ 
+\end{styleNormalWeb}
+
+\begin{styleNormalWeb}
+A second challenge is caused by what on the surface may look like substitution in the prenominal determiner: the prenominal determiner /de/\textit{ (det, }‘the’) associated with singular definite neuter, is substituted for the masculine/feminine form /den/ (\textit{den }‘the’) and the plural form /di/ (\textit{de }‘the’), as seen in (5) (Mid-Norwegian dialect, Eide et al. 2017: 46) and (6) (Northern Norwegian dialect, Sollid 2014). This leads to phrases that look like they are violating the agreement criteria often found in typical descriptions of Norwegian. If an L2 speaker produced phrases like (5–6) it is likely that the definite article \textit{de }would be analysed as a neuter singular form and not as a masculine (5) or plural (6) form.\footnote{\textrm{ We mark this by glossing the definite article in these phrases as “NEUT” and “SG” with quotation marks even if they are masculine or plural forms in the dialect data. The arrows point to what the form would look like if it was spelled out with unambiguous masculine or plural agreement.}}
+\end{styleNormalWeb}
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.24065986in}m{1.3733599in}m{1.0038599in}m{2.0879598in}m{1.1025599in}}
+(5) &
+\textbf{de} &
+grønn-e &
+pærme-\textbf{n} &
+${\Rightarrow}$ \textit{den}\\
+ &
+DEF.”SG.\textbf{NEUT}.” &
+green.DEF.SG. &
+portfolio.DEF.SG.\textbf{MASC}. &
+DEF.SG.MASC.\\
+ &
+\multicolumn{3}{m{4.6226597in}}{‘the green portfolio’} &
+\\
+(6) &
+\textbf{de} &
+her &
+flertallord-an &
+${\Rightarrow}$ \textit{di}\\
+ &
+DEF.”\textbf{SG}.NEUT.” &
+here &
+pluralword.\textbf{PL}.DEF. &
+DEF.PL.\\
+ &
+\multicolumn{3}{m{4.6226597in}}{‘these plural words’} &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{styleStandard}
+This kind of agreement may however be targetlike, as it is attested in certain Norwegian dialects, at least \textit{Fosen} (Middle Norwegian, (5)) and \textit{Reisadalen} (Northern Norwegian, (6)), as the examples show.
+\end{styleStandard}
+
+\begin{styleStandard}
+A third challenge related to nominal morphology is the loss of final /r/ in certain frequent word types, such as indefinite plural nouns and present tense verbs. This is often labelled \textit{r-bortfall }‘r-loss’, and is common in many dialects (cf. Mæhlum \& Røyneland 2012: 53). R-loss may cause nouns to look as if they lack plural declension, as in (7) (\textit{Herøy}, North-Western Norwegian) and (8) (\textit{Evje}, South-Norwegian) (data from \textit{NDC, }phonetic transcription).\footnote{\textrm{ The arrow points to what the forms would look like if there were no r-loss, i.e. if the plural marking was spelled out phonologically. The written standard forms would be }\textrm{\textit{jente}}\textrm{/}\textrm{\textit{perle}}\textrm{ (INDEF.SG) and }\textrm{\textit{jenter}}\textrm{/}\textrm{\textit{perler}}\textrm{ (INDEF.PL).}} 
+\end{styleStandard}
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.24205986in}m{0.32755986in}m{0.37545985in}m{0.42055985in}m{0.6094598in}m{1.3948599in}m{1.1323599in}m{0.18305984in}}
+(7) &
+e &
+lika &
+gått &
+\textbf{jænnte } &
+i bikini &
+${\Rightarrow}$ \textit{jænnte-r} &
+\\
+ &
+I &
+like &
+well &
+girls.\textbf{Ø} &
+in bikini &
+girls.\textbf{PL}. &
+\\
+ &
+\multicolumn{5}{m{3.4428596in}}{‘I like girls in bikini very much’} &
+ &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.24205986in}m{0.46295986in}m{0.5358598in}m{0.51155984in}m{1.6934599in}m{1.1025599in}m{0.21565986in}}
+(8) &
+dæi &
+va &
+som &
+\textbf{pærrle} &
+${\Rightarrow}$ \textit{pærrle-r} &
+\\
+ &
+they &
+were &
+like &
+perls.\textbf{Ø} &
+perls.\textbf{PL}. &
+\\
+ &
+\multicolumn{3}{m{1.66786in}}{‘They were like pearls’} &
+ &
+ &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{styleStandard}
+Omission of declension is a common feature of L2 interlanguage at some point during acquisition (e.g. White 2003; Trenkic 2007; 2009; Goad and White 2009; Emilsen \& Søfteland 2018; Emilsen 2019), making it potentially hard to differentiate between the two: If an L2 learner produces an utterance such as (7) or (8), is it targetlike or is it interlanguage variation?
+\end{styleStandard}
+
+\section[3.2 Finiteness and V2]{\textbf{3.2 Finiteness and V2}}
+\section[3.2.1 Typical description of finiteness and V2 in Norwegian]{\textbf{\textit{3.2.1 Typical description of finiteness and V2 in Norwegian}}}
+\begin{styleStandard}
+Norwegian is often described as a V2-language: every main clause needs a subject and a finite verb, where the finite verb is in second position in declarative sentences (see \textit{The Norwegian Reference Grammar}). In sentences with topicalisation (of phrases other than the subject), the verb and subject \textit{invert}, i.e. the verb moves in front of the subject, as in (9b):
+\end{styleStandard}
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.30595985in}m{0.93445987in}m{0.7025598in}m{0.7976598in}}
+(9a) &
+\textbf{S} &
+\textbf{V} &
+\textbf{ADV}\\
+ &
+Linda &
+danser &
+hver kveld\\
+ &
+Linda &
+dances &
+every night\\
+ &
+\multicolumn{3}{m{2.59216in}}{‘Linda dances every night.’}\\
+\end{supertabular}
+\end{flushleft}
+\begin{styleStandard}
+
+\end{styleStandard}
+
+\begin{center}
+\begin{minipage}{3.0563in}
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.31365985in}m{0.9316599in}m{0.70115983in}m{0.7941598in}}
+(9b) &
+\textbf{ADV} &
+\textbf{V} &
+\textbf{S}\\
+ &
+Hver kveld &
+danser &
+Linda\\
+ &
+Every night &
+dances &
+Linda\\
+ &
+\multicolumn{3}{m{2.58446in}}{‘Every night Linda dances.’}\\
+\end{supertabular}
+\end{flushleft}
+\end{minipage}
+\end{center}
+\begin{styleStandard}
+A paradigm of Norwegian verb tenses is given in (10), based on descriptions from descriptive grammars. Especially important in our case is that present tense is regarded as finite and that -\textit{er} is a frequent present tense suffix\textit{. }\ 
+\end{styleStandard}
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.31505984in}m{0.90525985in}m{0.9205598in}m{0.9893598in}m{0.9761599in}m{0.11225984in}m{0.44695982in}}
+(10) &
+\textbf{Infinitive} &
+\textbf{Present} &
+\textbf{Preterit} &
+\textbf{Perfect} &
+ &
+\\
+ &
+kjør-e &
+kjør-\textbf{er} &
+kjør-te &
+kjør-t &
+ &
+\\
+ &
+drive.INF &
+drive.PRES &
+drove.PRET &
+driven.PERF &
+ &
+\\
+ &
+dans-e &
+dans-\textbf{er} &
+dans-a/-et &
+dans-a/-et &
+ &
+\\
+ &
+dance.INF &
+dance.PRES &
+danced.PRET &
+danced.PERF &
+ &
+\\
+\end{supertabular}
+\end{flushleft}
+\section[3.2.2 V2 and finiteness in SLA]{\textbf{\textit{3.2.2 V2 and finiteness in SLA}}}
+\begin{styleStandard}
+It is well-attested that both finiteness and V2 may pose challenges for L2 learners: e.g., Prévost \& White (2000) for L2 French and German, and Hagen (2001; 2005), Mosfjeld (2017) and Gujord et al. (2018) for L2 Norwegian. L2 acquisition is often characterised by a period of nontargetlike finiteness marking either because of substitution of morphological marking or because of omission of marking and overuse of the infinitival form. Adult L2 learners of V2 languages are found to lack inversion of the verb and subject in contexts where this may be expected, giving raise to V3 word order, e.g., Bohnacker (2010) on L2 Swedish, Bohnacker (2006) on L2 German, and Mosfjeld (2017) on L2 Norwegian. 
+\end{styleStandard}
+
+\begin{styleStandard}
+However, as shown for the nominal phrases, V2 and finiteness are not uniform features across all spoken varieties of Norwegian, which poses a challenge for interpreting language learner data. 
+\end{styleStandard}
+
+\section[3.2.3 Finiteness in Norwegian spoken varieties]{\textbf{\textit{3.2.3 Finiteness in Norwegian spoken varieties}}}
+\begin{styleStandard}
+As noted above, present tense is regarded as finite, and \textit{{}-er }is a frequent present tense suffix. However, the aforementioned loss of /\textit{r/ }in final position in Norwegian also impacts verb morphology, often making infinitive and present tense homophonic in productive inflectional classes. Two of many examples from \textit{NDC} are shown in (11) (\textit{Volda}, North-Western Norwegian) and (12) (\textit{Ballangen}, Northern-Norwegian). In dialects where r-loss is attested, non-overt finiteness marking like this is targetlike.\footnote{\textrm{ The arrow points to what the forms would look like if there were no r-loss, i.e. if the present tense marking was spelled out. The written Bokmål forms would be }\textrm{\textit{kjøpe}}\textrm{/}\textrm{\textit{digge}}\textrm{ (INF.) and }\textrm{\textit{kjøper}}\textrm{/}\textrm{\textit{digger}}\textrm{ (PRES.).}}
+\end{styleStandard}
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.31435984in}m{0.65665984in}m{0.5976598in}m{0.34485984in}m{0.5150598in}m{0.7552598in}m{0.7059598in}m{1.5830599in}}
+(11) &
+møtje &
+fållk &
+så  &
+\textbf{tjøpe} &
+fisskekort &
+dær &
+${\Rightarrow}$ \textit{tjøpe-r}\\
+ &
+much &
+people &
+who &
+buy.\textbf{Ø} &
+fish-cards &
+there &
+buy.\textbf{PRS}\\
+ &
+\multicolumn{6}{m{3.9691596in}}{‘(There are) much people who buy fishing licences there.’} &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.31435984in}m{0.41365984in}m{0.8073598in}m{2.5788598in}m{0.8913598in}}
+(12) &
+æ &
+\textbf{digge} &
+tran &
+${\Rightarrow}$ \textit{digge-r}\\
+ &
+I &
+love.\textbf{Ø} &
+cod liver oil &
+love.\textbf{PRS}\\
+ &
+\multicolumn{3}{m{3.9573598in}}{‘I love cod liver oil.’} &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{styleStandard}
+Apocope also affects verbs, and in many dialects both the infinitive suffix and the present tense suffix are apocopated, making these forms homonymous, as in (13) and (14) (\textit{Mo i Rana}, Northern-Norwegian, examples from \textit{NDC}).
+\end{styleStandard}
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.31505984in}m{0.70805985in}m{0.51225984in}m{0.51155984in}m{0.51225984in}m{0.90525985in}m{1.0045599in}m{0.11705985in}}
+(13) &
+næi &
+de &
+\textbf{spis} &
+e &
+ikke &
+${\Rightarrow}$ \textit{spis-er} &
+\\
+ &
+no &
+that &
+eat-\textbf{Ø} &
+I &
+not &
+eat.\textbf{PRS} &
+\\
+ &
+\multicolumn{3}{m{1.88936in}}{‘No, I don’t eat that’.} &
+ &
+ &
+ &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.31435984in}m{0.41365984in}m{0.51225984in}m{0.31505984in}m{0.41365984in}m{0.31435984in}m{1.1025599in}m{0.7268598in}}
+(14) &
+de &
+bruk &
+e &
+ikke &
+å &
+\textbf{spis} &
+${\Rightarrow}$ \textit{spis-e}\\
+ &
+that &
+use &
+I &
+not &
+to &
+eat-\textbf{Ø} &
+eat.\textbf{INF}\\
+ &
+\multicolumn{5}{m{2.2839599in}}{‘I usually don’t eat that.’} &
+ &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{styleStandard}
+There are quite a few dialects with no overt distinction between the infinitival form and the finite present tense: either both end in an unstressed \textit{{}-e }(or \textit{{}-a}) or they only consist of the stem of the verb due to apocope. Since these features are common, it is likely that L2 learners of Norwegian encounter them in the input. 
+\end{styleStandard}
+
+\section[3.2.4 V3 in Norwegian spoken varieties]{\textbf{\textit{3.2.4 V3 in Norwegian spoken varieties}}}
+\begin{styleStandard}
+V2 is often presented as a consistent rule in general descriptions of the Norwegian grammar, but variation related to the V2-rule is widely discussed in recent literature on dialect syntax. Westergaard (2008) shows that word order varies in wh-questions, depending on the length of the wh-element and different information structural aspects. A national data collection of grammaticality judgments of syntactic spoken language variables, \textit{Nordic Syntactic Judgment Database }(Lindstad et al. 2009), also documents non-V2 in wh-questions in large parts of the country (e.g., Vangsnes \& Westergaard 2014). Furthermore, lack of inversion is a grammatical feature of the Oslo multi-ethnolect (cf. Svendsen \& Røyneland 2008; Opsahl \& Nistov 2010), making many declarative sentences V3 (examples 15 and 16 from Opsahl \& Nistov 2010):
+\end{styleStandard}
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.31365985in}m{1.1393598in}m{0.82335985in}m{1.3406599in}m{1.0219599in}m{1.3816599in}}
+(15) &
+egentlig &
+alle &
+kan &
+bidra &
+\\
+ &
+actually &
+everyone &
+can &
+contribute &
+\\
+ &
+\multicolumn{3}{m{3.4608598in}}{‘Everyone can actually contribute.’} &
+ &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.31365985in}m{1.9900599in}m{0.6101598in}m{0.76365983in}m{1.0011599in}m{1.3420599in}}
+(16) &
+hvis noen står og breaker &
+alle &
+stopper &
+opp &
+\\
+ &
+if some stands and breaks &
+all &
+stop  &
+up &
+\\
+ &
+\multicolumn{3}{m{3.52136in}}{‘I someone is breakdancing, everyone stops.’} &
+ &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{styleStandard}
+Opsahl \& Nistov (2010) show that lack of inversion is a signature of multi-ethnolectal style among adolescents in Oslo, but the use varies both inter- and intra-individually and there are sociolinguistic limitations on the variation between XVS (inversion) and XSV (non-inversion). They also point out that lack of inversion is more frequent after certain adverbials, such as \textit{uansett} and \textit{egentlig}. Later research on the same and similar data also finds pragmatic limitations for the use (see Freywald et al. (2015) for a comparative study of this in Norwegian and other North-Germanic languages).
+\end{styleStandard}
+
+\begin{styleStandard}
+Svendsen \& Røyneland (2008) also discuss lack of inversion in the same language group. They add an important methodological detail: utterances with an Adverbial (X) right before Subject+Verb (SV) do not necessarily entail lack of inversion (XSV). If the initial adverbial has “a break after” (Svendsen \& Røyneland 2008: 75) in the pronunciation of the utterance, it should be interpreted as extraposed, not topicalised. The adverbial must then be considered external to the main clause, the Subject is still in first position and there is no lack of inversion. Without access to the sound recording, an example like (15) is ambiguous: V3 with \textit{egentlig} ‘actually’ analysed as a topicalized adverbial (and a regular main clause pronunciation pattern), or V2 with \textit{egentlig} analysed as an extraposed adverbial.
+\end{styleStandard}
+
+\begin{styleStandard}
+We studied relevant utterances in the \textit{NoTa-Oslo Corpus} (an Oslo dialect corpus, with audio and video), and found that there are gradual transitions between these two analyses. Listening to the prosody of each utterance – accent, stress, pauses – makes it possible to tease apart the interpretations for many examples. In some, like (17) and (18), it is still impossible to decide, meaning that for some Oslo adolescents, both analyses are possible: an interpretation of \textit{uansett} ‘anyway’ and\textit{ faktisk} ‘actually’ as extraposed adverbials, followed by V2 syntax (i), or an interpretation of the same adverbials as topicalised, with lack of inversion (ii), i.e. V3:
+\end{styleStandard}
+
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.34905985in}m{0.77335984in}m{0.31435984in}m{0.31505984in}m{0.51225984in}m{0.41365984in}m{0.6108598in}m{0.51155984in}m{1.1018599in}m{0.41365984in}}
+(17) &
+\textbf{uansett} &
+alt &
+er  &
+bedre &
+enn  &
+Norge &
+altså &
+ &
+\textbf{V3?}\\
+ &
+anyway &
+all &
+is &
+better &
+than &
+Norway &
+then &
+ &
+\\
+ &
+\multicolumn{8}{m{5.10416in}}{‘Anyway everything is better than Norway.’} &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.34905985in}m{0.6740598in}m{0.31505984in}m{0.41365984in}m{0.41435984in}m{0.41365984in}m{0.21635985in}m{0.51155984in}m{0.6108598in}m{0.90525985in}m{0.41225985in}}
+(18) &
+\textbf{faktisk} &
+jeg &
+har  &
+aldri &
+sett &
+en &
+hel &
+episode &
+av Glamour &
+\textbf{V3?}\\
+ &
+actually &
+I &
+have &
+never &
+seen &
+a &
+whole &
+episode &
+of Glamour &
+\\
+ &
+\multicolumn{8}{m{4.12076in}}{‘Actually I have never seen a whole episode of Glamour.’} &
+ &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.34835985in}m{0.6754598in}m{0.21705985in}m{0.31435984in}m{0.51155984in}m{0.41435984in}m{0.41365984in}m{1.1025599in}m{0.117759846in}m{0.51155984in}}
+(i) &
+(extrap.) &
+ &
+S &
+Vaux  &
+A &
+V &
+DO &
+ &
+\textbf{{\textgreater}V2}\\
+ &
+faktisk &
+(.) &
+Jeg &
+har &
+aldri &
+sett &
+en hel episode &
+ &
+\\
+ &
+[actually] &
+(.) &
+I &
+have &
+never &
+seen &
+a whole episode &
+ &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{flushleft}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{0.34905985in}m{0.6747598in}m{0.31505984in}m{0.51155984in}m{0.41365984in}m{0.41365984in}m{1.1025599in}m{0.39065984in}m{0.51155984in}}
+(ii) &
+A &
+S &
+Vaux  &
+A &
+V &
+DO &
+ &
+\textbf{{\textgreater}V3}\\
+ &
+faktisk &
+jeg &
+har &
+aldri &
+sett &
+en hel episode &
+ &
+\\
+ &
+actually &
+I &
+have &
+never &
+seen &
+a whole episode &
+ &
+\\
+\end{supertabular}
+\end{flushleft}
+\begin{styleStandard}
+In the corpus (\textit{NoTa-Oslo}), it looks like V2/V3 ambiguity can appear independently of the adolescents’ reported linguistic background (reported L1 or L2 parents), geographical background (East or West) and social background (parents’ education level). We do not know what kind of linguistic variation these speakers encountered in the input when they learned Norwegian, as L1 or L2, but multi-ethnolects appear to be widespread in urban areas such as Oslo, and minority-language speaking families also use L2 Norwegian at home (cf. 2.3). Thus, the likelihood of encountering lack of inversion in the input is high, at least in urban areas. 
+\end{styleStandard}
+
+\begin{styleStandard}
+In sum, the issue of V2 is multifaceted in Norwegian, with a potentially large amount of variation in the input of language learners. The placement of the verb depends on a number of conditions. In the acquisition process, language learners must navigate between marginal differences in information structure and word length/complexity to acquire targetlike verb placement. L1 children appear sensitive to these patterns from an early age (Westergaard 2008: 1854). Given the variation discussed in this section, we can conclude that V3 among adolescents in Oslo can have multiple sources. The variation and ambiguity in interpretation of utterances demonstrate the complexity of working with these syntactic phenomena in language learner data. 
+\end{styleStandard}
+
+\section[4. Conclusion]{\textbf{4. Conclusion}}
+\begin{styleStandard}
+In this chapter we described the highly varied language situation in Norway, where any language learner is likely to be exposed to different dialects and also different written norms of the same language. This means that the language learner has to navigate between potentially diverging linguistic systems in the input, which has substantial implications for how we interpret L2 data. Since the learner may be extracting grammatical information from different systems, it becomes less transparent what an adequate baseline is. This supports the criticism of the L1 monolingual idealisation that has prevailed in SLA. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Even though Norwegian is far from being one variety with one grammar, either within or between individuals, it often is treated as a single variety – in research literature on SLA, in an L2 corpus and in textbooks for (future) L2 teachers. This is a highly problematic approach to interpreting L2 data. We discussed several dialect phenomena – apocope, agreement variation, r-loss and lack of inversion/non-V2 – that can give rise to ambiguity when compared to descriptions of interlanguage variation in the SLA literature. We referred to Hårstad (2009) and his use of the term isomorphic crux to describe when, in sociolinguistic analyses of language change, it is impossible to determine where a linguistic form stems from. This is exactly what we see from our methodological point of view. If an L2 learner had uttered the examples in (3)–(8) and (11)–(16), we would not be able to determine if the morphological forms or syntactic features in use is dialectal or interlanguage variation. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Some SLA research considers that language learners may be acquiring a local dialect and/or investigates the acquisition of a specific local dialect; nevertheless, the potential influence from diverging dialectal systems is rarely thematised and discussed. Our study has shown that a range of constructions considered typical for L2 acquisition are homophonic with targetlike variation if the language learner is receiving input on it. Descriptions of \textit{only} the local dialect, or \textit{one} of the written standards, for example, would not be sufficient to determine whether a produced construction is targetlike or not, since the construction may have occurred in the learner’s input from other dialects, multi-ethnolects and/or written varieties. Our study also shows that it is imperative to strive for an updated description of the variety/varieties in question; relying solely on older descriptions of dialects and/or abstractions from the written systems is insufficient.
+\end{styleStandard}
+
+\begin{styleStandard}
+\ \ We have claimed that working with data from language situations characterised by extensive variation pose methodological challenges for the interpretation of data. The challenges we describe may be impossible to solve fully, but it is important that we acknowledge and take into consideration that there might be targetlike variation homophonic to interlanguage variation, and this then raises a need to know more about the input of the learners.
+\end{styleStandard}
+
+\begin{styleStandard}
+Some of these challenges are probably present to a certain degree for most SLA researchers. Even so, our study highlights the relevance of and need for detailed information about exposure to different varieties, both qualitative and quantitative. Some important considerations are a) how much input is needed to acquire a feature, i.e. when a feature can be expected to be acquired, and, hence, when different sources of input are necessary to include, b) when faced with diverging input, what determines which specific features the language learner acquires, and c) how factors such as saliency, frequency and transparency affect the process (see for instance Sun 2008). These considerations may shed more light upon the nuances in methodological challenges as those we describe in this chapter.
+\end{styleStandard}
+
+\begin{styleStandard}
+Another step on the way, focusing on the methodological considerations alone, is by sharing our data. We acknowledge, of course, that there may be ethical considerations concerning the public sharing of data, especially when children are involved, but open access/open data should be the general goal. This will not resolve the challenges we have described, but it will allow others to make their own judgements about the data and help bring transparency to the analytic choices we have made. As is clear from our chapter, we cannot offer any single, fixed solution to the challenges we have posed, but awareness is a first step. 
+\end{styleStandard}
+
+\begin{styleStandard}
+\textbf{References}
+\end{styleStandard}
+
+\begin{styleStandard}
+Amaral, Luiz \& Roeper, Tom. 2014. Multiple grammars and second language representation. \textit{Second}\textbf{ }\textit{Language Research }30(1). 3–36. \url{https://doi.org/10.1177/0267658313519017}
+\end{styleStandard}
+
+\begin{styleStandard}
+Anderssen, Merete \& Bentzen, Kristine. 2013. Cross{}-linguistic influence outside the syntax{}-pragmatics interface: A case study of the acquisition of definiteness.~\textit{Studia Linguistica~}67(1). 82–100.
+\end{styleStandard}
+
+\begin{styleStandard}
+Arntzen, Ragnar. 2012. Tospråklige barn fra barnehage til skole: Et prosjekt i språkstimulering og språkkartlegging av andrespråket 2008–2011. In Arntzen, Ragnar \& Duek, Susanne \& Hjelde, Arnstein (eds.), \textit{Flerspråklig oppvekst i barnehage, førskole og skole: Artikler av lærere og forskere i det nordiske nettverket TOBANO}, 27–74. Halden: Østfold University College.
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{ASK corpus}: \textit{ASK – Norsk andrespråkskorpus. }ASK web page: \url{http://clarino.uib.no/ask/ask}
+\end{styleStandard}
+
+\begin{styleStandard}
+Baal, Yvonne van. 2018. Compositional definiteness in heritage Norwegian: Production studied in a translation experiment. In Petersen, Jan H. \& Kühl, Karoline (eds.), \textit{Selected proceedings of the 8th workshop on immigrant languages in the Americas (WILA 8)}, 9–17. Somerville, MA: Cascadilla Proceedings Project.
+\end{styleStandard}
+
+\begin{styleStandard}
+Bentzen, Kristine. 2007. \textit{Order and structure in embedded clauses in Northern Norwegian}. Tromsø: University of Tromsø. (Doctoral dissertation)
+\end{styleStandard}
+
+\begin{styleStandard}
+Berggreen, Harald \& Latomaa, Sirkku. 1994. Språkbytte og språkbevaring blant vietnamesere i Bergen og Helsinki. In Boyd, Sally \& Holmen, Anne \& Jørgensen, J. Normann. (eds.), \textit{Sprogbrug og sprogvalg blandt indvandrere i Norden. Bind 1. }København: Danmarks Lærerhøjskole. (Københavnstudier i tosprogedhed)
+\end{styleStandard}
+
+\begin{styleStandard}
+Berggreen, Harald \& Sørland, Kjartan \& Alver, Vigdis R. 2012. \textit{God nok i norsk? Språk- og skriveutvikling hos elever med norsk som andrespråk}. Oslo: Cappelen Damm Akademisk.
+\end{styleStandard}
+
+\begin{styleStandard}
+Bley-Vroman, Robert. 1983. The comparative fallacy in interlanguage studies: The case of systematicity. \textit{Language Learning }33. 1–17.
+\end{styleStandard}
+
+\begin{styleStandard}
+Bohnacker, Ute. 2006. When Swedes begin to learn German: From V2 to V2. \textit{Second Language Research }22(4). 443–486.
+\end{styleStandard}
+
+\begin{styleStandard}
+Bohnacker, Ute. 2010. The clause-initial position in L2 Swedish declaratives: Word order variation and discourse pragmatics. \textit{Nordic Journal of Linguistics} 33(2). 105–143. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Busterud, Guro, Lohndal, Terje, Rodina, Yulia, Westergaard, Marit. 2019. The loss of feminine gender in Norwegian: A dialect comparison. \textit{The Journal of Comparative Germanic Linguistics }22, 141–167. https://doi.org/10.1007/s10828-019-09108-7
+\end{styleStandard}
+
+\begin{styleStandard}
+Chomsky, N. (1965). \textit{Aspects of the theory of syntax}. MIT press.
+\end{styleStandard}
+
+\begin{styleStandard}
+Cook, Vivian J. \& Newson, Mark. 2007. \textit{Chomsky’s universal grammar: An introduction}. Malden, MA: Blackwell Publishing.
+\end{styleStandard}
+
+\begin{styleStandard}
+Corder, Stephen P. 1967. The significance of learner errors. \textit{International Review of Applied Linguistics }5. 161–170. \url{https://doi.org/10.1515/iral.1967.5.1-4.161} 
+\end{styleStandard}
+
+\begin{styleStandard}
+Cornips, Leonie. 2018. Bilingual child acquisition through the lens of sociolinguistic approaches. In Miller, David \& Bayram, Fatih \& Rothman, Jason \& Serratrice, Ludovica (eds.), \textit{Bilingual cognition and language. The state of the science across its subfields}, 15–36. Amsterdam: John Benjamins.
+\end{styleStandard}
+
+\begin{styleStandard}
+The Douglas Fir Group. 2016. A transdisciplinary framework for SLA in a multilingual world. \textit{The Modern Language Journal }100. 19–47. doi:\href{https://doi.org/10.1111/modl.12301}{\textstyleInternetlink{10.1111/modl.12301}}
+\end{styleStandard}
+
+\begin{styleStandard}
+Eide, Kristin M. \& Sollid, Hilde. 2011. Norwegian main clause declaratives. Variation within and across grammars. \textit{Linguistic universals and language variation }231. 327–360.
+\end{styleStandard}
+
+\begin{styleStandard}
+Eide, Kristin M. \& Dalen, Arnold \& Jenstad, Tor Erik \& Stemshaug, Ola. 2017. \textit{Fosenmåla. }Trondheim: Museumsforlaget.
+\end{styleStandard}
+
+\begin{styleStandard}
+Eisenstein, Miriam R. 1986. Target language variation and second{}-language acquisition: Learning English in New York City. \textit{World Englishes }5. 31–46. doi:\href{https://doi.org/10.1111/j.1467-971X.1986.tb00638.x}{\textstyleInternetlink{10.1111/j.1467-71X.1986.tb00638.x}}
+\end{styleStandard}
+
+\begin{styleStandard}
+Emilsen, Linda E. 2019. Acquisition of nominal morphology in Norwegian L2: Trends and tendencies. In Arntzen, Ragnar \& Håkansson, Gisela \& Hjelde, Arnstein \& Keßler, Jörg-U. (eds.), \textit{Teachability and learnability across languages, }163–181\textit{.} Amsterdam: John Benjamins.
+\end{styleStandard}
+
+\begin{styleStandard}
+Emilsen, Linda E. \& Søfteland, Åshild. 2018. Andrespråksanalyse av barns spontantale. \textit{NOA Norsk som andrespråk }1-2/2018. 128–157.\textit{ }
+\end{styleStandard}
+
+\begin{styleStandard}
+Emilsen, Linda E. in preparation. Acquiring a moving target. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Faarlund, Jan T. \& Lie, Svein \& Vannebo, Kjell I. 1997. \textit{Norsk referansegrammatikk}. Oslo: Universitetsforlaget.
+\end{styleStandard}
+
+\begin{styleStandard}
+Freywald, Ulrikke \& Cornips, Leonie \& Ganuza, Natalia \& Nistov, Ingvild \& Opsahl, Toril. 2015. Beyond verb second: A matter of novel information-structure effects? Evidence from Norwegian, Swedish, German and Dutch. In Nortier, Jacomine \& Svendsen, Bente A. (eds.), \textit{Language, youth and identity in the 21st century: Linguistic practices across urban spaces,} 73–92. Cambridge: Cambridge University Press. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Fulland, Helene. 2016. \textit{Language minority children's perspectives on being bilingual: On {\textquotedbl}bilanguagers{\textquotedbl} and their sensitivity towards complexity.} Oslo: University of Oslo. (Doctoral dissertation)
+\end{styleStandard}
+
+\begin{styleStandard}
+Garavito, Joyce B. de \& White, Lydia. 2002. The L2 acquisition of Spanish DPs: The status of grammatical features. In Pérez-Leroux, Ana T. \& Liceras, Juana M. (eds.), \textit{The acquisition of Spanish morphosyntax: The L1/L2 connection,} 153–178. Dordrecht: Kluwer Academic Publishers.
+\end{styleStandard}
+
+\begin{styleStandard}
+Gass, Susan M. \& Madden, Carolyn G. 1985. Section one. Introduction. In Gass, Susan M. \& Madden, Carolyn G. (eds.), \textit{Input in Second Language Acquisition}, 3–12. Boston, MA: Heinle \& Heinle. 
+\end{styleStandard}
+
+\begin{styleStandard}
+\textstyleauthor{Geeslin, Kimberly L.}\textstyleHTMLCite{ }\textstylepubyear{2011}\textstyleHTMLCite{. }\textstylearticletitle{Variation in L2 Spanish: The state of the discipline}\textstyleHTMLCite{. }\textstylejournaltitle{\textit{Studies in Hispanic and Lusophone Linguistics}}\textstyleHTMLCite{ }\textstylevol{4}\textstyleHTMLCite{. }\textstylepagefirst{461}\textstyleHTMLCite{–}\textstylepagelast{517}\textstyleHTMLCite{. }\url{https://doi.org/10.1515/shll-2011-1110}
+\end{styleStandard}
+
+\begin{styleStandard}
+Geeslin, Kimberly L. \& Gudmestad, Aarnes. 2008. The acquisition of variation in second-language Spanish: An agenda for integrating studies of the L2 sound system. \textit{Journal of Applied Linguistics }5(2). 137–157. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Geeslin, Kimberly L. \& García-Amaya, Lorenzo \& Hasler-Baker, Maria \& Henriksen, Nicholas \& Killam, Jason. 2012. The L2 acquisition of variable perfective past time reference in Spanish in an overseas immersion setting. In Geeslin, Kimberly L. \& Manuel Díaz-Campos (eds.), \textit{Selected proceedings of the 14th Hispanic Linguistics Symposium,} 197–213. Somerville, MA: Cascadilla Press.
+\end{styleStandard}
+
+\begin{styleStandard}
+Glahn, Esther \& Håkansson, Gisela \& Hammarberg, Björn \& Holmen, Anne \& Hvenekilde, Anne \& Lund, Karen. 2001. Processability in Scandinavian second language acquisition. \textit{Studies in Second Language Acquisition} 23(3). 389–416.
+\end{styleStandard}
+
+\begin{styleStandard}
+Goad, Heather \& White, Lydia. 2009. Articles in Turkish/English interlanguage revisited: Implications of vowel harmony. In García Mayo, María del P. \& Hawkins, Roger (eds.), \textit{Second language acquisition of articles: Empirical findings and theoretical implications}, 201–232. Amsterdam: John Benjamins.
+\end{styleStandard}
+
+\begin{styleStandard}
+Gudmestad, Aarnes. 2012. Acquiring a variable structure: An interlanguage alysis of second language mood use in Spanish. \textit{Language Learning }62. 373–402. doi:\href{https://doi.org/10.1111/j.1467-9922.2012.00696.x}{\textstyleInternetlink{10.1111/j.1467-9922.2012.00696.x}}
+\end{styleStandard}
+
+\begin{styleStandard}
+Gujord, Ann-Kristin H. \& Neteland, Randi \& Selås, Magnhild. 2018. Framvekst av morfologi, syntaks og ordforråd i tidleg andrespråksutvikling: Ein longitudinell kasusstudie. \textit{NOA Norsk som andrespråk }1-2/2018. 93–127.
+\end{styleStandard}
+
+\begin{styleStandard}
+Hagen, Jon E. 2001. Finittkategoriens kritiske karakter i norsk som andrespråk. In Golden, Anne \& Uri, Helene (eds.), \textit{Andrespråk, tospråklighet, norsk: Festskrift til Anne Hvenekilde},\textit{ }45–57. Oslo: Unipub.
+\end{styleStandard}
+
+\begin{styleStandard}
+Hagen, Jon E. [2005] 2013. Refleksjoner gjennom andrespråksprismet. In Nordanger, Marte \& Ragnhildstveit, Silje \&Vikøy, Aasne (eds.), \textit{Fra grammatikk til språkpolitikk}. \textit{Utdrag fra Jon Erik Hagens forfatterskap}, 156–174\textit{. }Oslo: Novus.
+\end{styleStandard}
+
+\begin{styleStandard}
+Hawkins, Roger \& Franceschina, Florencia. 2004. Explaining the acquisition and non-acquisition of determiner–noun gender concord in French and Spanish. In Prévost, Philippe \& Paradis, Johanne (eds.), \textit{The acquisition of French in different contexts: Focus on functional categories, }175–205\textit{. }Amsterdam: John Benjamins.
+\end{styleStandard}
+
+\begin{styleStandard}
+Heide, Eldar. 2017. Det norske språkmangfaldet og opplæringa i norsk som andrespråk. \textit{Norsklæreren }3. 16–27.
+\end{styleStandard}
+
+\begin{styleStandard}
+Husby, Olaf. 2009. Talt bokmål: Målspråk for andrespråksstudenter? \textit{NOA norsk som andrespråk 25}(2). 9-40.
+\end{styleStandard}
+
+\begin{styleStandard}
+Hårstad, Stian. 2009. Kommer ikke alt godt fra oven? Et forsøk på å se utviklingstrekk i trønderske talemål i et standardiseringsperspektiv. \textit{Norsk Lingvistisk Tidsskrift }27(1). 133–143.
+\end{styleStandard}
+
+\begin{styleStandard}
+Jahr, Ernst H. 1990. \textit{Den store dialektboka}. Oslo: Novus.
+\end{styleStandard}
+
+\begin{styleStandard}
+Jahr, Ernst H. 1992. \textit{Innhogg i nyare norsk språkhistorie}. Oslo: Novus. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Jansson, Benthe K. \& Bjerke, Christian B. \& Søfteland, Åshild \& Stjernholm, Karine. 2017. Dialekt og skole i Østfold. Kva seier lærarar på barnesteget om tilnærming til lokal dialekt i klasserommet? (Presentation at \textit{SONE-konferansen 2017 – “Språk og skole”}, NTNU Trondheim, April 2017.)
+\end{styleStandard}
+
+\begin{styleStandard}
+Jin, Fufen. 2007. \textit{Second language acquistion and processing of Norwegian DP internal agreement}. Trondheim: The Norwegian University of Science and Technology. (Doctoral dissertation)
+\end{styleStandard}
+
+\begin{styleStandard}
+Jin, Fufen \& Åfarli, Tor A. \& van Dommelen, Wim A. 2009. Variability in the L2 acquisition of Norwegian DPs: An evaluation of some current SLA models. In García Mayo, María del P. \& Hawkins, Roger (eds.), \textit{Second language acquisition of articles: Empirical findings and theoretical implications}, 175–200. Amsterdam: John Benjamins.
+\end{styleStandard}
+
+\begin{styleStandard}
+Johannessen, Janne B. 2017. Annotations in the Nordic Dialect Corpus. In Ide, Nancy \& Pustejovsky, James (eds.), \textit{Handbook of linguistic annotation,} 1303–1321. Dordrecht: Springer.
+\end{styleStandard}
+
+\begin{styleStandard}
+Johannessen, Janne B. \& Larsson, Ida. 2015. Complexity matters: On gender agreement in heritage Scandinavian. \textit{Frontiers in psychology }6: 1842. doi: 10.3389/fpsyg.2015.01842
+\end{styleStandard}
+
+\begin{styleStandard}
+Johannessen, Janne B. \& Priestley, Joel J. \& Hagen, Kristin \& Åfarli, Tor A. \& Vangsnes, Øystein A. 2009. The Nordic dialect corpus: An advanced research tool. In Jokinen, Kristiina \& Bick, Eckhard (eds.), \textit{Proceedings of the 17th Nordic Conference of Computational Linguistics NODALIDA 2009}. (NEALT Proceedings Series Volume 4). (\url{http://tekstlab.uio.no/nota/scandiasyn/})
+\end{styleStandard}
+
+\begin{styleStandard}
+Julien, Marit. 2005. \textit{Nominal phrases from a Scandinavian perspective}. Amsterdam: John Benjamins. (Linguistik aktuell/ Linguistics Today 87)
+\end{styleStandard}
+
+\begin{styleStandard}
+Karlsen, Jannicke \& Lykkenborg, Marta. 2012. Språkbruksmønstre i norsk-pakistanske familier. \textit{NORDAND Nordisk tidsskrift for andrespråksforskning 7}(1). 53–83.
+\end{styleStandard}
+
+\begin{styleStandard}
+Klein, Wolfgang. 1998. The contribution of second language acquisition research. \textit{Language Learning }48. 527–550. doi:\url{https://doi.org/10.1111/0023-8333.00057} 
+\end{styleStandard}
+
+\begin{styleStandard}
+Knudsen, Rune L. \& Fjeld, Ruth V. 2013. LBK2013: A balanced, annotated national corpus for Norwegian Bokmål. \textit{Proceedings of the workshop on lexical semantic resources for NLP at NODALIDA 2013. }(NEALT Proceedings Series Volume 19). (\url{http://tekstlab.uio.no/glossa/html/index_dev.php?corpus=bokmal})
+\end{styleStandard}
+
+\begin{styleStandard}
+Kulbrandstad, Lars A. 1997. \textit{Språkportretter. Studier av tolv minoritetselevers språkbruksmønstre, språkholdninger og språkferdigheter}. Vallset: Oplandske Bokforlag.
+\end{styleStandard}
+
+\section[Leivada, Evelina \& Papadopoulou, Elena \& Kambanaros, Maria \& Grohmann, Kleanthes K. 2017. The influence of bilectalism and non{}-standardization on the perception of native grammatical variants. Frontiers in psychology 8. article 205. doi:10.3389/fpsyg.2017.00205]{Leivada, Evelina \& Papadopoulou, Elena \& Kambanaros, Maria \& Grohmann, Kleanthes K. 2017. The influence of bilectalism and non-standardization on the perception of native grammatical variants. \textit{Frontiers in psychology} 8. article 205. \url{doi:10.3389/fpsyg.2017.00205}}
+\begin{styleStandard}
+Lindstad, Arne M. \& Nøklestad, Anders \& Johannessen, Janne B. \& Vangsnes, Øystein A. 2009. The Nordic dialect database: Mapping microsyntactic variation in the Scandinavian languages. In Jokinen, Kristiina \& Bick, Eckhard (eds.), \textit{Proceedings of the 17th Nordic Conference of Computational Linguistics NODALIDA 2009}. (NEALT Proceedings Series Volume 4). (\url{https://tekstlab.uio.no/nsd})
+\end{styleStandard}
+
+\begin{styleStandard}
+Lovdata (no date). \url{https://lovdata.no/dokument/NL/lov/1998-07-17-61} (Accessed Sept. 2019)
+\end{styleStandard}
+
+\begin{styleStandard}
+Lødrup, Helge. 2011. Hvor mange genus er det i Oslo-dialekten? [’How many genders does the Oslo dialect have?’] \textit{Maal og Minne} 2: 120–136.
+\end{styleStandard}
+
+\begin{styleStandard}
+Mancilla-Martinez, Jeannette \& Kieffer, Michael J. 2010. Language minority learners’ home language use is dynamic. \textit{Educational Researcher }39(7). 545–546.
+\end{styleStandard}
+
+\begin{styleStandard}
+Mosfjeld, Inger M. 2017. Startalder og andrespråkstilegnelse av finitthet. \textit{NOA Norsk som andrespråk }2. 65–87.
+\end{styleStandard}
+
+\begin{styleStandard}
+Mæhlum, Brit. 2009. Standardtalemål? Naturligvis! En argumentasjon for eksistensen av et norsk standardtalemål. \textit{Norsk Lingvistisk Tidsskrift }27(1). 7–26.
+\end{styleStandard}
+
+\begin{styleStandard}
+Mæhlum, Brit \& Røyneland, Unn. 2012. \textit{Det norske dialektlandskapet. Innføring i norske dialekter}. Oslo: Cappelen Damm Akademisk. 
+\end{styleStandard}
+
+\begin{styleStandard}
+\textit{NoTa–Oslo corpus}: \textit{Norsk talespråkskorpus – Oslodelen}, Text laboratory, ILN, University of Oslo (\url{http://www.tekstlab.uio.no/nota/oslo/index.html}) 
+\end{styleStandard}
+
+\begin{styleStandard}
+Opsahl, Toril \& Nistov, Ingvild. 2010. On some structural aspects of Norwegian spoken among adolescents in multilingual settings in Oslo. In Quist, Pia \& Svendsen, Bente A. (eds.), \textit{Multilingual urban Scandinavia: New linguistic practices}, 49–64. Bristol: Multilingual Matters.
+\end{styleStandard}
+
+\begin{styleStandard}
+Ortega, Lourdes. 2019. SLA and the study of equitable multilingualism. \textit{The Modern Language Journal }103. 23–38. doi:\href{https://doi.org/10.1111/modl.12525}{\textstyleInternetlink{10.1111/modl.12525}}
+\end{styleStandard}
+
+\begin{styleStandard}
+Prévost, Philippe \& White, Lydia. 2000. Missing surface inflection or impairment in second language? Evidence from tense and agreement. \textit{Second Language Research} 16(2). 103–133. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Ragnhildstveit, Silje. 2017. \textit{Genus og transfer når norsk er andrespråk. Tre korpusbaserte studier}. Bergen: University of Bergen. (Doctoral dissertation)
+\end{styleStandard}
+
+\begin{styleStandard}
+Rodina, Yulia \& Westergaard, Marit. 2013. The acquisition of gender and declension class in a nontransparent system: Monolinguals and bilinguals. \textit{Studia Linguistica }67(1). 47–67. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Rodina, Yulia \& Westergaard, Marit. 2015a. Grammatical gender in Norwegian: Language acquisition and language change. \textit{Journal of Germanic Linguistics }27(2). 145–187.
+\end{styleStandard}
+
+\begin{styleStandard}
+Rodina, Yulia \& Westergaard, Marit. 2015b. Grammatical gender in bilingual Norwegian-Russian acquisition: The role of input and transparency. \emph{Bilingualism: Language and Cognition \textup{20(1)}}\textit{.} 197–214.
+\end{styleStandard}
+
+\begin{styleStandard}
+Røyneland, Unn. 2009. Dialects in Norway: Catching up with the rest of Europe? \textit{International Journal of the Sociology of Language }196/197. 7–30.
+\end{styleStandard}
+
+\begin{styleStandard}
+Sandøy, Helge. 2009. Standartalemål? Ja, men…! \textit{Norsk Lingvistisk Tidsskrift} 27(1). 27–47.
+\end{styleStandard}
+
+\begin{styleStandard}
+Sandøy, Helge. 2011. Language culture in Norway: A tradition of questioning standard language norms.~In Coupland, Nikolas \& Kristiansen, Tore (eds.), \textit{Standard languages and language standards in a changing Europe}, 119–126. Oslo: Novus.
+\end{styleStandard}
+
+\begin{styleStandard}
+Saniei, Andisheh. 2011. Who is an ideal native speaker?! \textit{2011 International Conference on Languages, Literature and Linguistics IPEDR vol.26}. Singapore: IACSIT Press.
+\end{styleStandard}
+
+\begin{styleStandard}
+Schmidt, Lauren B. 2011. \textit{Acquisition of dialectal variation in a second language: L2 perception of aspiration of Spanish /s/}. Bloomington: Indiana University. (Doctoral dissertation)
+\end{styleStandard}
+
+\begin{styleStandard}
+Selinker, Larry. 1972. Interlanguage. \textit{International Review of Applied Linguistics }10. 209–231. \url{https://doi.org/10.1515/iral.1972.10.1-4.209}
+\end{styleStandard}
+
+\begin{styleStandard}
+Slabakova, Roumyana. 2016. \textit{Second language acquisition}. Oxford: Oxford University Press.
+\end{styleStandard}
+
+\begin{styleStandard}
+Sollid, Hilde. 2014. Kvensk påvirkning på norsk i Nord-Troms. \textit{Ottar – Populærvitenskapelig tidsskrift fra Tromsø museum – Universitetsmuseet }5-2014. 41–47. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Stjernholm, Karine. 2013. \textit{Stedet velger ikke lenger deg, du velger et sted. Tre artikler om språk i Oslo}. Oslo: University of Oslo. (Doctoral dissertation)
+\end{styleStandard}
+
+\begin{styleStandard}
+Stjernholm, Karine \& Søfteland, Åshild. 2019. Talemål i Sør-Østfold. Ideologi, struktur og praksis. \textit{Målbryting }10.\textit{ }101–131. doi: \url{https://doi.org/10.7557/17.4947} 
+\end{styleStandard}
+
+\begin{styleStandard}
+Sun, Yayun A. 2008. Input processing in second language acquisition: A discussion of four input processing models. \textit{Working papers in TESOL \& Applied linguistics 8/1}.
+\end{styleStandard}
+
+\begin{styleStandard}
+Svendsen, Bente A. \& Røyneland, Unn. 2008. Multiethnolectal facts and functions in Oslo, Norway. \textit{International Journal of Bilingualism }12. 63–83. 
+\end{styleStandard}
+
+\begin{styleStandard}
+Søfteland, Åshild. 2018. Nordisk dialektkorpus. Introduction aux recherches sur les parlers dans le Norden. \textit{Nordiques }35. 95–115.
+\end{styleStandard}
+
+\begin{styleStandard}
+Trenkic, Danijela. 2007. Variability in second language article production: Beyond the representational deficit vs. processing constraints debate. \textit{Second Language Research }23(3). 289–327. \url{https://doi.org/10.1177/0267658307077643}
+\end{styleStandard}
+
+\begin{styleStandard}
+Trenkic, Danijela. 2009. Accounting for patterns of article omissions and substitutions in second language production. In García Mayo, María del P. \& Hawkins, Roger (eds.), \textit{Second language acquisition of articles: Empirical findings and theoretical implications}, 115–143. Amsterdam: John Benjamins.
+\end{styleStandard}
+
+\begin{styleStandard}
+Trudgill, Peter. 2002. \textit{Sociolinguistic variation and change}. Edinburgh: Edinburgh University Press.
+\end{styleStandard}
+
+\begin{styleStandard}
+Vangsnes, Øystein A. \& Westergaard, Marit. 2014. Ka korpuse fortæll? Om ordstilling i hv-spørsmål i norske dialekter. In Johannessen, Janne B. \& Hagen, Kristin (eds.), \textit{Språk i Norge og nabolanda: Ny forsking om talespråk}, 133–151. Oslo: Novus.
+\end{styleStandard}
+
+\begin{styleStandard}
+Westergaard, Marit. 2008. Acquisition and change. On the robustness of the triggering experience for word order cues. \textit{Lingua }118(12). 1841–1863.
+\end{styleStandard}
+
+\begin{styleStandard}
+White, Lydia. 2003. Fossilization in steady state L2 grammars: Persistent problems with inflectional morphology. \textit{Bilingualism: Language and Cognition }6. 129–41. \url{https://doi.org/10.1017/S1366728903001081}
+\end{styleStandard}
+\end{document}
