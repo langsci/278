@@ -1,6 +1,6 @@
 \documentclass[output=book,collection,collectionchapter,multiauthors
-            ,colorlinks, citecolor=brown,arseneau
-            % ,draft,draftmode
+%             ,colorlinks, citecolor=brown
+%             ,draft,draftmode
 		  ]{langscibook}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{localmetadata.tex}
@@ -8,28 +8,32 @@
 \input{localhyphenation.tex}
 \input{localcommands.tex}
 \addbibresource{localbibliography.bib}
+\WarningFilter{scrbase}{Usage of deprecated}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Frontmatter                      %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\KOMAoptions{draft=false}
+% \includeonly{chapters/hilton}
 \begin{document}
 \maketitle
 \frontmatter
 % %% uncomment if you have preface and/or acknowledgements
 
+\largerpage
 \currentpdfbookmark{Contents}{name} % adds a PDF bookmark
 {\sloppy\tableofcontents}
+
 
 %% sections without authors
 % \include{chapters/preface}
 % \include{chapters/acknowledgments}
 
 % %% Additional prefaces and/or introductions that also have authors
-\lsCollectionPaperFrontmatterMode % Enter the Frontmatter Mode.
-% \includepaper{chapters/prefaceEd}
-\lsCollectionPaperMainmatterMode % Leave the Frontmatter Mode
-\setcounter{chapter}{0} % Reset the chapter counter so that preceding prefaces are not counted
+% \lsCollectionPaperFrontmatterMode % Enter the Frontmatter Mode.
+% % \includepaper{chapters/prefaceEd}
+% \lsCollectionPaperMainmatterMode % Leave the Frontmatter Mode
+% \setcounter{chapter}{0} % Reset the chapter counter so that preceding prefaces are not counted
 
 \mainmatter
 
@@ -37,18 +41,21 @@
 % %%%             Chapters                         %%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\renewcommand{\lsChapterFooterSize}{\scriptsize}
 \includepaper{chapters/intro}
-\includepaper{chapters/emilsen}
-\includepaper{chapters/pelissier}
-\includepaper{chapters/watorek}%needs better glosses
-\includepaper{chapters/gudmestad}
-\includepaper{chapters/hilton}
-\includepaper{chapters/leclerq}
-\includepaper{chapters/scheuer}%bilal:sec, bib -> done
+\includepaper{chapters/emilsen}%footer ok
+\includepaper{chapters/pelissier}%footer ok
+\renewcommand{\lsChapterFooterSize}{\tiny}
+\includepaper{chapters/watorek}%
+\renewcommand{\lsChapterFooterSize}{\scriptsize}
+\includepaper{chapters/gudmestad}%footer ok
+\includepaper{chapters/hilton}%footer ok, needs raw data
+\includepaper{chapters/leclercq}%footer ok
+\renewcommand{\lsChapterFooterSize}{\footnotesize}
+\includepaper{chapters/scheuer}%footer ok
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Backmatter                       %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% There is normally no need to change the backmatter section
 \input{backmatter.tex}
 \end{document}
