@@ -2,8 +2,8 @@
 
 \renewcommand{\sectref}[1]{Section~\ref{#1}}
 
-\renewcommand{\lsCoverTitleFont}[1]{\sffamily\addfontfeatures{Scale=MatchUppercase}\fontsize{41pt}{15mm}\selectfont #1}
-\renewcommand{\lsChapterFooterSize}{\scriptsize}
+% \renewcommand{\lsCoverTitleFont}[1]{\sffamily\addfontfeatures{Scale=MatchUppercase}\fontsize{41pt}{15mm}\selectfont #1}
+% \renewcommand{\lsChapterFooterSize}{\scriptsize}
 
 \makeatletter
 \let\thetitle\@title
@@ -25,8 +25,13 @@
   \addtocounter{chapter}{-1}
 }
 
-\newcommand{\keywords}[1]{\noindent\textbf{#1}}
+\newcommand{\keywords}[1]{\noindent\bfseries Keywords: \MakeCapital#1}
 
 \let\oldtabularx\tabularx	% number in tabulars
     \let\endoldtabularx\endtabularx
     \renewenvironment{tabularx}{\normalfont\addfontfeatures{Numbers={Monospaced,Lining}}\selectfont\oldtabularx}{\endoldtabularx}
+
+
+\newcommand{\NS}{\hphantom{N}{NS}:}
+\newcommand{\TRS}{\hphantom{NNS:}~}
+\newcommand{\NNS}{NNS:}
