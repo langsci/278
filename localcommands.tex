@@ -24,14 +24,3 @@
   \setcounter{chapter}{#1}
   \addtocounter{chapter}{-1}
 }
-
-\newcommand{\keywords}[1]{\noindent\bfseries Keywords: \MakeCapital#1}
-
-\let\oldtabularx\tabularx	% number in tabulars
-    \let\endoldtabularx\endtabularx
-    \renewenvironment{tabularx}{\normalfont\addfontfeatures{Numbers={Monospaced,Lining}}\selectfont\oldtabularx}{\endoldtabularx}
-
-
-\newcommand{\NS}{\hphantom{N}{NS}:}
-\newcommand{\TRS}{\hphantom{NNS:}~}
-\newcommand{\NNS}{NNS:}
